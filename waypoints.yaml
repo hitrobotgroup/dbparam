@@ -1,2 +1,88 @@
 waypoints:
+  - name: map_line1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 3.71416
+        y: -1.16555
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00523935
+        w: 0.99998
+  - name: map_line2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 7.50707
+        y: -1.33307
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00225155
+        w: 0.999989
+  - name: map_line3
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 15.0389
+        y: -1.50262
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00677862
+        w: 0.999957
+  - name: loop_loop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: looper
+    pose:
+      position:
+        x: 15.0389
+        y: -1.50264
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00715776
+        w: 0.999956
+  - name: timer_sleep2s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 2
+    type: timer
+    pose:
+      position:
+        x: 15.0389
+        y: -1.50263
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00688246
+        w: 0.999959
 trajectories:
+  - name: test
+    waypoints:
+    - map_line1
+    - timer_sleep2s
+    - map_line2
+    - map_line3
+    - timer_sleep2s
+    - loop_loop
