@@ -1,2 +1,46 @@
 waypoints:
+  - name: POEM
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: DREAM_LAND
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 23.33
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: and
+    goal_timeout: 2.33
+    type: timer
+  - name: far_afield
+    failure_mode: NONE
+    type: looper
 trajectories:
+  - name: test
+    waypoints:
+    - POEM
+    - and
+    - DREAM_LAND
+    - far_afield
