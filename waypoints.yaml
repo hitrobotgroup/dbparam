@@ -1,2 +1,856 @@
 waypoints:
+  - name: test_path
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: -2
+        y: -2
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: pallet_0
+    access: protected
+    frame_id: map
+    type: mark
+    pose:
+      position:
+        x: -5
+        y: -5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: pallet_1w
+    access: protected
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 2
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: pallet_1
+    access: protected
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 2
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: pallet_2
+    access: protected
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 1
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: loop_looper
+    close_enough: 0
+    failure_mode: LOOP
+    goal_timeout: 0
+    type: looper
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: timer_wait3s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 3
+    type: timer
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: shell_fork_up
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: shell_fork_down
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: shell_path_loader
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: shell_path_reversed_true
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: shell_path_reversed_false
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: vel_stop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0.5
+    type: cmd_vel
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: vel_forward
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 4
+    type: cmd_vel
+    pose:
+      position:
+        x: 0.4
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: vel_backward
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 4
+    type: cmd_vel
+    pose:
+      position:
+        x: -0.41
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: vel_forward_mini
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: cmd_vel
+    pose:
+      position:
+        x: 0.005
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: vel_backward_mini
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: cmd_vel
+    pose:
+      position:
+        x: -0.005
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_lathe_1oe
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -31.2889
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7017
+        w: 0.7017
+  - name: map_lathe_1os
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -31.2889
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: map_lathe_1ow
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -31.2889
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7017
+        w: 0.7017
+  - name: map_lathe_1on
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -31.2889
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_punch_1ie
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 11.7
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7017
+        w: 0.7017
+  - name: map_punch_1is
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 11.7
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: map_punch_1iw
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 11.7
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7017
+        w: 0.7017
+  - name: map_punch_1in
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 11.7
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_punch_2ie
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 17.0411
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7017
+        w: 0.7017
+  - name: map_punch_2is
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 17.0411
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: map_punch_2iw
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 17.0411
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7017
+        w: 0.7017
+  - name: map_punch_2in
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 17.0411
+        y: -7.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_cut_1oe
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 20.5
+        y: -7
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7017
+        w: 0.7017
+  - name: map_cut_1os
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 20.5
+        y: -7
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: map_cut_1ow
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 20.5
+        y: -7
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7017
+        w: 0.7017
+  - name: map_cut_1on
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 20.5
+        y: -7
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_cut_2oe
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 43.1
+        y: -7
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7017
+        w: 0.7017
+  - name: map_cut_2oe_rev
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 43.1
+        y: -5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7017
+        w: 0.7017
+  - name: map_cut_2os
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 43.1
+        y: -7
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: map_cut_2on
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 43.1
+        y: -7
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_weld_1is
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 65.55
+        y: -40
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: map_weld_1in
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 65.55
+        y: -40
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_door_n1c
+    close_enough: 0.5
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 68.5
+        y: -7
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_door_n2c
+    close_enough: 0.5
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 68.5
+        y: -38
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_door_n3c
+    close_enough: 0.5
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 68.5
+        y: -8
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: map_door_n4c
+    close_enough: 0.5
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 68.5
+        y: -6.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
 trajectories:
+  - name: cut2weld
+    waypoints:
+    - map_door_n1c
+    - map_door_n2c
+    - map_weld_1is
+    - map_weld_1in
+    - vel_stop
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_down
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - timer_wait3s
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_up
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - map_door_n2c
+    - map_door_n1c
+    - map_cut_2os
+    - map_cut_2oe
+    - vel_stop
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_down
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - timer_wait3s
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_up
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - map_cut_2on
+    - timer_wait3s
+    - loop_looper
+  - name: cut2punch
+    waypoints:
+    - map_cut_1on
+    - map_cut_1oe
+    - vel_stop
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_down
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - timer_wait3s
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_up
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - map_cut_1os
+    - map_punch_2is
+    - map_punch_2iw
+    - vel_stop
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_down
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - timer_wait3s
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_up
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - map_punch_2in
+    - loop_looper
+  - name: lathe2punch
+    waypoints:
+    - map_lathe_1os
+    - map_lathe_1ow
+    - vel_stop
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_down
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - timer_wait3s
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_up
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - map_lathe_1on
+    - map_punch_1in
+    - map_punch_1iw
+    - vel_stop
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_down
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - timer_wait3s
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_up
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - map_punch_1is
+    - loop_looper
+  - name: door2weld
+    waypoints:
+    - map_door_n1c
+    - vel_stop
+    - vel_backward
+    - vel_stop
+    - map_door_n3c
+    - map_door_n2c
+    - map_weld_1is
+    - map_weld_1in
+    - vel_stop
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_down
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - timer_wait3s
+    - vel_backward
+    - vel_stop
+    - vel_forward_mini
+    - shell_fork_up
+    - timer_wait3s
+    - vel_stop
+    - vel_forward
+    - vel_stop
+    - map_door_n2c
+    - map_door_n1c
+    - loop_looper
+  - name: pallet_test
+    access: protected
+    waypoints:
+    - pallet_0
+    - pallet_1w
+    - pallet_1
+    - pallet_2
