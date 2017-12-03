@@ -1,2 +1,110 @@
 waypoints:
+  - name: map_line1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.655713
+        y: -2.36807
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0137765
+        w: 0.999815
+  - name: map_line2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.641871
+        y: 0.555502
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0137425
+        w: 0.999841
+  - name: map_line3
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.589946
+        y: 2.88117
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0197552
+        w: 0.999699
+  - name: loop_loop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: looper
+    pose:
+      position:
+        x: 0.589942
+        y: 2.88118
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0197548
+        w: 0.999699
+  - name: timer_sleep3s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 3
+    type: timer
+    pose:
+      position:
+        x: 0.657589
+        y: 0.583866
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00625546
+        w: 0.999928
+  - name: pubsuber_read_status
+    close_enough: 0
+    failure_mode: 3
+    goal_timeout: 3
+    type: pubsuber
+    pose:
+      position:
+        x: 0.00589314
+        y: 3.21134e-05
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.000281026
+        w: 1
 trajectories:
+  - name: line123
+    waypoints:
+    - map_line1
+    - map_line2
+    - map_line3
+    - loop_loop
+  - name: timer-test
+    waypoints:
+    - map_line1
+    - timer_sleep3s
+    - map_line2
+    - timer_sleep3s
+    - map_line3
+    - timer_sleep3s
+    - loop_loop
