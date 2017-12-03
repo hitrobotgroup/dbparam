@@ -1,2 +1,101 @@
 waypoints:
+  - name: test_mark1
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 2.2
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: home
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -0.0439839
+        y: 0.0523334
+        z: -6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00126448
+        w: 0.999999
+  - name: mark1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 2.21527
+        y: 0.0539775
+        z: -2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.000537151
+        w: 1
+  - name: mark2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 3.46045
+        y: -11.7839
+        z: -6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: -0.703063
+        w: 0.711127
+  - name: mark3
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 1.90956
+        y: -26.2591
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: -0.685603
+        w: 0.727976
+  - name: m4
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 3.85581
+        y: -25.2281
+        z: -2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.713224
+        w: 0.700936
 trajectories:
+  - name: test_ouiyeah
+    waypoints:
+    - home
+    - mark1
+    - mark2
+    - mark3
