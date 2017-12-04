@@ -1,4 +1,26 @@
 waypoints:
+    #Fork manipulation
+  - name: wait5s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 5
+    type: timer
+  - name: shell_fork_up
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 3
+    type: shell
+  - name: shell_fork_down
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 3
+    type: shell
+  - name: shell_fork_hang
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 3
+    type: shell
+    #Station
   - name: origin_1
     close_enough: 0
     failure_mode: LOOP
@@ -349,12 +371,24 @@ trajectories:
   - name: punch_loading
     waypoints: 
     - punch_tail
+    - shell_fork_up
+    - wait5s
+    - shell_fork_hang
   - name: punch_unloading
     waypoints: 
     - punch_tail
+    - shell_fork_down
+    - wait5s
+    - shell_fork_hang
   - name: cache_loading
     waypoints: 
     - cache_tail
+    - shell_fork_up
+    - wait5s
+    - shell_fork_hang
   - name: cache_unloading
     waypoints: 
     - cache_tail
+    - shell_fork_down
+    - wait5s
+    - shell_fork_hang
