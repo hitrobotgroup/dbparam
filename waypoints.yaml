@@ -4,6 +4,11 @@ waypoints:
     failure_mode: NONE
     goal_timeout: 5
     type: timer
+  - name: vel_slow
+    close_enough: -0.0001
+    failure_mode: NONE
+    goal_timeout: 4
+    type: cmd_vel
   - name: shell_fork_up
     close_enough: 0
     failure_mode: NONE
@@ -33,7 +38,7 @@ waypoints:
       orientation: 
         x: 0
         y: 0
-        z: 0.7071
+        z: -0.7071
         w: 0.7071
   - name: origin_2
     close_enough: 0
@@ -49,7 +54,7 @@ waypoints:
       orientation: 
         x: 0
         y: 0
-        z: -0.7071
+        z: 0.7071
         w: 0.7071
   - name: origin_3
     close_enough: 0
@@ -344,8 +349,8 @@ waypoints:
     type: tail
     pose: 
       position: 
-        x: 15.28
-        y: -1.86
+        x: 15.3
+        y: -1.84
         z: 0
       orientation: 
         x: 0
@@ -358,7 +363,7 @@ waypoints:
     pose: 
       position: 
         x: 22.083
-        y: -2
+        y: -1.915
         z: 0
       orientation: 
         x: 0
@@ -366,27 +371,27 @@ waypoints:
         z: 0.7071
         w: 0.7071
 trajectories:
-  - name: punch_loading
+  - name: punchtest_loading
     waypoints: 
-    - punch_tail
+    - punchtest_tail
     - shell_fork_up
-    - wait5s
+    - vel_slow
     - shell_fork_hang
-  - name: punch_unloading
+  - name: punchtest_unloading
     waypoints: 
-    - punch_tail
+    - punchtest_tail
     - shell_fork_down
-    - wait5s
+    - vel_slow
     - shell_fork_hang
   - name: cache_loading
     waypoints: 
     - cache_tail
     - shell_fork_up
-    - wait5s
+    - vel_slow
     - shell_fork_hang
   - name: cache_unloading
     waypoints: 
     - cache_tail
     - shell_fork_down
-    - wait5s
+    - vel_slow
     - shell_fork_hang
