@@ -344,6 +344,35 @@ waypoints:
         y: 0
         z: -0.00877802
         w: 0.999961
+  - name: lasercutter_4_tail
+    frame_id: map
+    type: tail
+    pose: 
+      position: 
+        x: 42.7
+        y: 4.63
+        z: -2.77556e-17
+      orientation: 
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: lasercutter_4
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose: 
+      position: 
+        x: 43.9
+        y: 1.8
+        z: -2.77556e-17
+      orientation: 
+        x: 0
+        y: 0
+        z: 0
+        w: 1
   - name: punchtest_tail
     frame_id: map
     type: tail
@@ -370,6 +399,64 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
+  - name: semi_product_buffer_1_4_tail
+    frame_id: map
+    type: tail
+    pose: 
+      position: 
+        x: 27.109
+        y: -1.915
+        z: 0
+      orientation: 
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: semi_product_buffer_1_4
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose: 
+      position: 
+        x: 28.309
+        y: 1.8
+        z: 0
+      orientation: 
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: semi_product_buffer_1_8_tail
+    frame_id: map
+    type: tail
+    pose: 
+      position: 
+        x: 33.702
+        y: -1.88
+        z: 0
+      orientation: 
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: semi_product_buffer_1_8
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose: 
+      position: 
+        x: 34.902
+        y: 1.8
+        z: 0
+      orientation: 
+        x: 0
+        y: 0
+        z: 0
+        w: 1
 trajectories:
   - name: punchtest_loading
     waypoints: 
@@ -392,6 +479,30 @@ trajectories:
   - name: cache_unloading
     waypoints: 
     - cache_tail
+    - shell_fork_down
+    - vel_slow
+    - shell_fork_hang
+  - name: semi_product_buffer_1_4_loading
+    waypoints: 
+    - semi_product_buffer_1_4_tail
+    - shell_fork_up
+    - vel_slow
+    - shell_fork_hang
+  - name: semi_product_buffer_1_4_unloading
+    waypoints: 
+    - semi_product_buffer_1_4_tail
+    - shell_fork_down
+    - vel_slow
+    - shell_fork_hang
+  - name: semi_product_buffer_1_8_loading
+    waypoints: 
+    - semi_product_buffer_1_8_tail
+    - shell_fork_up
+    - vel_slow
+    - shell_fork_hang
+  - name: semi_product_buffer_1_8_unloading
+    waypoints: 
+    - semi_product_buffer_1_8_tail
     - shell_fork_down
     - vel_slow
     - shell_fork_hang
