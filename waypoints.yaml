@@ -1,5 +1,4 @@
 waypoints:
-    #Fork manipulation
   - name: wait5s
     close_enough: 0
     failure_mode: NONE
@@ -20,7 +19,6 @@ waypoints:
     failure_mode: NONE
     goal_timeout: 3
     type: shell
-    #Station
   - name: origin_1
     close_enough: 0
     failure_mode: LOOP
