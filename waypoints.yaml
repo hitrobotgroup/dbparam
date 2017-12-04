@@ -96,13 +96,13 @@ waypoints:
     type: workstation
     pose: 
       position: 
-        x: 0
-        y: 0
+        x: -2
+        y: 8
         z: 0
       orientation: 
         x: 0
         y: 0
-        z: 0.7071
+        z: -0.7071
         w: 0.7071
   - name: slicer
     close_enough: 0
