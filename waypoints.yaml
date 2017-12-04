@@ -1239,7 +1239,7 @@ waypoints:
         y: 0
         z: 0.706175
         w: 0.708022
-  - name: map_原点bk
+  - name: map_lift2.0
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
@@ -1247,15 +1247,15 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 0.077711
-        y: 0.131974
+        x: 24.2261
+        y: 5.59582
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.00892408
-        w: 0.999628
-  - name: map_宿舍bk
+        z: 0.696838
+        w: 0.717228
+  - name: map_west.0
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
@@ -1263,15 +1263,15 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 2.79542
-        y: 10.8864
+        x: 22.1522
+        y: 1.42896
         z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.711168
-        w: 0.698523
-  - name: map_门口bk
+        z: -0.001485
+        w: 0.999999
+  - name: map_south3.0
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
@@ -1279,15 +1279,15 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 8.53792
-        y: -0.597608
+        x: 8.52092
+        y: 8.05389
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.999424
-        w: -0.00105556
-  - name: map_中途bk
+        z: 0.99997
+        w: 0.00770575
+  - name: map_原点0.0
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
@@ -1295,14 +1295,62 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 2.58087
-        y: -0.593211
+        x: 0.0127655
+        y: -0.00185759
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.0111222
-        w: 0.999845
+        z: 8.56035e-05
+        w: 1
+  - name: map_west2.0
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 22.0789
+        y: 0.829551
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00451555
+        w: 0.999813
+  - name: map_corner-2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.621304
+        y: 1.29922
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.707348
+        w: 0.706857
+  - name: map_corner-1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 2.30288
+        y: 0.422523
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0034866
+        w: 0.999913
 trajectories:
   - name: lift_up
     waypoints:
@@ -1586,23 +1634,36 @@ trajectories:
     waypoints:
     - pub_led_blue
     - sound_start
-    - map_原点bk
-    - map_中途bk
-    - map_宿舍bk
-    - map_中途bk
     - timer_wait2s
     - pub_led_green
     - pub_up
     - pubsuber_limit_switch_top
     - pubsuber_lift_stop
     - pub_led_blue
-    - map_门口bk
     - timer_wait2s
     - pub_led_green
     - pub_down
     - pubsuber_limit_switch_buttom
     - pub_lift_stop
     - pub_led_blue
-    - map_原点bk
     - pub_led_off
     - sound_stop
+  - name: AGV_test_loop
+    waypoints:
+    - map_原点0.0
+    - map_lift2.0
+    - timer_wait2s
+    - map_south3.0
+    - timer_wait2s
+    - map_原点0.0
+    - loop_Loop
+  - name: AGV_test
+    waypoints:
+    - map_原点0.0
+    - map_west2.0
+    - timer_wait2s
+    - map_lift2.0
+    - timer_wait2s
+    - map_south3.0
+    - timer_wait2s
+    - map_原点0.0
