@@ -272,7 +272,7 @@ waypoints:
   - name: cmd_vel_back1
     close_enough: 0
     failure_mode: NONE
-    goal_timeout: 17
+    goal_timeout: 18
     type: cmd_vel
     pose:
       position:
@@ -287,7 +287,7 @@ waypoints:
   - name: cmd_vel_back2
     close_enough: 0
     failure_mode: NONE
-    goal_timeout: 12
+    goal_timeout: 10
     type: cmd_vel
     pose:
       position:
@@ -739,7 +739,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 1.35
+        x: 1.2
         y: 0
         z: 0
       orientation:
@@ -1381,7 +1381,7 @@ waypoints:
         z: -0.707266
         w: 0.706941
   - name: map_watch_A
-    close_enough: 0.1
+    close_enough: 0
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
@@ -1436,7 +1436,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 5.38636
+        x: 5.28636
         y: -7.56273
         z: 0
       orientation:
@@ -1454,6 +1454,22 @@ waypoints:
       position:
         x: 5.15431
         y: -2.72642
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.99992
+        w: 0.0055426
+  - name: map_watchA3C
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 5.15431
+        y: -3.02642
         z: 0
       orientation:
         x: 0
@@ -1484,7 +1500,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 17.6
+        x: 17.85
         y: -26.5095
         z: 0
       orientation:
@@ -1517,7 +1533,7 @@ waypoints:
     pose:
       position:
         x: 27.4041
-        y: -27.8
+        y: -27.8617
         z: 0
       orientation:
         x: 0
@@ -1597,7 +1613,7 @@ waypoints:
     pose:
       position:
         x: 19.0327
-        y: -33.0527
+        y: -33.1527
         z: 0
       orientation:
         x: 0
@@ -1629,7 +1645,7 @@ waypoints:
     pose:
       position:
         x: 10.7986
-        y: -32.29
+        y: -32.2078
         z: 0
       orientation:
         x: 0
@@ -1644,7 +1660,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 10.7986
+        x: 10.8169
         y: -33.4898
         z: 0
       orientation:
@@ -1837,7 +1853,7 @@ waypoints:
     pose:
       position:
         x: 26.9368
-        y: -48.1346
+        y: -48.3346
         z: 0
       orientation:
         x: 0
@@ -2308,7 +2324,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 5.30694
+        x: 5.40694
         y: -2.0993
         z: 0
       orientation:
@@ -2348,7 +2364,7 @@ waypoints:
         y: 0
         z: -0.684958
         w: 0.728518
-  - name: pubsuber_lift_up
+  - name: pubsuber_lift_down
     close_enough: 0
     failure_mode: 6
     goal_timeout: 0
@@ -2363,7 +2379,7 @@ waypoints:
         y: 0
         z: 0.000319063
         w: 0.99994
-  - name: pubsuber_lift_down
+  - name: pubsuber_lift_up
     close_enough: 0
     failure_mode: 6
     goal_timeout: 0
@@ -2682,22 +2698,6 @@ waypoints:
         y: 0
         z: 0.00081306
         w: 0.999998
-  - name: map_wh_start_D83_3_4
-    close_enough: 0.1
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 1.42913
-        y: -0.221249
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.00908047
-        w: 0.999897
   - name: map_cos_d
     close_enough: 0.1
     failure_mode: LOOP
@@ -2826,6 +2826,22 @@ waypoints:
         y: 0
         z: 0.0123293
         w: 0.999906
+  - name: map_wh_start_into4
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 1.47946
+        y: -1.85683
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.695475
+        w: 0.718493
   - name: map_D83_wh_start_into3
     close_enough: 0
     failure_mode: LOOP
@@ -2850,8 +2866,8 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 28.1587
-        y: -42.106
+        x: 28.1913
+        y: -42.3
         z: 0
       orientation:
         x: 0
@@ -2867,7 +2883,7 @@ waypoints:
     pose:
       position:
         x: 28.2454
-        y: -43.2604
+        y: -43.2
         z: 0
       orientation:
         x: 0
@@ -2915,7 +2931,7 @@ waypoints:
     pose:
       position:
         x: 30.1466
-        y: -44.4745
+        y: -44.5645
         z: 0
       orientation:
         x: 0
@@ -2962,7 +2978,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 8.07328
+        x: 7.82328
         y: -18.7186
         z: 0
       orientation:
@@ -3242,70 +3258,6 @@ waypoints:
         y: 0
         z: 0.0144732
         w: 0.999864
-  - name: map_wh_start_D83_6
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 1.45544
-        y: 2.50193
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.999982
-        w: 0.00107599
-  - name: map_wh_start_D83_7
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 1.4089
-        y: 3.7838
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.999955
-        w: 0.00591442
-  - name: map_wh_start_D83_8
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 1.37523
-        y: 5.10103
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.999802
-        w: 0.0195607
-  - name: map_wh_start_D83_9
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 1.38085
-        y: 6.55808
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.999254
-        w: 0.0385057
   - name: map_wh_start_into2
     close_enough: 0
     failure_mode: LOOP
@@ -3346,7 +3298,23 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 32.6077
+        x: 32.5577
+        y: -7.32506
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999921
+        w: -0.00126164
+  - name: map_cos_j
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 28
         y: -7.32506
         z: 0
       orientation:
@@ -3370,22 +3338,6 @@ waypoints:
         y: 0
         z: 0.705902
         w: 0.708305
-  - name: map_cos_j
-    close_enough: 0.1
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 28
-        y: -7.32506
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.999921
-        w: -0.00126164
   - name: map_D83_65
     close_enough: 0.1
     failure_mode: LOOP
@@ -3395,7 +3347,7 @@ waypoints:
     pose:
       position:
         x: 29.6586
-        y: -18.1736
+        y: -18.1236
         z: 0
       orientation:
         x: 0
@@ -3418,7 +3370,7 @@ waypoints:
         y: 0
         z: 0.716305
         w: 0.697678
-  - name: initial_pose_NO2
+  - name: initial_pose_NO1
     close_enough: 0
     failure_mode: NONE
     frame_id: map
@@ -3426,15 +3378,31 @@ waypoints:
     type: initial_pose
     pose:
       position:
-        x: -0.06
-        y: 1.55698
+        x: -0.0491259
+        y: -0.0354622
         z: 0
       orientation:
         x: 0
         y: 0
         z: 1
         w: 0
-  - name: map_wh_start_agv2_in_p
+  - name: map_wh_start_D83_3_4
+    close_enough: 0.05
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 1.23039
+        y: 0.308721
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.686708
+        w: 0.726928
+  - name: map_wh_start_D83_6
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
@@ -3442,15 +3410,15 @@ waypoints:
     type: goal
     pose:
       position:
-        x: -0.0318456
-        y: 1.56848
+        x: 1.38084
+        y: 2.61645
         z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.0122339
-        w: 0.999925
-  - name: map_wh_start_agv2_lane
+        z: 0.99975
+        w: -0.0217738
+  - name: map_wh_start_D83_7
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
@@ -3458,15 +3426,15 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 1.19032
-        y: 1.3
+        x: 1.38793
+        y: 3.99864
         z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.73444
-        w: 0.678674
-  - name: map_wh_start_agv2_out
+        z: 0.999908
+        w: 0.0110369
+  - name: map_wh_start_D83_8
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
@@ -3474,15 +3442,15 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 1.19131
-        y: 1.3
+        x: 1.44304
+        y: 5.33768
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.999688
-        w: 0.0249849
-  - name: map_wh_agv2_in
+        z: 0.999705
+        w: 0.0237474
+  - name: map_wh_start_D83_9
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
@@ -3490,46 +3458,14 @@ waypoints:
     type: goal
     pose:
       position:
-        x: -0.2
-        y: 1.37
+        x: 1.38941
+        y: 6.77083
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.99963
-        w: -0.0270911
-  - name: map_wh_start_into4
-    close_enough: 0.1
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 1.44245
-        y: -1.59467
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.999628
-        w: 0.0198863
-  - name: map_wh_start_agv2_lane1
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 1.16031
-        y: 1.08483
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.601213
-        w: 0.799075
+        z: 0.999977
+        w: 0.00537891
   - name: map_wh_start_into6
     close_enough: 0.1
     failure_mode: LOOP
@@ -3538,14 +3474,14 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 1.55234
-        y: -1.28487
+        x: 1.42469
+        y: -1.49185
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.696513
-        w: 0.717539
+        z: 0.820495
+        w: 0.571651
   - name: map_RD77_1_init
     close_enough: 0
     failure_mode: LOOP
@@ -3866,50 +3802,115 @@ waypoints:
         y: 0
         z: 0.71656
         w: 0.697524
-  - name: sound_start
-    close_enough: 0
-    failure_mode: START
+  - name: map_cos_w
+    close_enough: 0.05
+    failure_mode: LOOP
+    frame_id: map
     goal_timeout: 0
-    type: sound_play
+    type: goal
     pose:
       position:
-        x: 9.61548
-        y: -32.3479
+        x: 21.4061
+        y: -7.54139
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.71656
-        w: 0.697524
-  - name: sound_stop
+        z: 0.999219
+        w: -0.0375261
+  - name: map_cos_z
     close_enough: 0
-    failure_mode: STOP
+    failure_mode: NONE
+    frame_id: map
     goal_timeout: 0
-    type: sound_play
+    type: goal
     pose:
       position:
-        x: 9.61548
-        y: -32.3479
+        x: 9.8347
+        y: -33.3658
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.71656
-        w: 0.697524
+        z: -0.0255196
+        w: 0.999632
+  - name: map_DB3_5_20170912_mid
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 10.3118
+        y: -32.1899
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.713678
+        w: 0.70047
+  - name: map_DB3_5_20170912_before
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 10.3315
+        y: -33.3469
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.713276
+        w: 0.700882
+  - name: map_DB3_5_20170912_line
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 10.6627
+        y: -33.4498
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.998736
+        w: 0.0501686
+  - name: map_DB3_5_20170912_back
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 12.2908
+        y: -33.5602
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0201906
+        w: 0.999787
 trajectories:
   - name: RD77-1
     waypoints:
-    - initial_pose_NO2
-    - sound_stop
+    - initial_pose_NO1
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_wh_start_agv2_lane
-    - map_wh_start_into4
+    - map_wh_start1
     - map_wh_start2
     - map_wh_start_RD77_1
     - pub_vel_slow
@@ -3925,16 +3926,21 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
-    - sound_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_shutmplayer
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_wh_start_into
     - map_wh_start_into2
     - pub_vel_slow
@@ -3951,8 +3957,8 @@ trajectories:
     - pubsuber_close_cosA
     - map_RD_1_L_lane
     - pub_traction
-    - pub_vel_slow
     - map_RD_1_L_out
+    - pub_vel_slow
     - map_RD_1_L_in
     - pub_vel_fast
     - pub_led_green
@@ -3963,15 +3969,20 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
     - pub_led_red
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_RD_1_P_out
     - pub_vel_slow
     - map_RD_1_P_out
@@ -3986,16 +3997,22 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
-    - sound_start
-    - cmd_vel_back1
+    - pub_shutmplayer
+    - pub_alarm_back
+    - cmd_vel_back
     - pub_led_blue
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
+    - map_cos_w
     - map_watch_A
     - pubsuber_open_cosA
     - pubsuber_read_wh
@@ -4004,11 +4021,10 @@ trajectories:
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_open_wh
     - pub_down
     - timer_wait1s
     - pub_down
@@ -4016,24 +4032,29 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
-    - sound_stop
+    - pubsuber_open_wh
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: RD77-2
     waypoints:
-    - initial_pose_NO2
-    - sound_stop
+    - initial_pose_NO1
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_wh_start_agv2_lane
-    - map_wh_start_into4
+    - map_wh_start1
     - map_wh_start2
     - map_wh_start_RD77_2
     - pub_vel_slow
@@ -4050,20 +4071,24 @@ trajectories:
     - timer_wait1s
     - pubsuber_limit_switch_top
     - pub_lift_stop
-    - pubsuber_lift_stop
-    - pub_led_red
-    - sound_stop
     - timer_wait1s
-    - sound_stop
-    - sound_start
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_led_red
+    - pub_shutmplayer
+    - timer_wait1s
+    - pub_shutmplayer
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_wh_start_into
     - map_wh_start_into2
     - pub_vel_slow
@@ -4076,7 +4101,9 @@ trajectories:
     - map_RD_B_lane
     - pub_traction
     - map_RD_B_out
+    - pub_vel_slow
     - map_RD_B_in
+    - pub_vel_fast
     - pub_led_green
     - pub_down
     - timer_wait1s
@@ -4086,18 +4113,23 @@ trajectories:
     - timer_wait1s
     - pubsuber_limit_switch_buttom
     - pub_lift_stop
-    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_blue
-    - sound_start
+    - pub_mplayer
+    - map_RD_B_right
     - pub_vel_slow
     - map_RD_B_right
     - scan_marker_1
@@ -4112,18 +4144,22 @@ trajectories:
     - timer_wait1s
     - pubsuber_limit_switch_top
     - pub_lift_stop
-    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_blue
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_RD_B_back
     - map_D83_65
     - map_cos_i
@@ -4132,18 +4168,17 @@ trajectories:
     - pubsuber_read_cosA
     - pubsuber_close_cosA
     - map_watch_A
+    - timer_wait2s
     - pubsuber_open_cosA
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - timer_wait2s
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_open_wh
     - pub_down
     - timer_wait1s
     - pub_down
@@ -4151,24 +4186,28 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
-    - sound_stop
+    - pubsuber_open_wh
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: RC70-1
     waypoints:
-    - initial_pose_NO2
-    - sound_stop
+    - initial_pose_NO1
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_wh_start_agv2_lane
-    - map_wh_start_into4
     - map_wh_start1
     - map_wh_start2
     - map_wh_start_RC70_1
@@ -4186,20 +4225,24 @@ trajectories:
     - timer_wait1s
     - pubsuber_limit_switch_top
     - pub_lift_stop
-    - pubsuber_lift_stop
-    - pub_led_red
-    - sound_stop
     - timer_wait1s
-    - sound_start
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_led_red
+    - pub_shutmplayer
+    - timer_wait1s
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_wh_start_into
     - map_wh_start_into2
     - pub_vel_slow
@@ -4218,7 +4261,9 @@ trajectories:
     - map_RD_3_lane
     - pub_traction
     - map_RD_3_out
+    - pub_vel_slow
     - map_RD_3_in
+    - pub_vel_fast
     - pub_led_green
     - pub_down
     - timer_wait1s
@@ -4228,18 +4273,22 @@ trajectories:
     - timer_wait1s
     - pubsuber_limit_switch_buttom
     - pub_lift_stop
-    - pubsuber_lift_stop
-    - sound_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_shutmplayer
     - pub_normal
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_RD_3_right_out
     - pub_vel_slow
     - map_RD_3_right_out
@@ -4255,17 +4304,21 @@ trajectories:
     - timer_wait1s
     - pubsuber_limit_switch_top
     - pub_lift_stop
-    - pubsuber_lift_stop
-    - pub_traction_plus
-    - sound_stop
     - timer_wait1s
-    - sound_start
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_traction_plus
+    - pub_shutmplayer
+    - timer_wait1s
+    - pub_alarm_back
     - pub_vel_fast
     - pub_led_red
     - cmd_vel_back
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
     - pub_led_blue
     - map_cos_c_1
@@ -4273,15 +4326,15 @@ trajectories:
     - timer_wait2s
     - map_cos_c_n1
     - map_cos_c_n2
+    - timer_wait2s
     - pubsuber_read_wh
     - pubsuber_close_wh
     - map_cos_c_n3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_open_wh
     - pub_down
     - timer_wait1s
     - pub_down
@@ -4289,24 +4342,28 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
-    - sound_stop
+    - pubsuber_open_wh
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-3
     waypoints:
-    - initial_pose_NO2
-    - sound_stop
+    - initial_pose_NO1
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_wh_start_agv2_lane
-    - map_wh_start_into4
     - map_wh_start1
     - map_wh_start2
     - map_wh_start_D83_3
@@ -4323,16 +4380,21 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
-    - sound_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_shutmplayer
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_wh_start_into
     - map_wh_start_into2
     - pub_vel_slow
@@ -4364,16 +4426,21 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_D83_3_left
     - pub_vel_slow
     - map_D83_3_left
@@ -4388,39 +4455,45 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_3_back
     - map_D83_95
     - map_D83_64
     - map_D83_65
+    - timer_wait1s
     - map_cos_i
     - map_cos_h
     - map_cos_j
     - pubsuber_read_cosA
     - pubsuber_close_cosA
     - map_watch_A
+    - timer_wait2s
     - pubsuber_open_cosA
     - pubsuber_read_wh
     - pubsuber_close_wh
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_open_wh
     - pub_down
     - timer_wait1s
     - pub_down
@@ -4428,24 +4501,28 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
-    - sound_stop
+    - pubsuber_open_wh
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-4
     waypoints:
-    - initial_pose_NO2
-    - sound_stop
+    - initial_pose_NO1
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_wh_start_agv2_lane
-    - map_wh_start_into4
     - map_wh_start1
     - map_wh_start2
     - map_wh_start_D83_4
@@ -4462,16 +4539,21 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
-    - sound_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_shutmplayer
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_wh_start_into
     - map_wh_start_into2
     - pub_vel_slow
@@ -4503,16 +4585,21 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_D83_4_lanecorner
     - map_D83_4_left
     - pub_vel_slow
@@ -4528,39 +4615,46 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_4_2
     - timer_wait1s
     - map_D83_63
+    - map_D83_64
     - map_D83_65
+    - timer_wait1s
     - map_cos_i
     - map_cos_h
     - map_cos_j
     - pubsuber_read_cosA
     - pubsuber_close_cosA
     - map_watch_A
+    - timer_wait2s
     - pubsuber_open_cosA
     - pubsuber_read_wh
     - pubsuber_close_wh
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_open_wh
     - pub_down
     - timer_wait1s
     - pub_down
@@ -4568,24 +4662,28 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
-    - sound_stop
+    - pubsuber_open_wh
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-5
     waypoints:
-    - initial_pose_NO2
-    - sound_stop
+    - initial_pose_NO1
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_wh_start_agv2_lane
-    - map_wh_start_into4
     - map_wh_start1
     - map_wh_start2
     - map_wh_start_D83_5
@@ -4602,16 +4700,21 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
-    - sound_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_shutmplayer
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_wh_start_into
     - map_wh_start_into2
     - pub_vel_slow
@@ -4622,14 +4725,13 @@ trajectories:
     - pubsuber_open_wh
     - map_cos_c
     - map_D83_61
-    - map_D83_51
     - timer_wait1s
     - map_D83_52
+    - timer_wait1s
     - map_D83_5lane
     - pub_traction
     - map_D83_5out
     - map_D83_5in
-    - pub_vel_fast
     - pub_led_green
     - pub_down
     - timer_wait1s
@@ -4638,16 +4740,21 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_D83_5left
     - pub_vel_slow
     - map_D83_5left
@@ -4662,18 +4769,23 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_traction
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_53
     - pub_traction_plus
     - timer_wait1s
@@ -4683,23 +4795,24 @@ trajectories:
     - map_D83_56
     - map_D83_64
     - map_D83_65
+    - timer_wait1s
     - map_cos_i
     - map_cos_h
     - map_cos_j
     - pubsuber_read_cosA
     - pubsuber_close_cosA
     - map_watch_A
+    - timer_wait2s
     - pubsuber_open_cosA
     - pubsuber_read_wh
     - pubsuber_close_wh
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_open_wh
     - pub_down
     - timer_wait1s
     - pub_down
@@ -4707,24 +4820,30 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
-    - sound_stop
+    - pubsuber_open_wh
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-6
     waypoints:
-    - initial_pose_NO2
-    - sound_stop
+    - initial_pose_NO1
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_wh_start_agv2_lane
-    - map_wh_start_into6
+    - map_wh_start_into2
+    - map_wh_start_D83_3_4
     - map_wh_start_D83_6
     - pub_vel_slow
     - map_wh_start_D83_6
@@ -4739,16 +4858,21 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
-    - sound_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_shutmplayer
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_wh_start_into2
     - pub_vel_slow
     - map_watch1
@@ -4758,8 +4882,6 @@ trajectories:
     - pubsuber_open_wh
     - map_cos_c
     - map_D83_61
-    - timer_wait1s
-    - map_D83_62
     - timer_wait1s
     - map_D83_6_lane
     - pub_traction
@@ -4773,16 +4895,21 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_D83_6_left
     - pub_vel_slow
     - map_D83_6_left
@@ -4797,37 +4924,44 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_63
+    - map_D83_64
     - map_D83_65
+    - timer_wait1s
     - map_cos_i
     - map_cos_h
     - map_cos_j
     - pubsuber_read_cosA
     - pubsuber_close_cosA
     - map_watch_A
+    - timer_wait2s
     - pubsuber_open_cosA
     - pubsuber_read_wh
     - pubsuber_close_wh
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_open_wh
     - pub_down
     - timer_wait1s
     - pub_down
@@ -4835,24 +4969,30 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
-    - sound_stop
+    - pubsuber_open_wh
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-7
     waypoints:
-    - initial_pose_NO2
-    - sound_stop
+    - initial_pose_NO1
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_wh_start_agv2_lane1
-    - map_wh_start_into6
+    - map_wh_start_into2
+    - map_wh_start_D83_3_4
     - map_wh_start_D83_7
     - pub_vel_slow
     - map_wh_start_D83_7
@@ -4867,16 +5007,21 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
-    - sound_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_shutmplayer
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_wh_start_into2
     - pub_vel_slow
     - map_watch1
@@ -4888,7 +5033,6 @@ trajectories:
     - map_D83_61
     - timer_wait1s
     - map_D83_91
-    - timer_wait1s
     - timer_wait1s
     - map_D83_7_2
     - timer_wait1s
@@ -4908,17 +5052,22 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_7_left
     - pub_vel_slow
     - map_D83_7_left
@@ -4933,18 +5082,23 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
-    - cmd_vel_back2
+    - pub_alarm_back
+    - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_7_back
     - map_D83_7_5
     - map_cos_f
@@ -4955,24 +5109,26 @@ trajectories:
     - timer_wait1s
     - map_D83_95
     - map_D83_63
+    - map_D83_64
     - map_D83_65
+    - timer_wait1s
     - map_cos_i
     - map_cos_h
     - map_cos_j
     - pubsuber_read_cosA
     - pubsuber_close_cosA
     - map_watch_A
+    - timer_wait2s
     - pubsuber_open_cosA
     - pubsuber_read_wh
     - pubsuber_close_wh
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_open_wh
     - pub_down
     - timer_wait1s
     - pub_down
@@ -4980,24 +5136,30 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
-    - sound_stop
+    - pubsuber_open_wh
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-8
     waypoints:
-    - initial_pose_NO2
-    - sound_stop
+    - initial_pose_NO1
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_wh_start_agv2_lane1
-    - map_wh_start_into6
+    - map_wh_start_into2
+    - map_wh_start_D83_3_4
     - map_wh_start_D83_8
     - pub_vel_slow
     - map_wh_start_D83_8
@@ -5012,16 +5174,21 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
-    - sound_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_shutmplayer
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_wh_start_into2
     - pub_vel_slow
     - map_watch1
@@ -5032,13 +5199,14 @@ trajectories:
     - map_cos_c
     - map_D83_61
     - timer_wait1s
-    - map_D83_51
     - map_D83_8_1
     - timer_wait1s
     - map_D83_8_lane
     - pub_traction
     - map_D83_8_out
+    - pub_vel_slow
     - map_D83_8_in
+    - pub_vel_fast
     - pub_led_green
     - pub_down
     - timer_wait1s
@@ -5047,16 +5215,21 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_D83_8_left
     - pub_vel_slow
     - map_D83_8_left
@@ -5071,39 +5244,45 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
-    - cmd_vel_back
+    - pub_alarm_back
+    - cmd_vel_back2
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
-    - map_D83_8_back
+    - pub_mplayer
     - map_D83_8_2
     - map_D83_63
+    - map_D83_64
     - map_D83_65
+    - timer_wait1s
     - map_cos_i
     - map_cos_h
     - map_cos_j
     - pubsuber_read_cosA
     - pubsuber_close_cosA
     - map_watch_A
+    - timer_wait2s
     - pubsuber_open_cosA
     - pubsuber_read_wh
     - pubsuber_close_wh
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_open_wh
     - pub_down
     - timer_wait1s
     - pub_down
@@ -5111,24 +5290,30 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
-    - sound_stop
+    - pubsuber_open_wh
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-9
     waypoints:
-    - initial_pose_NO2
-    - sound_stop
+    - initial_pose_NO1
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_wh_start_agv2_lane1
-    - map_wh_start_into6
+    - map_wh_start_into2
+    - map_wh_start_D83_3_4
     - map_wh_start_D83_9
     - pub_vel_slow
     - map_wh_start_D83_9
@@ -5143,16 +5328,21 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
-    - sound_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_shutmplayer
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_wh_start_into2
     - pub_vel_slow
     - map_watch1
@@ -5181,16 +5371,21 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_D83_9left
     - pub_vel_slow
     - map_D83_9left
@@ -5205,39 +5400,46 @@ trajectories:
     - pub_up
     - timer_wait1s
     - pubsuber_limit_switch_top
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_94
     - map_D83_95
     - map_D83_63
+    - map_D83_64
     - map_D83_65
+    - timer_wait1s
     - map_cos_i
     - map_cos_h
     - map_cos_j
     - pubsuber_read_cosA
     - pubsuber_close_cosA
     - map_watch_A
+    - timer_wait2s
     - pubsuber_open_cosA
     - pubsuber_read_wh
     - pubsuber_close_wh
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_open_wh
     - pub_down
     - timer_wait1s
     - pub_down
@@ -5245,82 +5447,110 @@ trajectories:
     - pub_down
     - timer_wait1s
     - pubsuber_limit_switch_buttom
-    - pubsuber_lift_stop
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
+    - pub_lift_stop
+    - timer_wait1s
     - pub_normal
-    - sound_stop
+    - pubsuber_open_wh
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: up
     waypoints:
-    - pubsuber_lift_up
+    - pub_up
+    - timer_wait1s
+    - pub_up
+    - timer_wait1s
+    - pub_up
+    - timer_wait1s
     - pubsuber_limit_switch_top
+    - pub_lift_stop
     - pubsuber_lift_stop
   - name: down
     waypoints:
-    - pubsuber_lift_down
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
     - pubsuber_limit_switch_buttom
+    - pub_lift_stop
     - pubsuber_lift_stop
-  - name: music_close
+  - name: 音乐关掉
     waypoints:
-    - sound_stop
+    - pub_shutmplayer
   - name: RD77-1_reset
     waypoints:
     - RD77_1_init
-    - sound_stop
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_open_wh
     - pubsuber_open_cosA
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
-    - sound_start
-    - cmd_vel_back
+    - pub_shutmplayer
+    - pub_alarm_back
+    - cmd_vel_back1
     - pub_led_blue
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_watch_A
+    - pubsuber_open_cosA
+    - pubsuber_read_wh
+    - pubsuber_close_wh
     - timer_wait2s
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_lift_down
+    - pubsuber_open_wh
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
     - pubsuber_limit_switch_buttom
+    - pub_lift_stop
     - pubsuber_lift_stop
     - pub_normal
-    - pubsuber_open_wh
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_off
+    - comm-wifi
   - name: RD77-2_reset
     waypoints:
     - RD772init
-    - sound_stop
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_open_wh
     - pubsuber_open_cosA
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_blue
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_RD_B_back
     - map_D83_65
     - map_cos_i
@@ -5336,16 +5566,22 @@ trajectories:
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_lift_down
+    - pubsuber_open_wh
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
     - pubsuber_limit_switch_buttom
+    - pub_lift_stop
     - pubsuber_lift_stop
     - pub_normal
-    - pubsuber_open_wh
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: RC70-1_reset
@@ -5354,20 +5590,20 @@ trajectories:
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_open_wh
     - pubsuber_open_cosA
     - pub_traction_plus
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - pub_vel_fast
     - pub_led_red
     - cmd_vel_back
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
     - pub_led_blue
     - map_cos_c_1
@@ -5378,19 +5614,24 @@ trajectories:
     - timer_wait2s
     - pubsuber_read_wh
     - pubsuber_close_wh
-    - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_lift_down
+    - pubsuber_open_wh
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
     - pubsuber_limit_switch_buttom
+    - pub_lift_stop
     - pubsuber_lift_stop
     - pub_normal
-    - pubsuber_open_wh
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-3_reset
@@ -5399,21 +5640,21 @@ trajectories:
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_open_wh
     - pubsuber_open_cosA
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_3_back
     - map_D83_95
     - map_D83_64
@@ -5432,16 +5673,22 @@ trajectories:
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_lift_down
+    - pubsuber_open_wh
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
     - pubsuber_limit_switch_buttom
+    - pub_lift_stop
     - pubsuber_lift_stop
     - pub_normal
-    - pubsuber_open_wh
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-4_reset
@@ -5450,19 +5697,19 @@ trajectories:
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_open_wh
     - pubsuber_open_cosA
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_red
-    - sound_start
+    - pub_alarm_back
     - pub_traction_plus
     - cmd_vel_back
     - pub_led_blue
     - pub_vel_fast
-    - sound_stop
-    - sound_start
+    - pub_shutmplayer
+    - pub_mplayer
     - map_D83_4_2
     - timer_wait1s
     - map_D83_63
@@ -5482,40 +5729,47 @@ trajectories:
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_lift_down
+    - pubsuber_open_wh
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
     - pubsuber_limit_switch_buttom
+    - pub_lift_stop
     - pubsuber_lift_stop
     - pub_normal
-    - pubsuber_open_wh
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-5_reset
     waypoints:
     - D835init
-    - sound_stop
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_open_wh
     - pubsuber_open_cosA
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
+    - map_cos_z
     - map_D83_53
     - timer_wait1s
     - map_D83_54
@@ -5538,40 +5792,46 @@ trajectories:
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_lift_down
+    - pubsuber_open_wh
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
     - pubsuber_limit_switch_buttom
+    - pub_lift_stop
     - pubsuber_lift_stop
     - pub_normal
-    - pubsuber_open_wh
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-6_reset
     waypoints:
     - D836init
-    - sound_stop
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_open_wh
     - pubsuber_open_cosA
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_63
     - map_D83_64
     - map_D83_65
@@ -5589,40 +5849,46 @@ trajectories:
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_lift_down
+    - pubsuber_open_wh
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
     - pubsuber_limit_switch_buttom
+    - pub_lift_stop
     - pubsuber_lift_stop
     - pub_normal
-    - pubsuber_open_wh
-    - sound_stop
-    - comm-wifi
+    - pub_shutmplayer
     - pub_led_off
+    - comm-wifi
   - name: D83-7_reset
     waypoints:
     - D837init
-    - sound_stop
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_open_wh
     - pubsuber_open_cosA
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_7_back
     - map_D83_7_5
     - map_cos_f
@@ -5649,39 +5915,46 @@ trajectories:
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_lift_down
+    - pubsuber_open_wh
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
     - pubsuber_limit_switch_buttom
+    - pub_lift_stop
     - pubsuber_lift_stop
     - pub_normal
-    - pubsuber_open_wh
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-8_reset
     waypoints:
     - D838init
-    - sound_stop
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
+    - pubsuber_open_wh
+    - pubsuber_open_cosA
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
-    - cmd_vel_back
+    - pub_alarm_back
+    - cmd_vel_back2
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
-    - map_D83_8_back
+    - pub_mplayer
     - map_D83_8_2
     - map_D83_63
     - map_D83_64
@@ -5700,40 +5973,46 @@ trajectories:
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
-    - pubsuber_lift_down
+    - pubsuber_open_wh
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
     - pubsuber_limit_switch_buttom
+    - pub_lift_stop
     - pubsuber_lift_stop
     - pub_normal
-    - pubsuber_open_wh
-    - sound_stop
+    - pub_shutmplayer
     - pub_led_off
     - comm-wifi
   - name: D83-9_reset
     waypoints:
     - D839init
-    - sound_stop
+    - pub_shutmplayer
     - pub_vel_fast
     - pub_normal
     - pub_led_off
-    - sound_start
+    - pub_mplayer
     - pub_led_blue
     - pubsuber_open_wh
     - pubsuber_open_cosA
     - pub_traction_plus
     - pub_vel_fast
     - pub_led_red
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_alarm_back
     - cmd_vel_back
     - pub_led_blue
-    - sound_stop
+    - pub_shutmplayer
     - timer_wait1s
-    - sound_start
+    - pub_mplayer
     - map_D83_94
     - map_D83_95
     - map_D83_63
@@ -5753,15 +6032,32 @@ trajectories:
     - map_watchA2
     - map_watchA3
     - map_wh_start_into6
-    - map_wh_start_agv2_out
+    - map_wh_A_out
     - pub_traction
-    - map_wh_agv2_in
+    - map_wh_A_in
     - pub_led_green
+    - pubsuber_open_wh
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+    - pub_shutmplayer
+    - pub_led_off
+    - comm-wifi
+  - name: test-20170922
+    waypoints:
     - pubsuber_lift_down
     - pubsuber_limit_switch_buttom
     - pubsuber_lift_stop
-    - pub_normal
-    - pubsuber_open_wh
-    - sound_stop
-    - pub_led_off
-    - comm-wifi
+    - timer_wait1s
+    - pubsuber_lift_up
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - loop_Loop
