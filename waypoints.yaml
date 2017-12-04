@@ -1,2 +1,1608 @@
 waypoints:
+  - name: scan_marker_1
+    close_enough: 0.8
+    failure_mode: BACK
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_2
+    close_enough: -0.3
+    failure_mode: BACK2
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_3
+    close_enough: 0
+    failure_mode: BACK2
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_4
+    close_enough: 0.22
+    failure_mode: NONE
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: pub_led_off
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.013119
+        y: -0.00236529
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1.65275e-05
+        w: 0.999947
+  - name: pub_vel_slow
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: pub_down
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: -12.585
+        y: -0.660352
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0405342
+        w: 0.999039
+  - name: pub_lift_stop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: -12.585
+        y: -0.660346
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0405307
+        w: 0.99904
+  - name: pub_up
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0127626
+        y: -0.00185471
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 8.64421e-05
+        w: 1
+  - name: pub_read
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0126367
+        y: -0.00202074
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00010445
+        w: 0.999994
+  - name: pubsuber_motor_top
+    close_enough: 0
+    failure_mode: 3000
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0126367
+        y: -0.00201498
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000104244
+        w: 0.999994
+  - name: pubsuber_motor_buttom
+    close_enough: 0
+    failure_mode: 0
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0126367
+        y: -0.00201498
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000104244
+        w: 0.999994
+  - name: pub_alarm_back
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0.0124109
+        y: -0.00230636
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000135671
+        w: 0.999955
+  - name: pub_shutmplayer
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0.012408
+        y: -0.00231211
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000136698
+        w: 0.999954
+  - name: pub_mplayer
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0.0123602
+        y: -0.00236383
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000142619
+        w: 0.999942
+  - name: pubsuber_limit_switch_buttom
+    close_enough: 0
+    failure_mode: 128
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.011774
+        y: -0.00180862
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00420698
+        w: 0.999991
+  - name: pubsuber_limit_switch_top
+    close_enough: 0
+    failure_mode: 256
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0117741
+        y: -0.00180287
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00420697
+        w: 0.999991
+  - name: pubsuber_lift_stop
+    close_enough: 0
+    failure_mode: 6
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_back
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: cmd_vel_back
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: pub_lift_stop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0117966
+        y: -0.00208364
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000159067
+        w: 0.999862
+  - name: pub_normal
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 2.0644
+        y: -2.4992
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.422653
+        w: 0.906281
+  - name: pub_back
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: -0.0205208
+        y: 0.05406
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999468
+        w: 0.032353
+  - name: pub_stop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: -0.0205208
+        y: 0.05406
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999468
+        w: 0.032353
+  - name: pub_traction
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: -0.0205175
+        y: 0.0540656
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999468
+        w: 0.0323515
+  - name: pub_traction_plus
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: -0.0205175
+        y: 0.0540656
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999468
+        w: 0.0323515
+  - name: timer_wait2s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 2
+    type: timer
+    pose:
+      position:
+        x: 1.17648
+        y: -0.0143466
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999479
+        w: 0.0322324
+  - name: timer_waits17s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 17
+    type: timer
+    pose:
+      position:
+        x: 21.1821
+        y: -9.5991
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.731781
+        w: 0.681539
+  - name: timer_waits9s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 9
+    type: timer
+    pose:
+      position:
+        x: -0.0316769
+        y: 0.0390825
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999489
+        w: 0.0318726
+  - name: pub_led_blue
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0128863
+        y: -0.00183456
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 3.90915e-05
+        w: 0.999998
+  - name: pub_led_green
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0128805
+        y: -0.00183457
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 4.13064e-05
+        w: 0.999998
+  - name: pub_led_red
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0128834
+        y: -0.00183169
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 4.02931e-05
+        w: 0.999998
+  - name: map_AR
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 2.40446
+        y: 7.11084
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.747514
+        w: 0.664187
+  - name: map_C_in
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 1.97637
+        y: 11.1308
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.714843
+        w: 0.699278
+  - name: map_C_out
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 1.8962
+        y: 12.6202
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.712198
+        w: 0.70197
+  - name: map_D_out
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 7.25132
+        y: 13.2946
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.714674
+        w: 0.699436
+  - name: map_E_out
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 12.8939
+        y: 1.13687
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.695506
+        w: 0.718519
+  - name: map_F_out
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 13.3923
+        y: 9.1273
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.687151
+        w: 0.726507
+  - name: map_Zlp2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 5.01454
+        y: -2.77543
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0233013
+        w: 0.999728
+  - name: map_Zlp3
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 5.06089
+        y: -2.77407
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.694471
+        w: 0.717805
+  - name: map_Zlp4
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 5.11186
+        y: 1.20482
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.695324
+        w: 0.718695
+  - name: map_Zlp1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -3.31794
+        y: -2.47835
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0199429
+        w: 0.995062
+  - name: pub_song1
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0.0123602
+        y: -0.00236383
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000142619
+        w: 0.999942
+  - name: pub_song2
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0.0123602
+        y: -0.00236383
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000142619
+        w: 0.999942
+  - name: pub_song3
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0.0123602
+        y: -0.00236383
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000142619
+        w: 0.999942
+  - name: pub_song4
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0.0123602
+        y: -0.00236383
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000142619
+        w: 0.999942
+  - name: map_Zlp5
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 5.19018
+        y: 4.06834
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.715457
+        w: 0.698657
+  - name: pub_vel_fast
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_yuandian
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -0.119344
+        y: -0.0984649
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00869629
+        w: 0.999915
+  - name: loop_Loop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: looper
+    pose:
+      position:
+        x: -0.102111
+        y: -0.0770604
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00797519
+        w: 0.999542
+  - name: map_zlp2601
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 7.20904
+        y: -1.8446
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0315519
+        w: 0.999421
+  - name: map_Yuandian
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.0804268
+        y: 0.117551
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00680768
+        w: 0.998144
+  - name: map_t1
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -4.43102
+        y: -0.14303
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.721391
+        w: 0.690884
+  - name: map_t3
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 2.29205
+        y: 0.00339232
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.02155
+        w: 0.999725
+  - name: map_puk1
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 8.52782
+        y: -1.64559
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.011546
+        w: 0.999931
+  - name: map_puk2
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 10.115
+        y: -1.63472
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.692929
+        w: 0.719422
+  - name: map_pum1
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 10.0944
+        y: 0.160704
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999314
+        w: -0.000793214
+  - name: map_pum2
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 7.2296
+        y: 0.17483
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999922
+        w: 0.00263795
+  - name: map_t4
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 2.41521
+        y: -0.113837
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999292
+        w: -0.037471
+  - name: map_fgk1
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 8.61704
+        y: -3.48094
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00674964
+        w: 0.999975
+  - name: map_fgk2
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 10.0462
+        y: -3.44767
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.692378
+        w: 0.718094
+  - name: map_fgm2
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 7.34678
+        y: -5.0171
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999796
+        w: 0.0199106
+  - name: map_ckm2
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -3.00552
+        y: -0.032685
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.697667
+        w: 0.714375
+  - name: map_ckm1
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -3.12452
+        y: -2.63118
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.72993
+        w: 0.683508
+  - name: map_t2
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -4.45773
+        y: -3.74368
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.29556
+        w: 0.954359
+  - name: map_O1
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -4.47735
+        y: -2.67456
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.726099
+        w: 0.687539
+  - name: map_ckk1
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -1.58986
+        y: -1.08441
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.694289
+        w: 0.717105
+  - name: map_ckk2
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -1.5407
+        y: -2.66927
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999782
+        w: -0.00341804
+  - name: map_fgm1
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 10.3142
+        y: -5.06685
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.99746
+        w: -0.040797
+  - name: map_AL
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -4.61254
+        y: 0.119591
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0290086
+        w: 0.996463
+  - name: map_Ly3
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.829983
+        y: 0.189924
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0118419
+        w: 0.999636
+  - name: map_Ly4
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 6.13201
+        y: 0.304366
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00524627
+        w: 0.999944
+  - name: map_Ly6
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 10.5506
+        y: -2.09579
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.688277
+        w: 0.725445
+  - name: map_Ly1
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -3.80226
+        y: -3.58524
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.720496
+        w: 0.688117
+  - name: map_Ly2
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -4.17014
+        y: 0.302905
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0484393
+        w: 0.997453
+  - name: map_Ly5
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 10.5904
+        y: 0.737411
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.650112
+        w: 0.757822
+  - name: map_station1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -0.922588
+        y: -0.949851
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.70201
+        w: 0.712164
+  - name: map_goal
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -0.911342
+        y: 0.013126
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.706175
+        w: 0.708022
+  - name: sound_start
+    close_enough: 0
+    failure_mode: START
+    goal_timeout: 0
+    type: sound_play
+    pose:
+      position:
+        x: -0.911342
+        y: 0.013126
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.706175
+        w: 0.708022
+  - name: sound_stop
+    close_enough: 0
+    failure_mode: STOP
+    goal_timeout: 0
+    type: sound_play
+    pose:
+      position:
+        x: -0.911342
+        y: 0.013126
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.706175
+        w: 0.708022
+  - name: sound_once
+    close_enough: 0
+    failure_mode: ONCE
+    goal_timeout: 0
+    type: sound_play
+    pose:
+      position:
+        x: -0.911342
+        y: 0.013126
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.706175
+        w: 0.708022
+  - name: map_原点bk
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.077711
+        y: 0.131974
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00892408
+        w: 0.999628
+  - name: map_宿舍bk
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 2.79542
+        y: 10.8864
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.711168
+        w: 0.698523
+  - name: map_门口bk
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 8.53792
+        y: -0.597608
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999424
+        w: -0.00105556
+  - name: map_中途bk
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 2.58087
+        y: -0.593211
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0111222
+        w: 0.999845
 trajectories:
+  - name: lift_up
+    waypoints:
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+  - name: lift_down
+    waypoints:
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+  - name: R1
+    waypoints:
+    - map_AL
+    - pub_led_blue
+    - map_C_in
+    - map_C_out
+    - timer_wait2s
+    - pub_led_green
+    - map_D_out
+  - name: R2
+    waypoints:
+    - map_AR
+    - pub_led_red
+    - map_C_in
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - pub_lift_stop
+  - name: Up
+    waypoints:
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_traction_plus
+  - name: Down
+    waypoints:
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+  - name: Pu1
+    waypoints:
+    - pub_led_green
+    - pub_mplayer
+    - map_t1
+    - map_t2
+    - map_ckm1
+    - pub_vel_slow
+    - scan_marker_1
+    - scan_marker_3
+    - scan_marker_4
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_traction_plus
+    - pub_vel_fast
+    - map_ckm2
+    - map_t4
+    - map_puk1
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+    - map_puk2
+    - map_pum1
+    - pub_vel_slow
+    - scan_marker_1
+    - scan_marker_3
+    - scan_marker_4
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_traction_plus
+    - map_pum2
+    - pub_vel_fast
+    - map_t4
+    - map_t3
+    - map_ckk1
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+    - map_ckk2
+    - map_O1
+    - map_AL
+    - map_yuandian
+    - pub_shutmplayer
+    - pub_led_off
+  - name: Fg1
+    waypoints:
+    - pub_led_green
+    - pub_mplayer
+    - map_t1
+    - map_t2
+    - map_ckm1
+    - pub_vel_slow
+    - scan_marker_1
+    - scan_marker_3
+    - scan_marker_4
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_traction_plus
+    - map_ckm2
+    - pub_vel_fast
+    - map_t4
+    - map_fgk1
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+    - map_fgk2
+    - map_fgm1
+    - pub_vel_slow
+    - scan_marker_1
+    - scan_marker_3
+    - scan_marker_4
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_traction_plus
+    - map_fgm2
+    - pub_vel_fast
+    - map_t3
+    - map_ckk1
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+    - map_ckk2
+    - map_O1
+    - map_AL
+    - map_yuandian
+    - pub_shutmplayer
+    - pub_led_off
+  - name: Yuandian
+    waypoints:
+    - map_yuandian
+  - name: PuFg_loop
+    waypoints:
+    - pub_led_green
+    - pub_mplayer
+    - map_t1
+    - map_t2
+    - map_ckm1
+    - pub_vel_slow
+    - scan_marker_1
+    - scan_marker_3
+    - scan_marker_4
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_traction_plus
+    - map_ckm2
+    - pub_vel_fast
+    - map_t3
+    - map_puk1
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+    - map_puk2
+    - map_pum1
+    - pub_vel_slow
+    - scan_marker_1
+    - scan_marker_3
+    - scan_marker_4
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_traction_plus
+    - map_pum2
+    - pub_vel_fast
+    - map_t4
+    - pub_shutmplayer
+    - pub_mplayer
+    - map_ckk1
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+    - map_ckk2
+    - pub_led_off
+    - pub_led_blue
+    - map_ckm1
+    - pub_vel_slow
+    - scan_marker_1
+    - scan_marker_3
+    - scan_marker_4
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_traction_plus
+    - map_ckm2
+    - pub_vel_fast
+    - map_t3
+    - map_fgk1
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+    - map_fgk2
+    - map_fgm1
+    - pub_vel_slow
+    - scan_marker_1
+    - scan_marker_3
+    - scan_marker_4
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_traction_plus
+    - map_fgm2
+    - pub_vel_fast
+    - pub_shutmplayer
+    - pub_mplayer
+    - map_t4
+    - map_ckk1
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+    - map_ckk2
+    - map_O1
+    - map_AL
+    - map_Yuandian
+    - pub_shutmplayer
+    - pub_led_off
+  - name: Kaichang
+    waypoints:
+    - pub_song1
+  - name: Ly1
+    waypoints:
+    - pub_led_red
+    - pub_song4
+    - map_Ly1
+  - name: Ly2
+    waypoints:
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_traction_plus
+    - pub_shutmplayer
+    - pub_song4
+    - pub_vel_slow
+    - map_Ly2
+    - map_Ly5
+    - map_Ly6
+    - pub_shutmplayer
+    - pub_song4
+    - pub_vel_fast
+    - map_Ly1
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pubsuber_lift_stop
+    - pub_normal
+    - map_Yuandian
+    - pub_shutmplayer
+    - pub_led_off
+  - name: bktest1
+    waypoints:
+    - pub_led_blue
+    - sound_start
+    - map_原点bk
+    - map_中途bk
+    - map_宿舍bk
+    - map_中途bk
+    - timer_wait2s
+    - pub_led_green
+    - pub_up
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - pub_led_blue
+    - map_门口bk
+    - timer_wait2s
+    - pub_led_green
+    - pub_down
+    - pubsuber_limit_switch_buttom
+    - pub_lift_stop
+    - pub_led_blue
+    - map_原点bk
+    - pub_led_off
+    - sound_stop
