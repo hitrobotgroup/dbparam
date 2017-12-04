@@ -1,2 +1,2642 @@
 waypoints:
+  - name: scan_marker_n1
+    close_enough: 0.7
+    failure_mode: LOOP2
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0.04431
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_n2
+    close_enough: 0.6
+    failure_mode: LOOP2
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 3.14
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_normal1
+    close_enough: 0.6
+    failure_mode: BACK
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_1
+    close_enough: 0.8
+    failure_mode: BACK
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_2
+    close_enough: 0.4
+    failure_mode: LOOP2
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_3
+    close_enough: 0
+    failure_mode: BACK2
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_4
+    close_enough: 0.22
+    failure_mode: NONE
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: loop_Loop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: looper
+    pose:
+      position:
+        x: 0.0117426
+        y: -0.00210817
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00716498
+        w: 0.999962
+  - name: pub_down
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: -12.585
+        y: -0.660352
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0405342
+        w: 0.999039
+  - name: pub_lift_stop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: -12.585
+        y: -0.660346
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0405307
+        w: 0.99904
+  - name: pub_up
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0127626
+        y: -0.00185471
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 8.64421e-05
+        w: 1
+  - name: pub_alarm_back
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0.0124109
+        y: -0.00230636
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000135671
+        w: 0.999955
+  - name: pub_shutmplayer
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0.012408
+        y: -0.00231211
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000136698
+        w: 0.999954
+  - name: pub_mplayer
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0.0123602
+        y: -0.00236383
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000142619
+        w: 0.999942
+  - name: pubsuber_limit_switch_buttom
+    close_enough: 0
+    failure_mode: 128
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.011774
+        y: -0.00180862
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00420698
+        w: 0.999991
+  - name: pubsuber_limit_switch_top
+    close_enough: 0
+    failure_mode: 256
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0117741
+        y: -0.00180287
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00420697
+        w: 0.999991
+  - name: map_yuandian
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.012777
+        y: -0.00185183
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 8.25338e-05
+        w: 1
+  - name: scan_marker_1
+    close_enough: 0.8
+    failure_mode: BACK
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_3
+    close_enough: 0
+    failure_mode: BACK2
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_4
+    close_enough: 0.15
+    failure_mode: LOOP
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: scan_marker_5
+    close_enough: -0.63
+    failure_mode: LOOP
+    goal_timeout: 0
+    type: scan_marker
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 1.57
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: pubsuber_lift_stop
+    close_enough: 0
+    failure_mode: 6
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_back
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 2.5
+    type: cmd_vel
+    pose:
+      position:
+        x: -0.1
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_back_charging
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: -2.5
+    type: cmd_vel
+    pose:
+      position:
+        x: -0.01
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_back_stop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0.01
+    type: cmd_vel
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_back_first
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 1
+    type: cmd_vel
+    pose:
+      position:
+        x: -0.05
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_back_second
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 5
+    type: cmd_vel
+    pose:
+      position:
+        x: 0.1
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_docking
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 5.5
+    type: cmd_vel
+    pose:
+      position:
+        x: -0.05
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_docking1
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 5.5
+    type: cmd_vel
+    pose:
+      position:
+        x: -0.05
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_rotate
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 17
+    type: cmd_vel
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.2
+        w: 1
+  - name: cmd_vel_rotate_760
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 9
+    type: cmd_vel
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.2
+        w: 1
+  - name: loop_Loop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: looper
+    pose:
+      position:
+        x: 0.0117426
+        y: -0.00210817
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00716498
+        w: 0.999962
+  - name: pub_lift_stop
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0117966
+        y: -0.00208364
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.000159067
+        w: 0.999862
+  - name: pub_normal
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 2.0644
+        y: -2.4992
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.422653
+        w: 0.906281
+  - name: pub_normal_angle_left
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 2.0644
+        y: -2.4992
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.422653
+        w: 0.906281
+  - name: pub_normal_angle_right
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 2.0644
+        y: -2.4992
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.422653
+        w: 0.906281
+  - name: pub_rotate_slow
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 2.0644
+        y: -2.4992
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.422653
+        w: 0.906281
+  - name: pub_vel_fast
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: pub_vel_slow
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: pub_rotate_normal
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 2.0644
+        y: -2.4992
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.422653
+        w: 0.906281
+  - name: pub_normal_plus
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 2.0644
+        y: -2.4992
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.422653
+        w: 0.906281
+  - name: pub_traction
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: -0.0205175
+        y: 0.0540656
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999468
+        w: 0.0323515
+  - name: pub_traction_plus
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: -0.0205175
+        y: 0.0540656
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999468
+        w: 0.0323515
+  - name: timer_wait2s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 2
+    type: timer
+    pose:
+      position:
+        x: 1.17648
+        y: -0.0143466
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999479
+        w: 0.0322324
+  - name: timer_wait1s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 1
+    type: timer
+    pose:
+      position:
+        x: 1.17648
+        y: -0.0143466
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999479
+        w: 0.0322324
+  - name: timer_waits5s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 5
+    type: timer
+    pose:
+      position:
+        x: 21.1821
+        y: -9.5991
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.731781
+        w: 0.681539
+  - name: timer_waits9s
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 9
+    type: timer
+    pose:
+      position:
+        x: -0.0316769
+        y: 0.0390825
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999489
+        w: 0.0318726
+  - name: pubsuber_led_blue
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0128863
+        y: -0.00183456
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 3.90915e-05
+        w: 0.999998
+  - name: pubsuber_led_green
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0128805
+        y: -0.00183457
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 4.13064e-05
+        w: 0.999998
+  - name: pubsuber_led_red
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0128834
+        y: -0.00183169
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 4.02931e-05
+        w: 0.999998
+  - name: pub_led_red
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0128834
+        y: -0.00183169
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 4.02931e-05
+        w: 0.999998
+  - name: pub_led_green
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0128834
+        y: -0.00183169
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 4.02931e-05
+        w: 0.999998
+  - name: pub_led_blue
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0128834
+        y: -0.00183169
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 4.02931e-05
+        w: 0.999998
+  - name: pubsuber_led_off
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0128863
+        y: -0.00183456
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 3.90915e-05
+        w: 0.999998
+  - name: pubsuber_lift_up
+    close_enough: 0
+    failure_mode: 6
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0117741
+        y: -0.00180287
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00420697
+        w: 0.999991
+  - name: pubsuber_lift_down
+    close_enough: 0
+    failure_mode: 6
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0117741
+        y: -0.00180287
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00420697
+        w: 0.999991
+  - name: map_原点1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -0.0704518
+        y: -0.0158683
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0265868
+        w: 0.999647
+  - name: map_cos_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 66.1415
+        y: 41.7397
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.703008
+        w: 0.711181
+  - name: map_cos_3
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 7.56926
+        y: -10.8748
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.714553
+        w: 0.699579
+  - name: map_cos_1
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 2.16712
+        y: -8.67182
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.715978
+        w: 0.697979
+  - name: initalpose_origin
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: initial_pose
+    pose:
+      position:
+        x: 0.723784
+        y: 1.2015
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0329948
+        w: 0.999448
+  - name: sound_start
+    close_enough: 0
+    failure_mode: START
+    goal_timeout: 0
+    type: sound_play
+    pose:
+      position:
+        x: 9.72667
+        y: -5.23774
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.707506
+        w: 0.706705
+  - name: pubsuber_led_final
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_led_buzzer
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_led_screen
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pub_led_move
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_led_move_read
+    close_enough: 0
+    failure_mode: 1023
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_led_final_off
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_led_buzzer_off
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_led_screen_off
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pub_led_move_off
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: publisher
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: Initial_1
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: initial_pose
+    pose:
+      position:
+        x: 1.79714
+        y: 0.868122
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.70807
+        w: 0.706127
+  - name: Initial_2
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: initial_pose
+    pose:
+      position:
+        x: 50.4647
+        y: 41.6906
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.677077
+        w: 0.735906
+  - name: map_docking
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 9.60611
+        y: -5.14552
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7
+        w: 0.7
+  - name: initalpose_docking
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: initial_pose
+    pose:
+      position:
+        x: 9.60611
+        y: -5.14552
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7
+        w: 0.7
+  - name: map_cart_start_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 1.54488
+        y: -4.9577
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999939
+        w: 0.0108715
+  - name: map_cart_mid_2_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -0.0545315
+        y: -4.9195
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.731326
+        w: 0.681834
+  - name: map_cart_mid_1_2
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -0.0867728
+        y: -4.93013
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.998999
+        w: -0.0442001
+  - name: map_cos_1_2
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 1.96223
+        y: -1.80945
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.724398
+        w: 0.689267
+  - name: map_260_1
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 47.5495
+        y: -55.2892
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.778286
+        w: 0.627723
+  - name: map_start_before
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -0.562658
+        y: 1.13024
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0378756
+        w: 0.999272
+  - name: map_origin_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.723784
+        y: 1.2015
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0329948
+        w: 0.999448
+  - name: map_origin_3
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.812708
+        y: 1.29355
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.018035
+        w: 0.999805
+  - name: initial_origin_3
+    close_enough: 0
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    type: initial_pose
+    pose:
+      position:
+        x: -0.0681899
+        y: -0.00730566
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_origin
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -0.11819
+        y: -0.00730566
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_start_2
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -1.90832
+        y: 0.112533
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: map_cart_start
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.977229
+        y: 8.21912
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7
+        w: 0.7
+  - name: map_cart_mid_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 1.07159
+        y: 9.8847
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: map_cart_mid_1
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 1.06099
+        y: 9.92485
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7
+        w: 0.7
+  - name: map_cos_z
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 3.35612
+        y: 8.18775
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_260_final
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 44.5228
+        y: -59.9068
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7
+        w: 0.7
+  - name: initial_260_final
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: initial_pose
+    pose:
+      position:
+        x: 44.5228
+        y: -59.9068
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_260_3
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 46.0016
+        y: -59.91
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0175616
+        w: 0.999845
+  - name: map_260_final_mid2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 44.2071
+        y: -62.8203
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.713095
+        w: 0.701054
+  - name: map_260_final_mid_1
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 44.2016
+        y: -62.8068
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999389
+        w: 0.0271418
+  - name: map_260_final_mid_start
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 45.8207
+        y: -62.8505
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999755
+        w: 0.0219114
+  - name: map_260_1n
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 47.8755
+        y: -60.8478
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.263941
+        w: 0.964524
+  - name: map_back_final_2
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -2.52281
+        y: 8.68591
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7
+        w: 0.7
+  - name: map_back_final
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -5.6
+        y: 2.58598
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7
+        w: 0.7
+  - name: map_back_final_1
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -3.97131
+        y: 2.39521
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.030092
+        w: 0.999543
+  - name: map_start_final
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -1.50024
+        y: 0.0733759
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0312719
+        w: 0.99947
+  - name: map_origin_docking
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0.138219
+        y: -0.00406067
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999984
+        w: 0.00569212
+  - name: init_origin_docking
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: initial_pose
+    pose:
+      position:
+        x: 0.138219
+        y: -0.00406067
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999984
+        w: 0.00569212
+  - name: scan_marker_normal
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 2.0644
+        y: -2.4992
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.422653
+        w: 0.906281
+  - name: scan_marker_docking
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 0
+    type: shell
+    pose:
+      position:
+        x: 2.0644
+        y: -2.4992
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.422653
+        w: 0.906281
+  - name: pubsuber_docking_comm_open
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_docking_comm_off
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0
+  - name: pubsuber_plc_comm_relay_open
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0
+  - name: pubsuber_plc_charging_relay_open
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0
+  - name: pubsuber_docking_charging_open
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_docking_charging_off
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_docking_start_open
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_docking_start_off
+    close_enough: 0
+    failure_mode: 16
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0137005
+        y: -0.00247016
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00355482
+        w: 0.999939
+  - name: pubsuber_docking_read_comm
+    close_enough: 0
+    failure_mode: 130
+    goal_timeout: 0
+    type: pubsuber
+    pose:
+      position:
+        x: 0.0117741
+        y: -0.00180287
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00420697
+        w: 0.999991
+  - name: map_cos_A
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: initial_pose
+    pose:
+      position:
+        x: 26.4192
+        y: -5.36134
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.705631
+        w: 0.708578
+  - name: map_cos_B
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: initial_pose
+    pose:
+      position:
+        x: 26.9575
+        y: 3.81823
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.693161
+        w: 0.720767
+  - name: map_cos_C
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: initial_pose
+    pose:
+      position:
+        x: 44.3246
+        y: -62.8545
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.683518
+        w: 0.729916
+  - name: map_cart_760_c
+    close_enough: 0.01
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 5.60812
+        y: 7.91403
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0
+        w: 1
+  - name: map_cart_760_d
+    close_enough: 0.01
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 23.7654
+        y: -55.4333
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.724855
+        w: 0.688889
+  - name: map_cart_760_e
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 25.5199
+        y: -57.9541
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7
+        w: 0.7
+  - name: map_cart_760_f
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 23.8752
+        y: -57.9541
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.055264
+        w: 0.998272
+  - name: map_cart_760_g
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 23.8752
+        y: -61.308
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_cart_760_h
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 25.453
+        y: -61.2912
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: map_cart_760_i
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 25.435
+        y: -61.3125
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7
+        w: 0.7
+  - name: map_cart_760_j
+    close_enough: 0.1
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 23.0066
+        y: -59.4736
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.715051
+        w: 0.698946
+  - name: map_start_760
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 4.04201
+        y: 8.77282
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7
+        w: 0.7
+  - name: map_cart_760_a
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 3.95628
+        y: 10.1014
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.695627
+        w: 0.718403
+  - name: map_cart_760_b
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 3.96224
+        y: 10.1089
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: cmd_vel_rotate_cos
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 5
+    type: cmd_vel
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.2
+        w: 1
+  - name: cmd_vel_rotate_half_right
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 8.95
+    type: cmd_vel
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.2
+        w: 1
+  - name: cmd_vel_rotate_half_left
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 8.95
+    type: cmd_vel
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.2
+        w: 1
 trajectories:
+  - name: 260-cart
+    waypoints:
+    - init_origin_docking
+    - pub_led_blue
+    - pubsuber_led_buzzer_off
+    - pubsuber_led_screen
+    - timer_waits5s
+    - pubsuber_led_move_read
+    - pub_led_move
+    - pub_shutmplayer
+    - pubsuber_led_screen_off
+    - pubsuber_docking_start_off
+    - pub_normal
+    - pubsuber_led_green
+    - pub_mplayer
+    - cmd_vel_back_second
+    - map_start_2
+    - scan_marker_normal
+    - pub_normal_plus
+    - map_cart_start
+    - pub_normal_angle_left
+    - map_cart_mid_1
+    - map_cart_mid_2
+    - pub_normal
+    - cmd_vel_back_first
+    - scan_marker_2
+    - cmd_vel_back
+    - pubsuber_led_red
+    - pub_up
+    - timer_wait1s
+    - pub_up
+    - timer_wait1s
+    - pub_up
+    - timer_wait1s
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_traction_plus
+    - pubsuber_led_green
+    - map_back_final_2
+    - cmd_vel_rotate_cos
+    - map_260_1
+    - pub_traction
+    - map_260_final
+    - cmd_vel_rotate
+    - timer_wait1s
+    - pubsuber_led_red
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - pub_rotate_normal
+    - timer_wait1s
+    - pub_normal
+    - pubsuber_led_green
+    - cmd_vel_rotate_half_right
+    - initial_260_final
+    - map_260_3
+    - pub_normal_plus
+    - map_260_final_mid_start
+    - pub_normal_angle_right
+    - map_260_final_mid_1
+    - map_260_final_mid2
+    - pub_normal
+    - cmd_vel_back_first
+    - scan_marker_2
+    - cmd_vel_back
+    - pubsuber_led_red
+    - pub_up
+    - timer_wait1s
+    - pub_up
+    - timer_wait1s
+    - pub_up
+    - timer_wait1s
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - pub_rotate_slow
+    - timer_wait1s
+    - pub_traction_plus
+    - pubsuber_led_green
+    - map_260_1n
+    - pub_rotate_normal
+    - map_back_final_2
+    - pub_traction
+    - map_back_final
+    - pubsuber_led_red
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_normal
+    - pubsuber_led_green
+    - map_back_final_1
+    - pub_normal_plus
+    - map_start_final
+    - pub_normal
+    - pubsuber_led_final_off
+    - pubsuber_docking_charging_off
+    - pubsuber_docking_comm_open
+    - pubsuber_plc_comm_relay_open
+    - scan_marker_docking
+    - map_origin
+    - scan_marker_n1
+    - cmd_vel_rotate
+    - timer_wait1s
+    - cmd_vel_back_charging
+    - pubsuber_docking_read_comm
+    - timer_wait1s
+    - cmd_vel_back_stop
+    - pubsuber_docking_comm_off
+    - pubsuber_led_red
+    - pubsuber_plc_charging_relay_open
+    - pubsuber_docking_charging_open
+    - timer_wait2s
+    - pubsuber_docking_start_open
+    - pub_shutmplayer
+    - pub_led_move_off
+  - name: 206-point1
+    waypoints:
+    - Initial_1
+    - pub_shutmplayer
+    - pubsuber_led_off
+    - pubsuber_led_green
+    - pubsuber_led_final
+    - pub_mplayer
+    - pub_traction_plus
+    - pubsuber_led_green
+    - map_260_1
+    - map_260_final
+    - cmd_vel_rotate
+    - pubsuber_led_red
+    - pubsuber_lift_down
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - pub_rotate_normal
+    - timer_wait1s
+    - pub_normal
+    - pubsuber_led_green
+    - cmd_vel_rotate_half_right
+    - initial_260_final
+    - map_260_3
+    - pub_normal_plus
+    - map_260_final_mid_start
+    - pub_normal_angle_right
+    - map_260_final_mid_1
+    - map_260_final_mid2
+    - pub_normal
+    - cmd_vel_back_first
+    - scan_marker_2
+    - cmd_vel_back
+    - pubsuber_led_red
+    - pubsuber_lift_up
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - pub_rotate_slow
+    - timer_wait1s
+    - pub_traction_plus
+    - pubsuber_led_green
+    - map_260_1n
+    - pub_rotate_normal
+    - map_back_final_2
+    - pub_traction
+    - map_back_final
+    - pubsuber_led_red
+    - pubsuber_lift_down
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_normal
+    - pubsuber_led_green
+    - map_back_final_1
+    - pub_normal_plus
+    - map_start_before
+    - pub_normal
+    - map_origin_2
+    - pubsuber_led_blue
+    - pub_shutmplayer
+    - pubsuber_led_off
+    - pubsuber_led_buzzer_off
+    - pubsuber_led_final_off
+  - name: 206-point2
+    waypoints:
+    - Initial_2
+    - pub_shutmplayer
+    - pubsuber_led_off
+    - pubsuber_led_green
+    - pubsuber_led_final
+    - pub_mplayer
+    - pub_traction_plus
+    - map_260_1
+    - map_260_final
+    - cmd_vel_rotate
+    - pubsuber_led_red
+    - pubsuber_lift_down
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_normal
+    - cmd_vel_rotate_half_right
+    - initial_260_final
+    - pubsuber_led_green
+    - map_260_3
+    - pub_normal_plus
+    - map_260_final_mid_start
+    - pub_normal_angle_right
+    - map_260_final_mid_1
+    - map_260_final_mid2
+    - pub_normal
+    - cmd_vel_back_first
+    - scan_marker_2
+    - cmd_vel_back
+    - pubsuber_led_red
+    - pubsuber_lift_up
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_traction_plus
+    - pubsuber_led_green
+    - map_260_1n
+    - map_back_final_2
+    - pub_traction
+    - map_back_final
+    - pubsuber_led_red
+    - pubsuber_lift_down
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_normal
+    - pubsuber_led_green
+    - map_back_final_1
+    - pub_normal_plus
+    - map_start_before
+    - pub_normal
+    - map_origin_2
+    - pub_shutmplayer
+    - pubsuber_led_off
+    - pubsuber_led_final_off
+  - name: 206-point3
+    waypoints:
+    - map_cos_C
+    - pub_shutmplayer
+    - pubsuber_led_off
+    - pubsuber_led_green
+    - pubsuber_led_final
+    - pub_mplayer
+    - pub_traction_plus
+    - pub_normal
+    - pubsuber_led_red
+    - pubsuber_lift_up
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - pub_rotate_slow
+    - timer_wait1s
+    - pub_traction_plus
+    - pub_led_green
+    - map_260_1n
+    - pub_rotate_normal
+    - map_back_final_2
+    - pub_traction
+    - map_back_final
+    - pubsuber_led_red
+    - pubsuber_lift_down
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_normal
+    - pubsuber_led_green
+    - map_back_final_1
+    - pub_normal_plus
+    - map_start_final
+    - pub_normal
+    - pubsuber_led_final_off
+    - pubsuber_docking_charging_off
+    - pubsuber_docking_comm_open
+    - pubsuber_plc_comm_relay_open
+    - scan_marker_docking
+    - map_origin
+    - scan_marker_n1
+    - cmd_vel_rotate
+    - timer_wait1s
+    - cmd_vel_back_charging
+    - pubsuber_docking_read_comm
+    - timer_wait1s
+    - cmd_vel_back_stop
+    - pubsuber_docking_comm_off
+    - pub_led_red
+    - pubsuber_plc_charging_relay_open
+    - pubsuber_docking_charging_open
+    - timer_wait2s
+    - pubsuber_docking_start_open
+    - pub_shutmplayer
+    - pub_led_move_off
+  - name: 206-point4
+    waypoints:
+    - map_cos_A
+    - pub_shutmplayer
+    - pubsuber_led_off
+    - pubsuber_led_green
+    - pubsuber_led_final
+    - pub_mplayer
+    - pub_traction_plus
+    - pub_rotate_normal
+    - map_back_final_2
+    - pub_traction
+    - map_back_final
+    - pubsuber_led_red
+    - pubsuber_lift_down
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_normal
+    - pubsuber_led_green
+    - map_back_final_1
+    - pub_normal_plus
+    - map_start_final
+    - pub_normal
+    - pubsuber_led_final_off
+    - pubsuber_docking_charging_off
+    - pubsuber_docking_comm_open
+    - pubsuber_plc_comm_relay_open
+    - scan_marker_docking
+    - map_origin
+    - scan_marker_n1
+    - cmd_vel_rotate
+    - timer_wait1s
+    - cmd_vel_back_charging
+    - pubsuber_docking_read_comm
+    - timer_wait1s
+    - cmd_vel_back_stop
+    - pubsuber_docking_comm_off
+    - pub_led_red
+    - pubsuber_plc_charging_relay_open
+    - pubsuber_docking_charging_open
+    - timer_wait2s
+    - pubsuber_docking_start_open
+    - pub_shutmplayer
+    - pub_led_move_off
+  - name: 206-point5
+    waypoints:
+    - map_cos_B
+    - pub_shutmplayer
+    - pubsuber_led_off
+    - pubsuber_led_green
+    - pubsuber_led_final
+    - pub_mplayer
+    - pub_traction_plus
+    - pub_rotate_normal
+    - map_back_final_2
+    - pub_traction
+    - map_back_final
+    - pubsuber_led_red
+    - pubsuber_lift_down
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_normal
+    - pubsuber_led_green
+    - map_back_final_1
+    - pub_normal_plus
+    - map_start_final
+    - pub_normal
+    - pubsuber_led_final_off
+    - pubsuber_docking_charging_off
+    - pubsuber_docking_comm_open
+    - pubsuber_plc_comm_relay_open
+    - scan_marker_docking
+    - map_origin
+    - scan_marker_n1
+    - cmd_vel_rotate
+    - timer_wait1s
+    - cmd_vel_back_charging
+    - pubsuber_docking_read_comm
+    - timer_wait1s
+    - cmd_vel_back_stop
+    - pubsuber_docking_comm_off
+    - pub_led_red
+    - pubsuber_plc_charging_relay_open
+    - pubsuber_docking_charging_open
+    - timer_wait2s
+    - pubsuber_docking_start_open
+    - pub_shutmplayer
+    - pub_led_move_off
+  - name: 760-cart
+    waypoints:
+    - init_origin_docking
+    - pubsuber_led_blue
+    - pub_shutmplayer
+    - pubsuber_docking_start_off
+    - pub_normal
+    - pubsuber_led_green
+    - pub_mplayer
+    - cmd_vel_back_second
+    - map_start_2
+    - scan_marker_normal
+    - pub_normal_plus
+    - map_start_760
+    - pub_normal_angle_left
+    - map_cart_760_a
+    - map_cart_760_b
+    - pub_normal
+    - cmd_vel_back_first
+    - scan_marker_2
+    - cmd_vel_back
+    - pubsuber_led_red
+    - pubsuber_lift_up
+    - timer_wait1s
+    - pub_up
+    - timer_wait1s
+    - pub_up
+    - timer_wait1s
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_traction_plus
+    - pubsuber_led_green
+    - map_cart_760_c
+    - map_cart_760_d
+    - pub_traction
+    - map_cart_760_e
+    - pubsuber_led_red
+    - pubsuber_lift_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - pub_rotate_normal
+    - timer_wait1s
+    - pub_normal
+    - pub_led_green
+    - map_cart_760_f
+    - pub_normal_plus
+    - map_cart_760_g
+    - pub_normal_angle_right
+    - map_cart_760_h
+    - map_cart_760_i
+    - pub_normal
+    - cmd_vel_back_first
+    - scan_marker_2
+    - cmd_vel_back
+    - pub_led_red
+    - pubsuber_lift_up
+    - timer_wait1s
+    - pub_up
+    - timer_wait1s
+    - pub_up
+    - timer_wait1s
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - map_cart_760_j
+    - pub_traction_plus
+    - pub_led_green
+    - pub_rotate_normal
+    - map_back_final_2
+    - pub_traction
+    - map_back_final
+    - pub_led_red
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pub_down
+    - timer_wait1s
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_normal
+    - pub_led_green
+    - map_back_final_1
+    - pub_normal_plus
+    - map_start_final
+    - pub_normal
+    - pubsuber_docking_charging_off
+    - pubsuber_docking_comm_open
+    - pubsuber_plc_comm_relay_open
+    - scan_marker_docking
+    - map_origin
+    - scan_marker_n1
+    - cmd_vel_rotate
+    - timer_wait1s
+    - cmd_vel_back_charging
+    - pubsuber_docking_read_comm
+    - timer_wait1s
+    - cmd_vel_back_stop
+    - pubsuber_docking_comm_off
+    - pub_led_red
+    - pubsuber_plc_charging_relay_open
+    - pubsuber_docking_charging_open
+    - timer_wait2s
+    - pubsuber_docking_start_open
+    - pub_shutmplayer
+  - name: call-out
+    waypoints:
+    - pubsuber_led_buzzer
+  - name: 206-cart-manual
+    waypoints:
+    - pub_shutmplayer
+    - pub_normal_plus
+    - pubsuber_led_off
+    - pubsuber_led_green
+    - initalpose_origin
+    - pub_mplayer
+    - map_start_before
+    - pub_normal_plus
+    - map_cos_1
+    - map_cart_start_2
+    - pub_normal_angle_right
+    - map_cart_mid_1_2
+    - map_cart_mid_2_2
+    - pub_normal
+    - cmd_vel_back_first
+    - scan_marker_2
+    - cmd_vel_back
+    - pubsuber_led_red
+    - pubsuber_lift_up
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_traction_plus
+    - pubsuber_led_green
+    - map_cos_1_2
+    - cmd_vel_rotate_cos
+    - map_260_1
+    - map_260_final
+    - cmd_vel_rotate
+    - pubsuber_led_red
+    - pubsuber_lift_down
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_normal
+    - pubsuber_led_green
+    - cmd_vel_rotate_half_right
+    - initial_260_final
+    - map_260_3
+    - pub_normal_plus
+    - map_260_final_mid_start
+    - pub_normal_angle_right
+    - map_260_final_mid_1
+    - map_260_final_mid2
+    - pub_normal
+    - cmd_vel_back_first
+    - scan_marker_2
+    - cmd_vel_back
+    - pubsuber_led_red
+    - pubsuber_lift_up
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_traction_plus
+    - pubsuber_led_green
+    - map_260_1n
+    - map_back_final_2
+    - pub_traction
+    - map_back_final
+    - pubsuber_led_red
+    - pubsuber_lift_down
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+    - timer_wait1s
+    - pub_normal
+    - pubsuber_led_green
+    - map_back_final_1
+    - pub_normal_plus
+    - map_start_before
+    - pub_normal
+    - map_origin_2
+    - pub_shutmplayer
+    - pubsuber_led_off
+  - name: lift_up
+    waypoints:
+    - pubsuber_lift_up
+    - pubsuber_limit_switch_top
+    - pubsuber_lift_stop
+  - name: lift_down
+    waypoints:
+    - pubsuber_lift_down
+    - pubsuber_limit_switch_buttom
+    - pubsuber_lift_stop
+  - name: AGV_original_size
+    waypoints:
+    - pub_normal
+  - name: AGV_traction_size
+    waypoints:
+    - pub_traction
+  - name: docking
+    waypoints:
+    - pub_normal_plus
+    - map_start_final
+    - pub_normal
+    - pubsuber_led_final_off
+    - pubsuber_docking_charging_off
+    - pubsuber_docking_comm_open
+    - pubsuber_plc_comm_relay_open
+    - scan_marker_docking
+    - map_origin
+    - scan_marker_n1
+    - cmd_vel_rotate
+    - timer_wait1s
+    - cmd_vel_back_charging
+    - pubsuber_docking_read_comm
+    - timer_wait1s
+    - cmd_vel_back_stop
+    - pubsuber_docking_comm_off
+    - pub_led_red
+    - pubsuber_plc_charging_relay_open
+    - pubsuber_docking_charging_open
+    - timer_wait2s
+    - pubsuber_docking_start_open
+    - pub_shutmplayer
+    - pub_led_move_off
