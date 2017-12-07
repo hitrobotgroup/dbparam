@@ -30,12 +30,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: -2
         y: 9
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: -0.7071
@@ -46,12 +46,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: -2
         y: -3
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0.7071
@@ -62,12 +62,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 48
         y: 5
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0.7071
@@ -78,12 +78,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 52
         y: 5
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0.7071
@@ -94,12 +94,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: -2
         y: 8
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: -0.7071
@@ -110,12 +110,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: -32
         y: 1.8
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -126,12 +126,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: -25
         y: 1.8
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -142,12 +142,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 22
         y: 1.8
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -158,12 +158,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 43
         y: 1.8
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -174,12 +174,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 12
         y: 1.8
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -190,12 +190,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: tail
-    pose: 
-      position: 
+    pose:
+      position:
         x: 10
         y: -1
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0.7071
@@ -206,12 +206,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 40
         y: -2
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -222,12 +222,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 47
         y: 2
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -238,12 +238,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 53
         y: 2
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -254,12 +254,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 61
         y: 2
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -270,12 +270,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 55
         y: -30
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 1
@@ -286,12 +286,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: action
-    pose: 
-      position: 
+    pose:
+      position:
         x: 0
         y: 0
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 1
@@ -302,12 +302,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: action
-    pose: 
-      position: 
+    pose:
+      position:
         x: 0
         y: 0
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 1
@@ -318,12 +318,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 16.5527
         y: 1.82243
         z: 1.38778e-17
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: -0.00842699
@@ -334,12 +334,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 23.1977
         y: 1.866
         z: -2.77556e-17
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: -0.00877802
@@ -347,12 +347,12 @@ waypoints:
   - name: lasercutter_4_tail
     frame_id: map
     type: tail
-    pose: 
-      position: 
+    pose:
+      position:
         x: 42.7
         y: 4.63
         z: -2.77556e-17
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: -0.7071
@@ -363,12 +363,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 43.9
         y: 1.8
         z: -2.77556e-17
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -376,12 +376,12 @@ waypoints:
   - name: punchtest_tail
     frame_id: map
     type: tail
-    pose: 
-      position: 
+    pose:
+      position:
         x: 15.3
         y: -1.84
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0.7071
@@ -389,12 +389,12 @@ waypoints:
   - name: cache_tail
     frame_id: map
     type: tail
-    pose: 
-      position: 
+    pose:
+      position:
         x: 22.083
         y: -1.915
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0.7071
@@ -402,12 +402,12 @@ waypoints:
   - name: semi_product_buffer_1_4_tail
     frame_id: map
     type: tail
-    pose: 
-      position: 
+    pose:
+      position:
         x: 27.109
         y: -1.915
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0.7071
@@ -418,12 +418,12 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 28.309
         y: 1.8
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
@@ -431,12 +431,12 @@ waypoints:
   - name: semi_product_buffer_1_8_tail
     frame_id: map
     type: tail
-    pose: 
-      position: 
+    pose:
+      position:
         x: 33.702
         y: -1.88
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0.7071
@@ -447,61 +447,365 @@ waypoints:
     frame_id: map
     goal_timeout: 0
     type: workstation
-    pose: 
-      position: 
+    pose:
+      position:
         x: 34.902
         y: 1.8
         z: 0
-      orientation: 
+      orientation:
         x: 0
         y: 0
         z: 0
         w: 1
+  - name: product_buffer_2_1_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 65.4542
+        y: -19.432
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.711273
+        w: 0.702916
+  - name: product_buffer_2_19_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 39.3274
+        y: -19.4805
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.708486
+        w: 0.705724
+  - name: product_buffer_1_19_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 39.5169
+        y: -11.8663
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: -0.705754
+        w: 0.708457
+  - name: product_buffer_1_1_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 65.547
+        y: -11.961
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: -0.713806
+        w: 0.700343
+  - name: product_line1_1_1_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 61.2926
+        y: -26.2709
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.713455
+        w: 0.700701
+  - name: product_line1_1_7_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 51.7871
+        y: -26.195
+        z: -2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.719599
+        w: 0.694389
+  - name: product_line1_2_7_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 51.7639
+        y: -31.0391
+        z: 2.08167e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.698338
+        w: 0.715769
+  - name: product_line1_2_1_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 61.1938
+        y: -31.1654
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.675081
+        w: 0.737743
+  - name: product_line1_3_7_tail_rev
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 51.7373
+        y: -36.1701
+        z: -6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0.709127
+        w: 0.705081
+  - name: meld_1_1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 61.5847
+        y: -2.6499
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.698126
+        w: 0.715975
+  - name: meld_1_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 59.3758
+        y: -2.70687
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.68329
+        w: 0.730147
+  - name: meld_2_1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 54.9537
+        y: -2.4161
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.725107
+        w: 0.688636
+  - name: meld_2_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 52.2833
+        y: -2.54886
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.703696
+        w: 0.710501
+  - name: meld_3_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 45.9298
+        y: -3.04083
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.669033
+        w: 0.743233
+  - name: meld_3_1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 47.6532
+        y: -3.00497
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.727973
+        w: 0.685606
+  - name: meld_4_1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 41.4401
+        y: -3.06946
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.699675
+        w: 0.714461
+  - name: meld_4_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 39.8437
+        y: -3.06273
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.677288
+        w: 0.735718
+  - name: laser_cut_1_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 40.8307
+        y: 4.58791
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.715805
+        w: 0.6983
+  - name: laser_cut_1_1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 42.5972
+        y: 4.50153
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: -0.708532
+        w: 0.705679
 trajectories:
   - name: punchtest_loading
-    waypoints: 
+    waypoints:
     - punchtest_tail
     - shell_fork_up
     - vel_slow
     - shell_fork_hang
   - name: punchtest_unloading
-    waypoints: 
+    waypoints:
     - punchtest_tail
     - shell_fork_down
     - vel_slow
     - shell_fork_hang
   - name: cache_loading
-    waypoints: 
+    waypoints:
     - cache_tail
     - shell_fork_up
     - vel_slow
     - shell_fork_hang
   - name: cache_unloading
-    waypoints: 
+    waypoints:
     - cache_tail
     - shell_fork_down
     - vel_slow
     - shell_fork_hang
   - name: semi_product_buffer_1_4_loading
-    waypoints: 
+    waypoints:
     - semi_product_buffer_1_4_tail
     - shell_fork_up
     - vel_slow
     - shell_fork_hang
   - name: semi_product_buffer_1_4_unloading
-    waypoints: 
+    waypoints:
     - semi_product_buffer_1_4_tail
     - shell_fork_down
     - vel_slow
     - shell_fork_hang
   - name: semi_product_buffer_1_8_loading
-    waypoints: 
+    waypoints:
     - semi_product_buffer_1_8_tail
     - shell_fork_up
     - vel_slow
     - shell_fork_hang
   - name: semi_product_buffer_1_8_unloading
-    waypoints: 
+    waypoints:
     - semi_product_buffer_1_8_tail
     - shell_fork_down
     - vel_slow
