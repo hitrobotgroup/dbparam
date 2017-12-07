@@ -761,6 +761,150 @@ waypoints:
         y: 0
         z: -0.708532
         w: 0.705679
+  - name: semi_buffer_1_1_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 33.7157
+        y: -1.89628
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.691189
+        w: 0.722674
+  - name: semi_buffer_1_8_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 21.9576
+        y: -1.88574
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.695395
+        w: 0.718628
+  - name: semi_buffer_2_1_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 33.7312
+        y: -7.34047
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.704867
+        w: 0.709339
+  - name: laser_cut_2_1_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 20.2909
+        y: 4.5425
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.716891
+        w: 0.697185
+  - name: laser_cut_2_2_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 18.7202
+        y: 4.5319
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.720708
+        w: 0.693238
+  - name: punch_1_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 15.1932
+        y: -1.91525
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0.691487
+        w: 0.722389
+  - name: punch_2_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 12.7859
+        y: -1.90981
+        z: -2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.686898
+        w: 0.726754
+  - name: punch_3_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 11.1592
+        y: -1.94503
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.692858
+        w: 0.721074
+  - name: punch_4_tail
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 9.28673
+        y: -1.86629
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.695756
+        w: 0.718278
 trajectories:
   - name: punchtest_loading
     waypoints:
