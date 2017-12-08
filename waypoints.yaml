@@ -1,14 +1,1534 @@
 waypoints:
-  - name: wait5s
+  - name: origin_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 2.916
+        y: -3.151
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.6877
+        w: 0.726
+  - name: origin_1_left
     close_enough: 0
-    failure_mode: NONE
-    goal_timeout: 5
-    type: timer
-  - name: vel_slow
-    close_enough: -0.0001
-    failure_mode: NONE
-    goal_timeout: 4
-    type: cmd_vel
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 1.716
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: origin_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 4.116
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: origin_2_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 4.326
+        y: -3.24
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7002
+        w: 0.7138
+  - name: origin_2_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 3.126
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: origin_2_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 5.526
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: origin_3_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 1.716
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: origin_3_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 4.116
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: origin_3_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 2.916
+        y: -3.151
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: origin_4_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 2.834
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: origin_4_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 0.434
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: origin_4_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 1.634
+        y: -3.193
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.686
+        w: 0.7276
+  - name: origin_5_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 0.353
+        y: -3.193
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.686
+        w: 0.7276
+  - name: origin_5_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 1.553
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: origin_5_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: -0.847
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: product_buffer_2_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 66.6542
+        y: -16
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: product_buffer_2_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 64.2542
+        y: -16
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: product_buffer_2_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 65.4542
+        y: -19.432
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.711273
+        w: 0.702916
+  - name: product_buffer_2_19_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 40.5274
+        y: -16
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: product_buffer_2_19_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 38.1274
+        y: -16
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: product_buffer_2_19_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 39.3274
+        y: -19.4805
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.708486
+        w: 0.705724
+  - name: product_buffer_1_19_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 38.3169
+        y: -16
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: product_buffer_1_19_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 40.7169
+        y: -16
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: product_buffer_1_19_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 39.5169
+        y: -11.8663
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: -0.705754
+        w: 0.708457
+  - name: product_buffer_1_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 64.347
+        y: -16
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: product_buffer_1_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 66.747
+        y: -16
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: product_buffer_1_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 65.547
+        y: -11.961
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: -0.713806
+        w: 0.700343
+  - name: product_line1_1_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 60.0926
+        y: -28.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: product_line1_1_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 62.4926
+        y: -28.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: product_line1_1_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 61.2926
+        y: -26.2709
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.713455
+        w: 0.700701
+  - name: product_line1_1_7_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 50.5871
+        y: -28.5
+        z: -2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: product_line1_1_7_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 52.9871
+        y: -28.5
+        z: -2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: product_line1_1_7_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 51.7871
+        y: -28.5
+        z: -2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.719599
+        w: 0.694389
+  - name: product_line1_2_7_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 52.9639
+        y: -28.5
+        z: 2.08167e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: product_line1_2_7_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 50.5639
+        y: -28.5
+        z: 2.08167e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: product_line1_2_7_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 51.7639
+        y: -31.0391
+        z: 2.08167e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.698338
+        w: 0.715769
+  - name: product_line1_2_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 62.3938
+        y: -28.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: product_line1_2_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 60
+        y: -28.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: product_line1_2_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 61.1938
+        y: -31.1654
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.675081
+        w: 0.737743
+  - name: product_line1_3_7_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 50.5373
+        y: -38.5
+        z: -6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: product_line1_3_7_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 52.9373
+        y: -38.5
+        z: -6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: product_line1_3_7_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 51.7373
+        y: -36.1701
+        z: -6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: -0.709127
+        w: 0.705081
+  - name: bender_1_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 62.7847
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: bender_1_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 60.3847
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: bender_1_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 61.5847
+        y: -2.6499
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.698126
+        w: 0.715975
+  - name: bender_1_2_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 60.5758
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: bender_1_2_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 58.1758
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: bender_1_2_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 59.3758
+        y: -2.70687
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.68329
+        w: 0.730147
+  - name: bender_2_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 56.1537
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: bender_2_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 53.7537
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: bender_2_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 54.9537
+        y: -2.4161
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.725107
+        w: 0.688636
+  - name: bender_2_2_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 53.4833
+        y: 1.5
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: bender_2_2_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 51.0833
+        y: 1.5
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: bender_2_2_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 52.2833
+        y: -2.54886
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.703696
+        w: 0.710501
+  - name: bender_3_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 48.8532
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: bender_3_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 46.4532
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: bender_3_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 47.6532
+        y: -3.00497
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.727973
+        w: 0.685606
+  - name: bender_3_2_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 47.1298
+        y: 1.5
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: bender_3_2_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 44.7298
+        y: -3.04083
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: bender_3_2_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 45.9298
+        y: -3.04083
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.669033
+        w: 0.743233
+  - name: bender_4_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 42.6401
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: bender_4_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 40.2401
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: bender_4_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 41.4401
+        y: -3.06946
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.699675
+        w: 0.714461
+  - name: bender_4_2_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 41.0437
+        y: 1.5
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: bender_4_2_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 37.6437
+        y: 1.5
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: bender_4_2_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 39.8437
+        y: -3.06273
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.677288
+        w: 0.735718
+  - name: laser_cut_1_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 41.3972
+        y: 1.5
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: laser_cut_1_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 43.7972
+        y: 1.5
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: laser_cut_1_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 42.5972
+        y: 4.50153
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: -0.708532
+        w: 0.705679
+  - name: laser_cut_1_2_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 39.6307
+        y: 1.5
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: laser_cut_1_2_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 42.0307
+        y: 1.5
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: laser_cut_1_2_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 40.8307
+        y: 4.58791
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.715805
+        w: 0.6983
+  - name: semi_buffer_1_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 34.9157
+        y: 1.5
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: semi_buffer_1_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 32.5157
+        y: 1.5
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: semi_buffer_1_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 33.7157
+        y: -1.89628
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.691189
+        w: 0.722674
+  - name: semi_buffer_1_8_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 23.1576
+        y: 1.5
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: semi_buffer_1_8_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 20.7576
+        y: 1.5
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: semi_buffer_1_8_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 21.9576
+        y: -1.88574
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.695395
+        w: 0.718628
+  - name: semi_buffer_2_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 34.9312
+        y: -4.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: semi_buffer_2_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 32.5312
+        y: -4.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: semi_buffer_2_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 33.7312
+        y: -7.34047
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.704867
+        w: 0.709339
+  - name: laser_cut_2_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 19.0909
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: laser_cut_2_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 21.4909
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: laser_cut_2_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 20.2909
+        y: 4.5425
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.716891
+        w: 0.697185
+  - name: laser_cut_2_2_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 17.5202
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: laser_cut_2_2_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 19.9202
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: laser_cut_2_2_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 18.7202
+        y: 4.5319
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.720708
+        w: 0.693238
+  - name: punch_1_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 16.3932
+        y: 1.5
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: punch_1_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 14
+        y: 1.5
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: punch_1_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 15.1932
+        y: -1.91525
+        z: 6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0.691487
+        w: 0.722389
+  - name: punch_2_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 13.9859
+        y: 1.5
+        z: -2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: punch_2_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 11.5859
+        y: 1.5
+        z: -2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: punch_2_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 12.7859
+        y: -1.90981
+        z: -2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.686898
+        w: 0.726754
+  - name: punch_3_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 11.1592
+        y: -1.94503
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.692858
+        w: 0.721074
+  - name: punch_3_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 9.9592
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: punch_3_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 12.3592
+        y: 1.5
+        z: 1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: punch_4_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: 9.28673
+        y: -1.86629
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.695756
+        w: 0.718278
+  - name: punch_4_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 8.08673
+        y: 1.5
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: punch_4_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: 10.4867
+        y: 1.5
+        z: 2.77556e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: saw_right
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: -33.1495
+        y: 1.5
+        z: -6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: saw_left
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: workstation
+    pose:
+      position:
+        x: -35.5495
+        y: 1.5
+        z: -6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: saw_tail
+    frame_id: map
+    type: tail
+    pose:
+      position:
+        x: -34.3495
+        y: -2.01562
+        z: -6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0.698341
+        w: 0.715765
   - name: shell_fork_up
     close_enough: 0
     failure_mode: NONE
@@ -24,485 +1544,84 @@ waypoints:
     failure_mode: NONE
     goal_timeout: 3
     type: shell
-  - name: origin_1
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: -2
-        y: 9
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: origin_2
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: -2
-        y: -3
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
-  - name: origin_3
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 48
-        y: 5
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
-  - name: origin_4
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 52
-        y: 5
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
-  - name: origin_5
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: -2
-        y: 8
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: slicer
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: -32
-        y: 1.8
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: pipecutter
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: -25
-        y: 1.8
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: lasercutter_0
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 22
-        y: 1.8
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: lasercutter_1
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 43
-        y: 1.8
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: punch
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 12
-        y: 1.8
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: punch_tail
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: tail
-    pose: 
-      position: 
-        x: 10
-        y: -1
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
-  - name: bender_0
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 40
-        y: -2
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: bender_1
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 47
-        y: 2
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: bender_2
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 53
-        y: 2
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: bender_3
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 61
-        y: 2
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: welder
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 55
-        y: -30
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 1
-        w: 0
-  - name: loading
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: action
-    pose: 
-      position: 
-        x: 0
-        y: 0
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 1
-        w: 0
-  - name: unloading
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: action
-    pose: 
-      position: 
-        x: 0
-        y: 0
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 1
-        w: 0
-  - name: punchtest
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 16.5527
-        y: 1.82243
-        z: 1.38778e-17
-      orientation: 
-        x: 0
-        y: 0
-        z: -0.00842699
-        w: 0.999964
-  - name: cache
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 23.1977
-        y: 1.866
-        z: -2.77556e-17
-      orientation: 
-        x: 0
-        y: 0
-        z: -0.00877802
-        w: 0.999961
-  - name: lasercutter_4_tail
-    frame_id: map
-    type: tail
-    pose: 
-      position: 
-        x: 42.7
-        y: 4.63
-        z: -2.77556e-17
-      orientation: 
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: lasercutter_4
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 43.9
-        y: 1.8
-        z: -2.77556e-17
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: punchtest_tail
-    frame_id: map
-    type: tail
-    pose: 
-      position: 
-        x: 15.3
-        y: -1.84
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
-  - name: cache_tail
-    frame_id: map
-    type: tail
-    pose: 
-      position: 
-        x: 22.083
-        y: -1.915
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
-  - name: semi_product_buffer_1_4_tail
-    frame_id: map
-    type: tail
-    pose: 
-      position: 
-        x: 27.109
-        y: -1.915
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
-  - name: semi_product_buffer_1_4
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 28.309
-        y: 1.8
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: semi_product_buffer_1_8_tail
-    frame_id: map
-    type: tail
-    pose: 
-      position: 
-        x: 33.702
-        y: -1.88
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
-  - name: semi_product_buffer_1_8
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: workstation
-    pose: 
-      position: 
-        x: 34.902
-        y: 1.8
-        z: 0
-      orientation: 
-        x: 0
-        y: 0
-        z: 0
-        w: 1
+  - name: wait3s
+    goal_timeout: 3
+    type: timer
+  - name: wait4s
+    goal_timeout: 4
+    type: timer
+  - name: wait5s
+    goal_timeout: 5
+    type: timer
+  - name: fork_up_cb
+    failure_mode: fork_up
+    type: call
+  - name: fork_down_cb
+    failure_mode: fork_down
+    type: call
 trajectories:
-  - name: punchtest_loading
-    waypoints: 
-    - punchtest_tail
+  - name: fork_up
+    waypoints:
     - shell_fork_up
-    - vel_slow
+    - wait4s
     - shell_fork_hang
-  - name: punchtest_unloading
-    waypoints: 
-    - punchtest_tail
+  - name: fork_down
+    waypoints:
     - shell_fork_down
-    - vel_slow
+    - wait4s
     - shell_fork_hang
-  - name: cache_loading
-    waypoints: 
-    - cache_tail
-    - shell_fork_up
-    - vel_slow
-    - shell_fork_hang
-  - name: cache_unloading
-    waypoints: 
-    - cache_tail
-    - shell_fork_down
-    - vel_slow
-    - shell_fork_hang
-  - name: semi_product_buffer_1_4_loading
-    waypoints: 
-    - semi_product_buffer_1_4_tail
-    - shell_fork_up
-    - vel_slow
-    - shell_fork_hang
-  - name: semi_product_buffer_1_4_unloading
-    waypoints: 
-    - semi_product_buffer_1_4_tail
-    - shell_fork_down
-    - vel_slow
-    - shell_fork_hang
-  - name: semi_product_buffer_1_8_loading
-    waypoints: 
-    - semi_product_buffer_1_8_tail
-    - shell_fork_up
-    - vel_slow
-    - shell_fork_hang
-  - name: semi_product_buffer_1_8_unloading
-    waypoints: 
-    - semi_product_buffer_1_8_tail
-    - shell_fork_down
-    - vel_slow
-    - shell_fork_hang
+  - name: origin_1_docking
+    waypoints:
+    - origin_1_tail
+  - name: origin_2_docking
+    waypoints:
+    - origin_2_tail
+  - name: origin_3_docking
+    waypoints:
+    - origin_3_tail
+  - name: origin_4_docking
+    waypoints:
+    - origin_4_tail
+  - name: origin_5_docking
+    waypoints:
+    - origin_5_tail
+  - name: punch_1_loading
+    waypoints:
+    - punch_1_tail
+    - fork_up_cb
+  - name: punch_1_unloading
+    waypoints:
+    - punch_1_tail
+    - fork_down_cb
+  - name: punch_2_loading
+    waypoints:
+    - punch_2_tail
+    - fork_up_cb
+  - name: punch_2_unloading
+    waypoints:
+    - punch_2_tail
+    - fork_down_cb
+  - name: punch_3_loading
+    waypoints:
+    - punch_3_tail
+    - fork_up_cb
+  - name: punch_3_unloading
+    waypoints:
+    - punch_3_tail
+    - fork_down_cb
+  - name: punch_4_loading
+    waypoints:
+    - punch_4_tail
+    - fork_up_cb
+  - name: punch_4_unloading
+    waypoints:
+    - punch_4_tail
+    - fork_down_cb
+  - name: saw_loading
+    waypoints:
+    - saw_tail
+    - fork_up_cb
+  - name: saw_unloading
+    waypoints:
+    - saw_tail
+    - fork_down_cb
