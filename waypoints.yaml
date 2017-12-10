@@ -1,33 +1,4 @@
 waypoints:
-  - name: 叉齿上升
-    failure_mode: fork_up_cb
-    type: call
-  - name: 叉齿下降
-    failure_mode: fork_down_cb
-    type: call
-  - name: 叉货上升
-    failure_mode: tail_up_cb
-    type: call
-  - name: 叉货下降
-    failure_mode: tail_down_cb
-    type: call
-  - name: 中入叉货上升
-    failure_mode: line_center_up_cb
-    type: call
-  - name: 中入叉货下降
-    failure_mode: line_center_down_cb
-    type: call
-  - name: 左入叉货上升
-    failure_mode: line_left_up_cb
-    type: call
-  - name: 左入叉货下降
-    failure_mode: line_left_down_cb
-    type: call
-  - name: 右入叉货上升
-    failure_mode: line_right_up_cb
-    type: call
-  - name: 右入叉货下降
-    failure_mode: line_right_down_cb
   - name: 充电位
     frame_id: map
     iter: 5
@@ -296,49 +267,30 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
-  - name: line_center
-    close_enough: 1.0
-    frame_id: map
-    mark: true
-    type: tail
-    pose:
-      position:
-        x: 2.5
-        y: 0
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: line_left
-    frame_id: map
-    mark: true
-    type: tail
-    pose:
-      position:
-        x: 2.5
-        y: -1.5
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0
-        w: 1
-  - name: line_right
-    frame_id: map
-    mark: true
-    type: tail
-    pose:
-      position:
-        x: 2.5
-        y: 1.5
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0
-        w: 1
+  - name: wait3s
+    goal_timeout: 3
+    type: timer
+  - name: wait4s
+    goal_timeout: 4
+    type: timer
+  - name: wait5s
+    goal_timeout: 5
+    type: timer
+  - name: lift_hang
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 3
+    type: shell
+  - name: lift_up
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 3
+    type: shell
+  - name: lift_down
+    close_enough: 0
+    failure_mode: NONE
+    goal_timeout: 3
+    type: shell
   - name: tail_up
     frame_id: map
     mark: true
@@ -367,70 +319,134 @@ waypoints:
         y: 0
         z: 0
         w: 1
-  - name: fork_up
-    close_enough: 0
-    failure_mode: NONE
-    goal_timeout: 3
-    type: shell
-  - name: fork_down
-    close_enough: 0
-    failure_mode: NONE
-    goal_timeout: 3
-    type: shell
-  - name: fork_hang
-    close_enough: 0
-    failure_mode: NONE
-    goal_timeout: 3
-    type: shell
-  - name: wait3s
-    goal_timeout: 3
-    type: timer
-  - name: wait4s
-    goal_timeout: 4
-    type: timer
-  - name: wait5s
-    goal_timeout: 5
-    type: timer
+  - name: line_center
+    close_enough: 1.0
+    frame_id: map
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 4
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: line_left
+    frame_id: map
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 4
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: line_right
+    frame_id: map
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 4
+        y: -1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: line_auto
+    frame_id: map
+    line: true
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 4
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: lift_up_wp
+    failure_mode: lift_up_cb
+    type: call
+  - name: lift_down_wp
+    failure_mode: lift_down_cb
+    type: call
+  - name: tail_up_wp
+    failure_mode: tail_up_cb
+    type: call
+  - name: tail_down_wp
+    failure_mode: tail_down_cb
+    type: call
+  - name: line_left_up_wp
+    failure_mode: line_left_up_cb
+    type: call
+  - name: line_left_down_wp
+    failure_mode: line_left_down_cb
+    type: call
+  - name: line_right_up_wp
+    failure_mode: line_right_up_cb
+    type: call
+  - name: line_right_down_wp
+    failure_mode: line_right_down_cb
+    type: call
+  - name: line_center_up_wp
+    failure_mode: line_center_up_cb
+    type: call
+  - name: line_center_down_wp
+    failure_mode: line_center_down_cb
+    type: call
 trajectories:
-  - name: fork_up_cb
+  - name: lift_up_cb
     waypoints:
-    - fork_up
+    - lift_up
     - wait4s
-    - fork_hang
-  - name: fork_down_cb
+    - lift_hang
+  - name: lift_down_cb
     waypoints:
-    - fork_down
+    - lift_down
     - wait4s
-    - fork_hang
+    - lift_hang
   - name: tail_up_cb
     waypoints:
     - tail_up
-    - 叉齿上升
+    - lift_up_wp
   - name: tail_down_cb
     waypoints:
     - tail_down
-    - 叉齿下降
-  - name: line_center_up_cb
-    waypoints:
-    - line_center
-    - 叉货上升
-  - name: line_center_down_cb
-    waypoints:
-    - line_center
-    - 叉货下降
+    - lift_down_wp
   - name: line_left_up_cb
     waypoints:
     - line_left
-    - 叉货上升
+    - tail_up_wp
   - name: line_left_down_cb
     waypoints:
     - line_left
-    - 叉货下降
+    - tail_down_wp
   - name: line_right_up_cb
     waypoints:
     - line_right
-    - 叉货上升
+    - tail_up_wp
   - name: line_right_down_cb
     waypoints:
     - line_right
-    - 叉货下降
+    - tail_down_wp
+  - name: line_center_up_cb
+    waypoints:
+    - line_center
+    - tail_up_wp
+  - name: line_center_down_cb
+    waypoints:
+    - line_center
+    - tail_down_wp
