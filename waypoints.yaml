@@ -27,36 +27,6 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
-  - name: 切割机1
-    frame_id: map
-    iter: 2
-    iter_span: -1.85
-    type: mark
-    pose:
-      position:
-        x: 42.65
-        y: 4.5
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
-  - name: 切割机2
-    frame_id: map
-    iter: 2
-    iter_span: -1.4
-    type: mark
-    pose:
-      position:
-        x: 20.2
-        y: 4.5
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
   - name: 冲压机1
     frame_id: map
     iter: 2
@@ -86,6 +56,66 @@ waypoints:
         x: 0
         y: 0
         z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_A
+    frame_id: map
+    iter: 8
+    iter_span: 1.68
+    type: mark
+    pose:
+      position:
+        x: 33.72
+        y: -1.89
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_B
+    frame_id: map
+    iter: 8
+    iter_span: -1.68
+    type: mark
+    pose:
+      position:
+        x: 33.72
+        y: -7.34
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 切割机1
+    frame_id: map
+    iter: 2
+    iter_span: -1.85
+    type: mark
+    pose:
+      position:
+        x: 42.65
+        y: 4.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 切割机2
+    frame_id: map
+    iter: 2
+    iter_span: -1.4
+    type: mark
+    pose:
+      position:
+        x: 20.2
+        y: 4.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
         w: 0.7071
   - name: 折弯机1
     frame_id: map
@@ -141,6 +171,36 @@ waypoints:
       position:
         x: 41.44
         y: -2.8
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_A
+    frame_id: map
+    iter: 19
+    iter_span: -1.45
+    type: mark
+    pose:
+      position:
+        x: 65.5
+        y: -11.9
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_B
+    frame_id: map
+    iter: 19
+    iter_span: 1.45
+    type: mark
+    pose:
+      position:
+        x: 65.5
+        y: -19.45
         z: 0
       orientation:
         x: 0
@@ -207,66 +267,6 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
-  - name: 中间缓存区_A
-    frame_id: map
-    iter: 7
-    iter_span: -1.68
-    type: mark
-    pose:
-      position:
-        x: 33.72
-        y: -1.89
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: 中间缓存区_B
-    frame_id: map
-    iter: 7
-    iter_span: 1.68
-    type: mark
-    pose:
-      position:
-        x: 33.72
-        y: -7.34
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
-  - name: 最终缓存区_A
-    frame_id: map
-    iter: 19
-    iter_span: -1.45
-    type: mark
-    pose:
-      position:
-        x: 65.5
-        y: -11.9
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: 最终缓存区_B
-    frame_id: map
-    iter: 19
-    iter_span: 1.45
-    type: mark
-    pose:
-      position:
-        x: 65.5
-        y: -19.45
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: 0.7071
-        w: 0.7071
   - name: wait3s
     goal_timeout: 3
     type: timer
@@ -326,7 +326,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 4
+        x: 3
         y: 0
         z: 0
       orientation:
@@ -335,13 +335,13 @@ waypoints:
         z: 0
         w: 1
   - name: line_left
-    close_enough: -1.0
+    close_enough: -1.5
     frame_id: map
     mark: true
     type: goal
     pose:
       position:
-        x: 4
+        x: 3
         y: 2
         z: 0
       orientation:
@@ -350,14 +350,14 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: line_right
-    close_enough: -1.0
+    close_enough: -1.5
     frame_id: map
     mark: true
     type: goal
     pose:
       position:
-        x: 4
-        y: -2
+        x: 3
+        y: 2
         z: 0
       orientation:
         x: 0
@@ -365,14 +365,14 @@ waypoints:
         z: -0.7071
         w: 0.7071
   - name: line_auto
-    close_enough: -1.0
+    close_enough: -1.5
     frame_id: map
     line: true
     mark: true
     type: goal
     pose:
       position:
-        x: 4
+        x: 3
         y: 2
         z: 0
       orientation:
@@ -411,6 +411,22 @@ waypoints:
     failure_mode: line_auto_down_cb
     type: call
 trajectories:
+  - name: 切管机-冲压机1_1
+    waypoints:
+    - 切管机
+    - line_auto_up_wp
+    - line_center
+    - 冲压机1_1
+    - line_auto_down_wp
+    - line_center
+  - name: 冲压机2_1-切割机1_2
+    waypoints:
+    - 冲压机2_1
+    - line_auto_up_wp
+    - line_center
+    - 切割机1_2
+    - line_auto_down_wp
+    - line_center
   - name: lift_up_cb
     waypoints:
     - lift_up
