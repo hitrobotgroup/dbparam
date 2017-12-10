@@ -320,7 +320,7 @@ waypoints:
         z: 0
         w: 1
   - name: line_center
-    close_enough: 1.0
+    close_enough: -2.0
     frame_id: map
     mark: true
     type: goal
@@ -335,13 +335,14 @@ waypoints:
         z: 0
         w: 1
   - name: line_left
+    close_enough: -1.0
     frame_id: map
     mark: true
     type: goal
     pose:
       position:
         x: 4
-        y: 1.5
+        y: 2
         z: 0
       orientation:
         x: 0
@@ -349,13 +350,14 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: line_right
+    close_enough: -1.0
     frame_id: map
     mark: true
     type: goal
     pose:
       position:
         x: 4
-        y: -1.5
+        y: -2
         z: 0
       orientation:
         x: 0
@@ -363,6 +365,7 @@ waypoints:
         z: -0.7071
         w: 0.7071
   - name: line_auto
+    close_enough: -1.0
     frame_id: map
     line: true
     mark: true
@@ -370,7 +373,7 @@ waypoints:
     pose:
       position:
         x: 4
-        y: 1.5
+        y: 2
         z: 0
       orientation:
         x: 0
@@ -401,11 +404,11 @@ waypoints:
   - name: line_right_down_wp
     failure_mode: line_right_down_cb
     type: call
-  - name: line_center_up_wp
-    failure_mode: line_center_up_cb
+  - name: line_auto_up_wp
+    failure_mode: line_auto_up_cb
     type: call
-  - name: line_center_down_wp
-    failure_mode: line_center_down_cb
+  - name: line_auto_down_wp
+    failure_mode: line_auto_down_cb
     type: call
 trajectories:
   - name: lift_up_cb
@@ -442,11 +445,13 @@ trajectories:
     waypoints:
     - line_right
     - tail_down_wp
-  - name: line_center_up_cb
+  - name: line_auto_up_cb
     waypoints:
     - line_center
+    - line_auto
     - tail_up_wp
-  - name: line_center_down_cb
+  - name: line_auto_down_cb
     waypoints:
     - line_center
+    - line_auto
     - tail_down_wp
