@@ -1,9 +1,38 @@
 waypoints:
+  - name: 叉齿上升
+    failure_mode: fork_up_cb
+    type: call
+  - name: 叉齿下降
+    failure_mode: fork_down_cb
+    type: call
+  - name: 叉货上升
+    failure_mode: tail_up_cb
+    type: call
+  - name: 叉货下降
+    failure_mode: tail_down_cb
+    type: call
+  - name: 中入叉货上升
+    failure_mode: line_center_up_cb
+    type: call
+  - name: 中入叉货下降
+    failure_mode: line_center_down_cb
+    type: call
+  - name: 左入叉货上升
+    failure_mode: line_left_up_cb
+    type: call
+  - name: 左入叉货下降
+    failure_mode: line_left_down_cb
+    type: call
+  - name: 右入叉货上升
+    failure_mode: line_right_up_cb
+    type: call
+  - name: 右入叉货下降
+    failure_mode: line_right_down_cb
   - name: 充电位
     frame_id: map
     iter: 5
     iter_span: 1.28
-    type: tail
+    type: mark
     pose:
       position:
         x: 5.476
@@ -16,7 +45,7 @@ waypoints:
         w: 0.7071
   - name: 切管机
     frame_id: map
-    type: tail
+    type: mark
     pose:
       position:
         x: -34.35
@@ -31,7 +60,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: -1.85
-    type: tail
+    type: mark
     pose:
       position:
         x: 42.65
@@ -46,7 +75,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: -1.4
-    type: tail
+    type: mark
     pose:
       position:
         x: 20.2
@@ -61,7 +90,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 2.4
-    type: tail
+    type: mark
     pose:
       position:
         x: 15.2
@@ -76,7 +105,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 1.87
-    type: tail
+    type: mark
     pose:
       position:
         x: 11.16
@@ -91,7 +120,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 2.2
-    type: tail
+    type: mark
     pose:
       position:
         x: 61.5847
@@ -106,7 +135,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 2.67
-    type: tail
+    type: mark
     pose:
       position:
         x: 54.95
@@ -121,7 +150,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 1.72
-    type: tail
+    type: mark
     pose:
       position:
         x: 47.65
@@ -136,7 +165,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 1.6
-    type: tail
+    type: mark
     pose:
       position:
         x: 41.44
@@ -151,7 +180,7 @@ waypoints:
     frame_id: map
     iter: 7
     iter_span: -1.58
-    type: tail
+    type: mark
     pose:
       position:
         x: 61.25
@@ -166,7 +195,7 @@ waypoints:
     frame_id: map
     iter: 7
     iter_span: 1.58
-    type: tail
+    type: mark
     pose:
       position:
         x: 61.25
@@ -181,7 +210,7 @@ waypoints:
     frame_id: map
     iter: 7
     iter_span: -1.58
-    type: tail
+    type: mark
     pose:
       position:
         x: 61.25
@@ -196,7 +225,7 @@ waypoints:
     frame_id: map
     iter: 7
     iter_span: 1.58
-    type: tail
+    type: mark
     pose:
       position:
         x: 61.25
@@ -211,7 +240,7 @@ waypoints:
     frame_id: map
     iter: 7
     iter_span: -1.68
-    type: tail
+    type: mark
     pose:
       position:
         x: 33.72
@@ -226,7 +255,7 @@ waypoints:
     frame_id: map
     iter: 7
     iter_span: 1.68
-    type: tail
+    type: mark
     pose:
       position:
         x: 33.72
@@ -241,7 +270,7 @@ waypoints:
     frame_id: map
     iter: 19
     iter_span: -1.45
-    type: tail
+    type: mark
     pose:
       position:
         x: 65.5
@@ -256,7 +285,7 @@ waypoints:
     frame_id: map
     iter: 19
     iter_span: 1.45
-    type: tail
+    type: mark
     pose:
       position:
         x: 65.5
@@ -267,17 +296,88 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
-  - name: shell_fork_up
+  - name: line_center
+    close_enough: 1.0
+    frame_id: map
+    mark: true
+    type: tail
+    pose:
+      position:
+        x: 2.5
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: line_left
+    frame_id: map
+    mark: true
+    type: tail
+    pose:
+      position:
+        x: 2.5
+        y: -1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: line_right
+    frame_id: map
+    mark: true
+    type: tail
+    pose:
+      position:
+        x: 2.5
+        y: 1.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: tail_up
+    frame_id: map
+    mark: true
+    type: tail
+    pose:
+      position:
+        x: -0.05
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: tail_down
+    frame_id: map
+    mark: true
+    type: tail
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: fork_up
     close_enough: 0
     failure_mode: NONE
     goal_timeout: 3
     type: shell
-  - name: shell_fork_down
+  - name: fork_down
     close_enough: 0
     failure_mode: NONE
     goal_timeout: 3
     type: shell
-  - name: shell_fork_hang
+  - name: fork_hang
     close_enough: 0
     failure_mode: NONE
     goal_timeout: 3
@@ -291,156 +391,47 @@ waypoints:
   - name: wait5s
     goal_timeout: 5
     type: timer
-  - name: fork_up_cb
-    failure_mode: fork_up
-    type: call
-  - name: fork_down_cb
-    failure_mode: fork_down
-    type: call
 trajectories:
-  - name: fork_up
+  - name: fork_up_cb
     waypoints:
-    - shell_fork_up
+    - fork_up
     - wait4s
-    - shell_fork_hang
-  - name: fork_down
+    - fork_hang
+  - name: fork_down_cb
     waypoints:
-    - shell_fork_down
+    - tail_down
+    - fork_down
     - wait4s
-    - shell_fork_hang
-  - name: bender_1_1_loading
+    - fork_hang
+  - name: tail_up_cb
     waypoints:
-    - bender_1_1_tail
-    - fork_up_cb
-  - name: bender_1_1_unloading
+    - tail_up
+    - 叉齿上升
+  - name: tail_down_cb
     waypoints:
-    - bender_1_1_tail
-    - fork_down_cb
-  - name: bender_1_2_loading
+    - tail_down
+    - 叉齿下降
+  - name: line_center_up_cb
     waypoints:
-    - bender_1_2_tail
-    - fork_up_cb
-  - name: bender_1_2_unloading
+    - line_center
+    - 叉货上升
+  - name: line_center_down_cb
     waypoints:
-    - bender_1_2_tail
-    - fork_down_cb
-  - name: bender_2_1_loading
+    - line_center
+    - 叉货下降
+  - name: line_left_up_cb
     waypoints:
-    - bender_2_1_tail
-    - fork_up_cb
-  - name: bender_2_1_unloading
+    - line_left
+    - 叉货上升
+  - name: line_left_down_cb
     waypoints:
-    - bender_2_1_tail
-    - fork_down_cb
-  - name: bender_2_2_loading
+    - line_left
+    - 叉货下降
+  - name: line_right_up_cb
     waypoints:
-    - bender_2_2_tail
-    - fork_up_cb
-  - name: bender_2_2_unloading
+    - line_right
+    - 叉货上升
+  - name: line_right_down_cb
     waypoints:
-    - bender_2_2_tail
-    - fork_down_cb
-  - name: bender_3_1_loading
-    waypoints:
-    - bender_3_1_tail
-    - fork_up_cb
-  - name: bender_3_1_unloading
-    waypoints:
-    - bender_3_1_tail
-    - fork_down_cb
-  - name: bender_3_2_loading
-    waypoints:
-    - bender_3_2_tail
-    - fork_up_cb
-  - name: bender_3_2_unloading
-    waypoints:
-    - bender_3_2_tail
-    - fork_down_cb
-  - name: bender_4_1_loading
-    waypoints:
-    - bender_4_1_tail
-    - fork_up_cb
-  - name: bender_4_1_unloading
-    waypoints:
-    - bender_4_1_tail
-    - fork_down_cb
-  - name: bender_4_2_loading
-    waypoints:
-    - bender_4_2_tail
-    - fork_up_cb
-  - name: bender_4_2_unloading
-    waypoints:
-    - bender_4_2_tail
-    - fork_down_cb
-  - name: laser_cut_1_1_loading
-    waypoints:
-    - laser_cut_1_1_tail
-    - fork_up_cb
-  - name: laser_cut_1_1_unloading
-    waypoints:
-    - laser_cut_1_1_tail
-    - fork_down_cb
-  - name: laser_cut_1_2_loading
-    waypoints:
-    - laser_cut_1_2_tail
-    - fork_up_cb
-  - name: laser_cut_1_2_unloading
-    waypoints:
-    - laser_cut_1_2_tail
-    - fork_down_cb
-  - name: laser_cut_2_1_loading
-    waypoints:
-    - laser_cut_2_1_tail
-    - fork_up_cb
-  - name: laser_cut_2_1_unloading
-    waypoints:
-    - laser_cut_2_1_tail
-    - fork_down_cb
-  - name: laser_cut_2_2_loading
-    waypoints:
-    - laser_cut_2_2_tail
-    - fork_up_cb
-  - name: laser_cut_2_2_unloading
-    waypoints:
-    - laser_cut_2_2_tail
-    - fork_down_cb
-  - name: punch_1_loading
-    waypoints:
-    - punch_1_tail
-    - fork_up_cb
-  - name: punch_1_unloading
-    waypoints:
-    - punch_1_tail
-    - fork_down_cb
-  - name: punch_2_loading
-    waypoints:
-    - punch_2_tail
-    - fork_up_cb
-  - name: punch_2_unloading
-    waypoints:
-    - punch_2_tail
-    - fork_down_cb
-  - name: punch_3_loading
-    waypoints:
-    - punch_3_tail
-    - fork_up_cb
-  - name: punch_3_unloading
-    waypoints:
-    - punch_3_tail
-    - fork_down_cb
-  - name: punch_4_loading
-    waypoints:
-    - punch_4_tail
-    - fork_up_cb
-  - name: punch_4_unloading
-    waypoints:
-    - punch_4_tail
-    - fork_down_cb
-  - name: saw_loading
-    waypoints:
-    - saw_tail
-    - fork_up_cb
-  - name: saw_unloading
-    waypoints:
-    - saw_tail
-    - fork_down_cb
+    - line_right
+    - 叉货下降
