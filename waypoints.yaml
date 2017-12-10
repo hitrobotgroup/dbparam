@@ -399,7 +399,6 @@ trajectories:
     - fork_hang
   - name: fork_down_cb
     waypoints:
-    - tail_down
     - fork_down
     - wait4s
     - fork_hang
