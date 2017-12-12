@@ -4,7 +4,7 @@ waypoints:
     frame_id: map
     iter: 5
     iter_span: 1.28
-    type: mark
+    type: workstation
     pose:
       position:
         x: 5.476
@@ -18,7 +18,7 @@ waypoints:
   - name: 切管机
     call: line_center_cb
     frame_id: map
-    type: mark
+    type: workstation
     pose:
       position:
         x: -34.35
@@ -34,7 +34,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 2.4
-    type: mark
+    type: workstation
     pose:
       position:
         x: 15.2
@@ -50,7 +50,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 1.87
-    type: mark
+    type: workstation
     pose:
       position:
         x: 11.16
@@ -66,7 +66,7 @@ waypoints:
     frame_id: map
     iter: 8
     iter_span: 1.68
-    type: mark
+    type: workstation
     pose:
       position:
         x: 33.72
@@ -82,7 +82,7 @@ waypoints:
     frame_id: map
     iter: 8
     iter_span: -1.68
-    type: mark
+    type: workstation
     pose:
       position:
         x: 33.72
@@ -98,7 +98,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: -1.85
-    type: mark
+    type: workstation
     pose:
       position:
         x: 42.65
@@ -114,7 +114,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: -1.4
-    type: mark
+    type: workstation
     pose:
       position:
         x: 20.2
@@ -130,7 +130,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 2.2
-    type: mark
+    type: workstation
     pose:
       position:
         x: 61.5847
@@ -146,7 +146,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 2.67
-    type: mark
+    type: workstation
     pose:
       position:
         x: 54.95
@@ -162,7 +162,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 1.72
-    type: mark
+    type: workstation
     pose:
       position:
         x: 47.65
@@ -178,7 +178,7 @@ waypoints:
     frame_id: map
     iter: 2
     iter_span: 1.6
-    type: mark
+    type: workstation
     pose:
       position:
         x: 41.44
@@ -194,7 +194,7 @@ waypoints:
     frame_id: map
     iter: 19
     iter_span: -1.45
-    type: mark
+    type: workstation
     pose:
       position:
         x: 65.5
@@ -210,7 +210,7 @@ waypoints:
     frame_id: map
     iter: 19
     iter_span: 1.45
-    type: mark
+    type: workstation
     pose:
       position:
         x: 65.5
@@ -226,7 +226,7 @@ waypoints:
     frame_id: map
     iter: 7
     iter_span: -1.58
-    type: mark
+    type: workstation
     pose:
       position:
         x: 61.25
@@ -242,7 +242,7 @@ waypoints:
     frame_id: map
     iter: 7
     iter_span: 1.58
-    type: mark
+    type: workstation
     pose:
       position:
         x: 61.25
@@ -258,7 +258,7 @@ waypoints:
     frame_id: map
     iter: 7
     iter_span: -1.58
-    type: mark
+    type: workstation
     pose:
       position:
         x: 61.25
@@ -274,7 +274,7 @@ waypoints:
     frame_id: map
     iter: 7
     iter_span: 1.58
-    type: mark
+    type: workstation
     pose:
       position:
         x: 61.25
@@ -422,6 +422,9 @@ waypoints:
   - name: line_right_down_wp
     failure_mode: line_right_down_cb
     type: call
+  - name: line_auto_dock_wp
+    failure_mode: line_auto_dock_cb
+    type: call
   - name: line_auto_up_wp
     failure_mode: line_auto_up_cb
     type: call
@@ -466,6 +469,27 @@ trajectories:
   - name: line_center_cb
     waypoints:
     - line_center
+  - name: line_left_up_cb
+    waypoints:
+    - line_left
+    - tail_up_wp
+  - name: line_left_down_cb
+    waypoints:
+    - line_left
+    - tail_down_wp
+  - name: line_right_up_cb
+    waypoints:
+    - line_right
+    - tail_up_wp
+  - name: line_right_down_cb
+    waypoints:
+    - line_right
+    - tail_down_wp
+  - name: line_auto_dock_cb
+    waypoints:
+    - line_center
+    - line_auto
+    - tail_down
   - name: line_auto_up_cb
     waypoints:
     - line_center
