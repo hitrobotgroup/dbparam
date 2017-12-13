@@ -1,7 +1,7 @@
 waypoints:
   - name: init
     frame_id: map
-    home: 充电位
+    home: 充电位_
     type: initial_pose
   - name: 充电位_AGV
     call: line_center_cb
