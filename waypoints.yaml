@@ -1,14 +1,4 @@
 waypoints:
-  - name: set_navfn
-    node: /move_base/MixedPlanner/navfn_planner
-    param: planner_is_navfn
-    type: dynparam
-    value: true
-  - name: set_fixed
-    node: /move_base/MixedPlanner/navfn_planner
-    param: planner_is_navfn
-    type: dynparam
-    value: false
   - name: init
     frame_id: map
     home: 充电位_
@@ -299,6 +289,16 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
+  - name: set_navfn
+    node: /move_base/MixedPlanner/navfn_planner
+    param: planner_is_navfn
+    type: dynparam
+    value: true
+  - name: set_fixed
+    node: /move_base/MixedPlanner/navfn_planner
+    param: planner_is_navfn
+    type: dynparam
+    value: false
   - name: wait3s
     goal_timeout: 3
     type: timer
@@ -352,7 +352,6 @@ waypoints:
         z: 0
         w: 1
   - name: line_center
-    close_enough: -2.0
     frame_id: map
     mark: true
     type: goal
@@ -482,41 +481,38 @@ trajectories:
     - lift_down_wp
   - name: line_center_cb
     waypoints:
+    - set_fixed
     - line_center
+    - set_navfn
   - name: line_left_up_cb
     waypoints:
+    - set_navfn
     - line_left
     - tail_up_wp
   - name: line_left_down_cb
     waypoints:
+    - set_navfn
     - line_left
     - tail_down_wp
   - name: line_right_up_cb
     waypoints:
+    - set_navfn
     - line_right
     - tail_up_wp
   - name: line_right_down_cb
     waypoints:
+    - set_navfn
     - line_right
     - tail_down_wp
   - name: line_auto_dock_cb
     waypoints:
-    - line_center
-    - set_navfn
     - line_auto
     - tail_down
-    - set_fixed
   - name: line_auto_up_cb
     waypoints:
-    - line_center
-    - set_navfn
     - line_auto
     - tail_up_wp
-    - set_fixed
   - name: line_auto_down_cb
     waypoints:
-    - line_center
-    - set_navfn
     - line_auto
     - tail_down_wp
-    - set_fixed
