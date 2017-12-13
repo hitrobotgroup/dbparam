@@ -1,4 +1,14 @@
 waypoints:
+  - name: set_navfn
+    node: /move_base/MixedPlanner/navfn_planner
+    param: planner_is_navfn
+    type: dynparam
+    value: true
+  - name: set_fixed
+    node: /move_base/MixedPlanner/navfn_planner
+    param: planner_is_navfn
+    type: dynparam
+    value: false
   - name: init
     frame_id: map
     home: 充电位_
@@ -492,15 +502,21 @@ trajectories:
   - name: line_auto_dock_cb
     waypoints:
     - line_center
+    - set_navfn
     - line_auto
     - tail_down
+    - set_fixed
   - name: line_auto_up_cb
     waypoints:
     - line_center
+    - set_navfn
     - line_auto
     - tail_up_wp
+    - set_fixed
   - name: line_auto_down_cb
     waypoints:
     - line_center
+    - set_navfn
     - line_auto
     - tail_down_wp
+    - set_fixed
