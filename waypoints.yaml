@@ -73,7 +73,7 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 33.72
+        x: 33.8
         y: -1.9
         z: 0
       orientation:
@@ -89,7 +89,7 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 33.72
+        x: 33.8
         y: -7.3
         z: 0
       orientation:
@@ -149,7 +149,7 @@ waypoints:
     call: line_center_cb
     frame_id: map
     iter: 2
-    iter_span: 2.67
+    iter_span: 2.6
     type: workstation
     pose:
       position:
