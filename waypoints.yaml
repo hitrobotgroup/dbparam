@@ -90,7 +90,7 @@ waypoints:
     pose:
       position:
         x: 33.72
-        y: -7.34
+        y: -7.3
         z: 0
       orientation:
         x: 0
