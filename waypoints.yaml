@@ -299,6 +299,34 @@ waypoints:
     param: planner_is_navfn
     type: dynparam
     value: false
+  - name: light_green
+    plc_io: 512
+    plc_io_cmd: set
+    type: plc_io
+  - name: light_yellow
+    plc_io: 256
+    plc_io_cmd: set
+    type: plc_io
+  - name: light_red
+    plc_io: 128
+    plc_io_cmd: set
+    type: plc_io
+  - name: light_off
+    plc_io: 0
+    plc_io_cmd: set
+    type: plc_io
+  - name: lift_up
+    plc_io: 32
+    plc_io_cmd: set
+    type: plc_io
+  - name: lift_down
+    plc_io: 16
+    plc_io_cmd: set
+    type: plc_io
+  - name: lift_hang
+    plc_io: 0
+    plc_io_cmd: set
+    type: plc_io
   - name: wait3s
     goal_timeout: 3
     type: timer
@@ -308,21 +336,6 @@ waypoints:
   - name: wait5s
     goal_timeout: 5
     type: timer
-  - name: lift_hang
-    close_enough: 0
-    failure_mode: NONE
-    goal_timeout: 3
-    type: shell
-  - name: lift_up
-    close_enough: 0
-    failure_mode: NONE
-    goal_timeout: 3
-    type: shell
-  - name: lift_down
-    close_enough: 0
-    failure_mode: NONE
-    goal_timeout: 3
-    type: shell
   - name: tail_up
     frame_id: map
     mark: true
@@ -527,21 +540,25 @@ trajectories:
     - lift_down_wp
   - name: line_center_cb
     waypoints:
+    - light_green
     - set_fixed
     - line_center
     - set_navfn
   - name: line_center_4500_cb
     waypoints:
+    - light_green
     - set_fixed
     - line_center_4500
     - set_navfn
   - name: line_center_3700_cb
     waypoints:
+    - light_green
     - set_fixed
     - line_center_3700
     - set_navfn
   - name: line_center_2500_cb
     waypoints:
+    - light_green
     - set_fixed
     - line_center_2500
     - set_navfn
@@ -567,13 +584,19 @@ trajectories:
     - tail_down_wp
   - name: line_auto_dock_cb
     waypoints:
+    - light_yellow
     - line_auto
     - tail_down
+    - light_off
   - name: line_auto_up_cb
     waypoints:
+    - light_yellow
     - line_auto
     - tail_up_wp
+    - light_off
   - name: line_auto_down_cb
     waypoints:
+    - light_yellow
     - line_auto
     - tail_down_wp
+    - light_off
