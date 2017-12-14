@@ -4,7 +4,7 @@ waypoints:
     home: 充电位_
     type: initial_pose
   - name: 充电位_AGV
-    call: line_center_cb
+    call: line_center_4500_cb
     frame_id: map
     iter: 5
     iter_span: 1.28
@@ -26,7 +26,7 @@ waypoints:
     pose:
       position:
         x: -34.35
-        y: -2
+        y: -1.9
         z: 0
       orientation:
         x: 0
@@ -74,7 +74,7 @@ waypoints:
     pose:
       position:
         x: 33.72
-        y: -1.89
+        y: -1.9
         z: 0
       orientation:
         x: 0
@@ -82,7 +82,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 中间缓存区_B
-    call: line_center_cb
+    call: line_center_2500_cb
     frame_id: map
     iter: 8
     iter_span: -1.68
@@ -194,7 +194,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 最终缓存区_A
-    call: line_center_cb
+    call: line_center_3700_cb
     frame_id: map
     iter: 19
     iter_span: -1.45
@@ -202,7 +202,7 @@ waypoints:
     pose:
       position:
         x: 65.5
-        y: -11.9
+        y: -12
         z: 0
       orientation:
         x: 0
@@ -210,7 +210,7 @@ waypoints:
         z: -0.7071
         w: 0.7071
   - name: 最终缓存区_B
-    call: line_center_cb
+    call: line_center_3700_cb
     frame_id: map
     iter: 19
     iter_span: 1.45
@@ -218,7 +218,7 @@ waypoints:
     pose:
       position:
         x: 65.5
-        y: -19.45
+        y: -19.4
         z: 0
       orientation:
         x: 0
@@ -226,7 +226,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 焊接线1_A
-    call: line_center_cb
+    call: line_center_2500_cb
     frame_id: map
     iter: 7
     iter_span: -1.58
@@ -242,7 +242,7 @@ waypoints:
         z: -0.7071
         w: 0.7071
   - name: 焊接线1_B
-    call: line_center_cb
+    call: line_center_2500_cb
     frame_id: map
     iter: 7
     iter_span: 1.58
@@ -258,7 +258,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 焊接线2_A
-    call: line_center_cb
+    call: line_center_2500_cb
     frame_id: map
     iter: 7
     iter_span: -1.58
@@ -274,7 +274,7 @@ waypoints:
         z: -0.7071
         w: 0.7071
   - name: 焊接线2_B
-    call: line_center_cb
+    call: line_center_2500_cb
     frame_id: map
     iter: 7
     iter_span: 1.58
@@ -352,12 +352,58 @@ waypoints:
         z: 0
         w: 1
   - name: line_center
+    failure_mode: LOOP
     frame_id: map
     mark: true
     type: goal
     pose:
       position:
-        x: 3
+        x: 3.2
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: line_center_4500
+    failure_mode: LOOP
+    frame_id: map
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 3.7
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: line_center_3700
+    failure_mode: LOOP
+    frame_id: map
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 3.7
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: line_center_2500
+    failure_mode: LOOP
+    frame_id: map
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 3.7
         y: 0
         z: 0
       orientation:
@@ -366,7 +412,7 @@ waypoints:
         z: 0
         w: 1
   - name: line_left
-    close_enough: -1.5
+    failure_mode: LOOP
     frame_id: map
     mark: true
     type: goal
@@ -381,7 +427,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: line_right
-    close_enough: -1.5
+    failure_mode: LOOP
     frame_id: map
     mark: true
     type: goal
@@ -396,7 +442,7 @@ waypoints:
         z: -0.7071
         w: 0.7071
   - name: line_auto
-    close_enough: -1.5
+    failure_mode: LOOP
     frame_id: map
     line: true
     mark: true
@@ -404,7 +450,7 @@ waypoints:
     pose:
       position:
         x: 3
-        y: 2
+        y: 3
         z: 0
       orientation:
         x: 0
@@ -483,6 +529,21 @@ trajectories:
     waypoints:
     - set_fixed
     - line_center
+    - set_navfn
+  - name: line_center_4500_cb
+    waypoints:
+    - set_fixed
+    - line_center_4500
+    - set_navfn
+  - name: line_center_3700_cb
+    waypoints:
+    - set_fixed
+    - line_center_3700
+    - set_navfn
+  - name: line_center_2500_cb
+    waypoints:
+    - set_fixed
+    - line_center_2500
     - set_navfn
   - name: line_left_up_cb
     waypoints:
