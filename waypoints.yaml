@@ -382,7 +382,7 @@ waypoints:
   - name: line_center_4500
     failure_mode: LOOP
     frame_id: map
-    mark:3 true
+    mark: true
     type: goal
     pose:
       position:
