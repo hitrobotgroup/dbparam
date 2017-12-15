@@ -418,7 +418,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 3.7
+        x: 2.5
         y: 0
         z: 0
       orientation:
