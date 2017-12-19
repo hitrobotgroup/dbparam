@@ -338,7 +338,7 @@ waypoints:
     type: timer
   - name: tail_up
     frame_id: map
-    goal_timeout: 60.0
+    goal_timeout: 45.0
     mark: true
     type: tail
     pose:
@@ -353,7 +353,7 @@ waypoints:
         w: 1
   - name: tail_down
     frame_id: map
-    goal_timeout: 60.0
+    goal_timeout: 45.0
     mark: true
     type: tail
     pose:
@@ -530,7 +530,7 @@ trajectories:
   - name: lift_down_cb
     waypoints:
     - lift_down
-    - wait4s
+    - wait5s
     - lift_hang
   - name: tail_up_cb
     waypoints:
