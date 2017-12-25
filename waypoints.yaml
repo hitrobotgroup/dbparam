@@ -543,25 +543,25 @@ trajectories:
   - name: line_center_cb
     waypoints:
     - light_green
-    - set_fixed
+    - set_navfn
     - line_center
     - set_navfn
   - name: line_center_4500_cb
     waypoints:
     - light_green
-    - set_fixed
+    - set_navfn
     - line_center_4500
     - set_navfn
   - name: line_center_3700_cb
     waypoints:
     - light_green
-    - set_fixed
+    - set_navfn
     - line_center_3700
     - set_navfn
   - name: line_center_2500_cb
     waypoints:
     - light_green
-    - set_fixed
+    - set_navfn
     - line_center_2500
     - set_navfn
   - name: line_left_up_cb
