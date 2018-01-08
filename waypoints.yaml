@@ -25,7 +25,7 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: -34.35
+        x: -34.25
         y: -1.9
         z: 0
       orientation:
@@ -37,12 +37,12 @@ waypoints:
     call: line_center_cb
     frame_id: map
     iter: 2
-    iter_span: 2.4
+    iter_span: 1.85
     type: workstation
     pose:
       position:
-        x: 15.2
-        y: -1.9
+        x: 14.95
+        y: -0.96
         z: 0
       orientation:
         x: 0
@@ -53,12 +53,28 @@ waypoints:
     call: line_center_cb
     frame_id: map
     iter: 2
-    iter_span: 1.87
+    iter_span: 1.83
     type: workstation
     pose:
       position:
-        x: 11.16
-        y: -1.9
+        x: 11.3
+        y: -0.96
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_AL
+    call: line_center_cb
+    frame_id: map
+    iter: 5
+    iter_span: 1.81
+    type: workstation
+    pose:
+      position:
+        x: 33
+        y: -0.98
         z: 0
       orientation:
         x: 0
@@ -68,13 +84,29 @@ waypoints:
   - name: 中间缓存区_A
     call: line_center_cb
     frame_id: map
-    iter: 8
-    iter_span: 1.68
+    iter: 3
+    iter_span: 1.42
     type: workstation
     pose:
       position:
-        x: 33.8
-        y: -1.9
+        x: 24.315
+        y: -0.98
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_BL
+    call: line_center_cb
+    frame_id: map
+    iter: 5
+    iter_span: 1.8
+    type: workstation
+    pose:
+      position:
+        x: 33
+        y: -2.4
         z: 0
       orientation:
         x: 0
@@ -82,15 +114,31 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 中间缓存区_B
-    call: line_center_2500_cb
+    call: line_center_cb
     frame_id: map
-    iter: 8
-    iter_span: -1.68
+    iter: 3
+    iter_span: 1.42
     type: workstation
     pose:
       position:
-        x: 33.8
-        y: -7.3
+        x: 24.315
+        y: -2.4
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_C
+    call: line_center_2500_cb
+    frame_id: map
+    iter: 10
+    iter_span: -1.4
+    type: workstation
+    pose:
+      position:
+        x: 34
+        y: -7.53
         z: 0
       orientation:
         x: 0
@@ -101,12 +149,12 @@ waypoints:
     call: line_center_cb
     frame_id: map
     iter: 2
-    iter_span: -1.85
+    iter_span: -1.92
     type: workstation
     pose:
       position:
-        x: 42.65
-        y: 4.5
+        x: 42.8
+        y: 4.4
         z: 0
       orientation:
         x: 0
@@ -117,12 +165,12 @@ waypoints:
     call: line_center_cb
     frame_id: map
     iter: 2
-    iter_span: -1.4
+    iter_span: -1.62
     type: workstation
     pose:
       position:
-        x: 20.2
-        y: 4.5
+        x: 20.13
+        y: 4.54
         z: 0
       orientation:
         x: 0
@@ -338,7 +386,7 @@ waypoints:
     type: timer
   - name: tail_up
     frame_id: map
-    goal_timeout: 40.0
+    goal_timeout: 45.0
     mark: true
     type: tail
     pose:
@@ -353,7 +401,7 @@ waypoints:
         w: 1
   - name: tail_down
     frame_id: map
-    goal_timeout: 40.0
+    goal_timeout: 45.0
     mark: true
     type: tail
     pose:
