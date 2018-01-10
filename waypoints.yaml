@@ -42,7 +42,7 @@ waypoints:
     pose:
       position:
         x: 14.95
-        y: -0.96
+        y: -1
         z: 0
       orientation:
         x: 0
@@ -58,7 +58,7 @@ waypoints:
     pose:
       position:
         x: 11.3
-        y: -0.96
+        y: -1
         z: 0
       orientation:
         x: 0
@@ -74,7 +74,7 @@ waypoints:
     pose:
       position:
         x: 33
-        y: -0.98
+        y: -1
         z: 0
       orientation:
         x: 0
@@ -90,7 +90,7 @@ waypoints:
     pose:
       position:
         x: 24.315
-        y: -0.98
+        y: -1
         z: 0
       orientation:
         x: 0
@@ -98,7 +98,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 中间缓存区_BL
-    call: line_center_cb
+    call: line_center_2725_cb
     frame_id: map
     iter: 5
     iter_span: 1.8
@@ -106,15 +106,15 @@ waypoints:
     pose:
       position:
         x: 33
-        y: -2.4
+        y: -1.78
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.7071
+        z: -0.7071
         w: 0.7071
   - name: 中间缓存区_B
-    call: line_center_cb
+    call: line_center_2725_cb
     frame_id: map
     iter: 3
     iter_span: 1.42
@@ -122,15 +122,15 @@ waypoints:
     pose:
       position:
         x: 24.315
-        y: -2.4
+        y: -1.78
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.7071
+        z: -0.7071
         w: 0.7071
   - name: 中间缓存区_C
-    call: line_center_2500_cb
+    call: line_center_2725_cb
     frame_id: map
     iter: 10
     iter_span: -1.4
@@ -138,7 +138,7 @@ waypoints:
     pose:
       position:
         x: 34
-        y: -7.53
+        y: -7.23
         z: 0
       orientation:
         x: 0
@@ -436,7 +436,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 3.7
+        x: 4.9
         y: 0
         z: 0
       orientation:
@@ -467,6 +467,21 @@ waypoints:
     pose:
       position:
         x: 2.5
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: line_center_2725
+    failure_mode: LOOP
+    frame_id: map
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 2.725
         y: 0
         z: 0
       orientation:
@@ -611,6 +626,12 @@ trajectories:
     - light_green
     - set_fixed
     - line_center_2500
+    - set_navfn
+  - name: line_center_2725_cb
+    waypoints:
+    - light_green
+    - set_fixed
+    - line_center_2725
     - set_navfn
   - name: line_left_up_cb
     waypoints:
