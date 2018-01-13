@@ -34,7 +34,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 冲压机1
-    call: line_center_cb
+    call: line_center_2700_cb
     frame_id: map
     iter: 2
     iter_span: 1.85
@@ -50,7 +50,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 冲压机2
-    call: line_center_cb
+    call: line_center_2700_cb
     frame_id: map
     iter: 2
     iter_span: 1.83
@@ -66,7 +66,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 中间缓存区_AL
-    call: line_center_cb
+    call: line_center_2700_cb
     frame_id: map
     iter: 5
     iter_span: 1.81
@@ -82,7 +82,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 中间缓存区_A
-    call: line_center_cb
+    call: line_center_2700_cb
     frame_id: map
     iter: 3
     iter_span: 1.42
@@ -101,12 +101,12 @@ waypoints:
     call: line_center_2725_cb
     frame_id: map
     iter: 5
-    iter_span: 1.8
+    iter_span: -1.81
     type: workstation
     pose:
       position:
         x: 33
-        y: -1.78
+        y: -1.8
         z: 0
       orientation:
         x: 0
@@ -117,12 +117,12 @@ waypoints:
     call: line_center_2725_cb
     frame_id: map
     iter: 3
-    iter_span: 1.42
+    iter_span: -1.42
     type: workstation
     pose:
       position:
         x: 24.315
-        y: -1.78
+        y: -1.8
         z: 0
       orientation:
         x: 0
@@ -133,12 +133,12 @@ waypoints:
     call: line_center_2725_cb
     frame_id: map
     iter: 10
-    iter_span: -1.4
+    iter_span: 1.4
     type: workstation
     pose:
       position:
         x: 34
-        y: -7.23
+        y: -7.13
         z: 0
       orientation:
         x: 0
@@ -146,7 +146,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 切割机1
-    call: line_center_cb
+    call: line_center_2700_cb
     frame_id: map
     iter: 2
     iter_span: -1.92
@@ -154,7 +154,7 @@ waypoints:
     pose:
       position:
         x: 42.8
-        y: 4.4
+        y: 4.54
         z: 0
       orientation:
         x: 0
@@ -162,7 +162,7 @@ waypoints:
         z: -0.7071
         w: 0.7071
   - name: 切割机2
-    call: line_center_cb
+    call: line_center_2700_cb
     frame_id: map
     iter: 2
     iter_span: -1.62
@@ -489,6 +489,21 @@ waypoints:
         y: 0
         z: 0
         w: 1
+  - name: line_center_2700
+    failure_mode: LOOP
+    frame_id: map
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 2.7
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
   - name: line_left
     failure_mode: LOOP
     frame_id: map
@@ -632,6 +647,12 @@ trajectories:
     - light_green
     - set_fixed
     - line_center_2725
+    - set_navfn
+  - name: line_center_2700_cb
+    waypoints:
+    - light_green
+    - set_fixed
+    - line_center_2700
     - set_navfn
   - name: line_left_up_cb
     waypoints:
