@@ -19,14 +19,30 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
-  - name: 切管机
+  - name: 锯床
     call: line_center_cb
     frame_id: map
     type: workstation
     pose:
       position:
-        x: -34.25
-        y: -1.9
+        x: -34.38
+        y: -2.25
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 切管机
+    call: line_center_2725_cb
+    frame_id: map
+    iter: 4
+    iter_span: 1.4
+    type: workstation
+    pose:
+      position:
+        x: -23.65
+        y: -0.8
         z: 0
       orientation:
         x: 0
@@ -65,7 +81,7 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
-  - name: 中间缓存区_AL
+  - name: 中间缓存区_A
     call: line_center_2700_cb
     frame_id: map
     iter: 5
@@ -81,11 +97,9 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
-  - name: 中间缓存区_A
+  - name: 中间缓存区_A_6
     call: line_center_2700_cb
     frame_id: map
-    iter: 3
-    iter_span: 1.42
     type: workstation
     pose:
       position:
@@ -97,7 +111,35 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
-  - name: 中间缓存区_BL
+  - name: 中间缓存区_A_7
+    call: line_center_2700_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 22.895
+        y: -1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_A_8
+    call: line_center_2700_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 21.475
+        y: -1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_B
     call: line_center_2725_cb
     frame_id: map
     iter: 5
@@ -113,11 +155,9 @@ waypoints:
         y: 0
         z: -0.7071
         w: 0.7071
-  - name: 中间缓存区_B
+  - name: 中间缓存区_B_6
     call: line_center_2725_cb
     frame_id: map
-    iter: 3
-    iter_span: -1.42
     type: workstation
     pose:
       position:
@@ -129,15 +169,113 @@ waypoints:
         y: 0
         z: -0.7071
         w: 0.7071
+  - name: 中间缓存区_B_7
+    call: line_center_2725_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 22.895
+        y: -1.8
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 中间缓存区_B_8
+    call: line_center_2725_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 24.4
+        y: -4.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 中间缓存区_B_8_tail
+    frame_id: map
+    goal_timeout: 45.0
+    type: tail
+    pose:
+      position:
+        x: 21.475
+        y: -1.8
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
   - name: 中间缓存区_C
     call: line_center_2725_cb
     frame_id: map
-    iter: 10
+    iter: 9
     iter_span: 1.4
     type: workstation
     pose:
       position:
         x: 34
+        y: -7.13
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_C_10
+    call: line_center_2725_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 24.4
+        y: -4.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_C_10_tail
+    frame_id: map
+    goal_timeout: 45.0
+    type: tail
+    pose:
+      position:
+        x: 21.4
+        y: -7.13
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_C_11
+    call: line_center_2725_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 24.4
+        y: -4.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 中间缓存区_C_11_tail
+    frame_id: map
+    goal_timeout: 45.0
+    type: tail
+    pose:
+      position:
+        x: 20
         y: -7.13
         z: 0
       orientation:
@@ -584,14 +722,6 @@ waypoints:
     failure_mode: line_auto_down_cb
     type: call
 trajectories:
-  - name: 切管机-冲压机1_1
-    waypoints:
-    - 切管机
-    - line_auto_up_wp
-    - line_center
-    - 冲压机1_1
-    - line_auto_down_wp
-    - line_center
   - name: 冲压机2_1-切割机1_2
     waypoints:
     - 冲压机2_1
@@ -691,4 +821,40 @@ trajectories:
     - light_yellow
     - line_auto
     - tail_down_wp
+    - light_off
+  - name: 中间缓存区_B_8_unloading
+    waypoints:
+    - light_yellow
+    - 中间缓存区_B_8_tail
+    - lift_down_wp
+    - light_off
+  - name: 中间缓存区_B_8_loading
+    waypoints:
+    - light_yellow
+    - 中间缓存区_B_8_tail
+    - lift_up_wp
+    - light_off
+  - name: 中间缓存区_C_10_unloading
+    waypoints:
+    - light_yellow
+    - 中间缓存区_C_10_tail
+    - lift_down_wp
+    - light_off
+  - name: 中间缓存区_C_10_loading
+    waypoints:
+    - light_yellow
+    - 中间缓存区_C_10_tail
+    - lift_up_wp
+    - light_off
+  - name: 中间缓存区_C_11_unloading
+    waypoints:
+    - light_yellow
+    - 中间缓存区_C_11_tail
+    - lift_down_wp
+    - light_off
+  - name: 中间缓存区_C_11_loading
+    waypoints:
+    - light_yellow
+    - 中间缓存区_C_11_tail
+    - lift_up_wp
     - light_off
