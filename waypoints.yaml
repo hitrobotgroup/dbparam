@@ -411,6 +411,22 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
+  - name: 最终缓存区_C
+    call: line_center_2500_cb
+    frame_id: map
+    iter: 19
+    iter_span: -1.45
+    type: workstation
+    pose:
+      position:
+        x: 65.5
+        y: -19.6
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
   - name: 焊接线1_A
     call: line_center_2500_cb
     frame_id: map
