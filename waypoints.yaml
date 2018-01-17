@@ -58,7 +58,7 @@ waypoints:
     pose:
       position:
         x: 14.95
-        y: -1
+        y: -0.95
         z: 0
       orientation:
         x: 0
@@ -74,7 +74,7 @@ waypoints:
     pose:
       position:
         x: 11.3
-        y: -1
+        y: -0.95
         z: 0
       orientation:
         x: 0
@@ -90,7 +90,7 @@ waypoints:
     pose:
       position:
         x: 33
-        y: -1
+        y: -0.95
         z: 0
       orientation:
         x: 0
@@ -104,7 +104,7 @@ waypoints:
     pose:
       position:
         x: 24.315
-        y: -1
+        y: -0.95
         z: 0
       orientation:
         x: 0
@@ -118,7 +118,7 @@ waypoints:
     pose:
       position:
         x: 22.895
-        y: -1
+        y: -0.95
         z: 0
       orientation:
         x: 0
@@ -132,7 +132,7 @@ waypoints:
     pose:
       position:
         x: 21.475
-        y: -1
+        y: -0.95
         z: 0
       orientation:
         x: 0
@@ -220,7 +220,7 @@ waypoints:
     pose:
       position:
         x: 34
-        y: -7.13
+        y: -7.08
         z: 0
       orientation:
         x: 0
@@ -248,7 +248,7 @@ waypoints:
     pose:
       position:
         x: 21.4
-        y: -7.13
+        y: -7.08
         z: 0
       orientation:
         x: 0
@@ -276,7 +276,7 @@ waypoints:
     pose:
       position:
         x: 20
-        y: -7.13
+        y: -7.08
         z: 0
       orientation:
         x: 0
