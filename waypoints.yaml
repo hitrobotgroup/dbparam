@@ -529,32 +529,294 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
-  - name: 炉体2_A
+  - name: 炉体1_B_4
     call: line_center_2500_cb
     frame_id: map
-    iter: 7
-    iter_span: -1.58
     type: workstation
     pose:
       position:
-        x: 61.25
-        y: -36.17
+        x: 59.6
+        y: -31.55
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体1_B_5
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 58.12
+        y: -31.62
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体1_B_6
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 56.6
+        y: -31.66
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体1_B_7
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 55.12
+        y: -31.66
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体1_B_8
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 53.6
+        y: -31.7
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体2_A_1
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 64.5
+        y: -34.91
         z: 0
       orientation:
         x: 0
         y: 0
         z: -0.7071
         w: 0.7071
-  - name: 炉体2_B
+  - name: 炉体2_A_2
     call: line_center_2500_cb
     frame_id: map
-    iter: 7
-    iter_span: 1.58
     type: workstation
     pose:
       position:
-        x: 61.25
-        y: -41.17
+        x: 62.95
+        y: -34.91
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 炉体2_A_3
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 61.45
+        y: -34.91
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 炉体2_A_4
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 59.68
+        y: -34.99
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 炉体2_A_5
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 58.18
+        y: -35.04
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 炉体2_A_6
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 56.64
+        y: -35.04
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 炉体2_A_7
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 55.12
+        y: -35.14
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 炉体2_A_8
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 53.66
+        y: -35.14
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 炉体2_B_1
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 64.64
+        y: -40.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体2_B_2
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 63.1
+        y: -40.18
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体2_B_3
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 61.68
+        y: -40.18
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体2_B_4
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 59.82
+        y: -40.35
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体2_B_5
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 58.32
+        y: -40.35
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体2_B_6
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 56.81
+        y: -40.35
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体2_B_7
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 55.27
+        y: -40.44
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 炉体2_B_8
+    call: line_center_2500_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 53.8
+        y: -40.48
         z: 0
       orientation:
         x: 0
