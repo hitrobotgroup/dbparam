@@ -1,101 +1,390 @@
 waypoints:
-  - name: test_mark1
+  - name: bez_test
     frame_id: map
+    type: goal
+    pose:
+      position:
+        x: 5
+        y: -33.4
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: init
+    failure_mode: init_cb
+    type: call
+  - name: init_pose
+    frame_id: map
+    home: origin_tail
+    type: initial_pose
+  - name: pallet_test
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 4.92934
+        y: -24.4032
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0136849
+        w: 0.999906
+  - name: pallet_tail
+    frame_id: map
+    goal_timeout: 45.0
     type: tail
     pose:
       position:
-        x: 2.2
-        y: 0
+        x: 5.3
+        y: -24.4032
         z: 0
       orientation:
         x: 0
         y: 0
+        z: 0.0136849
+        w: 0.999906
+  - name: lift_up
+    close_enough: 0
+    failure_mode: LOOP
+    goal_timeout: 4.0
+    type: shell
+  - name: lift_down
+    close_enough: 0
+    failure_mode: LOOP
+    goal_timeout: 4.0
+    type: shell
+  - name: vel_out
+    close_enough: 0.5
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 4
+    mark: false
+    type: cmd_vel
+  - name: loop
+    close_enough: 0
+    failure_mode: LOOP
+    goal_timeout: 0
+    type: looper
+  - name: pallet1_l
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 9
+        y: -22.3801
+        z: -1.38778e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.717607
+        w: 0.696448
+  - name: timer4s
+    close_enough: 0
+    failure_mode: LOOP
+    goal_timeout: 4
+    type: timer
+  - name: lift_hang
+    close_enough: 0
+    failure_mode: LOOP
+    goal_timeout: 3.0
+    type: shell
+  - name: pallet2_l
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 9
+        y: -14.0548
+        z: -6.93889e-18
+      orientation:
+        x: 0
+        y: 0
+        z: 0.711774
+        w: 0.702409
+  - name: pallet2_r
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 9
+        y: -17.6232
         z: 0
-        w: 1
-  - name: home
+      orientation:
+        x: 0
+        y: 0
+        z: -0.710422
+        w: 0.703776
+  - name: pallet_test2
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
+    mark: false
     type: goal
     pose:
       position:
-        x: -0.0439839
-        y: 0.0523334
-        z: -6.93889e-18
+        x: 4.87047
+        y: -16.5426
+        z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.00126448
-        w: 0.999999
-  - name: mark1
+        z: 0.0149904
+        w: 0.999888
+  - name: pallet_tail2
+    frame_id: map
+    goal_timeout: 45.0
+    type: tail
+    pose:
+      position:
+        x: 5.27
+        y: -16.5426
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0149904
+        w: 0.999888
+  - name: pallet1_r
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
+    mark: false
     type: goal
     pose:
       position:
-        x: 2.21527
-        y: 0.0539775
-        z: -2.77556e-17
+        x: 9
+        y: -26.3168
+        z: -2.08167e-17
       orientation:
         x: 0
         y: 0
-        z: -0.000537151
-        w: 1
-  - name: mark2
+        z: -0.722748
+        w: 0.691111
+  - name: vel_zero
+    close_enough: 0
+    failure_mode: LOOP
+    goal_timeout: 1.0
+    type: cmd_vel
+  - name: origin_r
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
+    mark: false
     type: goal
     pose:
       position:
-        x: 3.46045
-        y: -11.7839
-        z: -6.93889e-18
+        x: 9
+        y: -35.4822
+        z: -2.08167e-17
       orientation:
         x: 0
         y: 0
-        z: -0.703063
-        w: 0.711127
-  - name: mark3
+        z: -0.7071
+        w: 0.7071
+  - name: origin_l
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
+    mark: false
     type: goal
     pose:
       position:
-        x: 1.90956
-        y: -26.2591
-        z: 6.93889e-18
+        x: 9
+        y: -31.2102
+        z: -1.38778e-17
       orientation:
         x: 0
         y: 0
-        z: -0.685603
-        w: 0.727976
-  - name: m4
-    close_enough: 0
-    failure_mode: LOOP
+        z: 0.7071
+        w: 0.7071
+  - name: origin_tail
     frame_id: map
-    goal_timeout: 0
-    type: goal
+    goal_timeout: 45.0
+    type: tail
     pose:
       position:
-        x: 3.85581
-        y: -25.2281
-        z: -2.77556e-17
+        x: 5.00331
+        y: -33.4088
+        z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.713224
-        w: 0.700936
+        z: -0.00887061
+        w: 0.999961
+  - name: light_green
+    plc_io: 128
+    plc_io_cmd: set
+    type: plc_io
+  - name: light_yellow
+    plc_io: 192
+    plc_io_cmd: set
+    type: plc_io
+  - name: light_red
+    plc_io: 64
+    plc_io_cmd: set
+    type: plc_io
+  - name: light_off
+    plc_io: 32319
+    plc_io_cmd: off
+    type: plc_io
+  - name: set_power_off
+    plc_io: 1536
+    plc_io_cmd: on
+    type: plc_io
+  - name: set_shutdown
+    type: shutdown
 trajectories:
-  - name: test_ouiyeah
+  - name: init_cb
     waypoints:
-    - home
-    - mark1
-    - mark2
-    - mark3
+    - init_pose
+    - light_green
+  - name: power_off
+    waypoints:
+    - set_power_off
+    - set_shutdown
+  - name: tail2down
+    waypoints:
+    - pallet2_l
+    - pallet_tail2
+    - lift_down
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet2_r
+  - name: tail2up
+    waypoints:
+    - pallet2_l
+    - pallet_tail2
+    - lift_up
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet2_r
+  - name: tail1down
+    waypoints:
+    - pallet1_r
+    - pallet_tail
+    - lift_down
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet1_l
+  - name: tail1up
+    waypoints:
+    - pallet1_r
+    - pallet_tail
+    - lift_up
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet1_l
+  - name: tailbringup
+    waypoints:
+    - pallet1_r
+    - pallet_tail
+    - lift_up
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet1_l
+    - pallet2_l
+    - pallet_tail2
+    - lift_down
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet2_r
+    - pallet1_r
+    - pallet_tail
+    - lift_down
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet1_l
+    - pallet2_l
+    - pallet_tail2
+    - lift_up
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet2_r
+    - pallet1_r
+    - pallet_tail
+    - lift_down
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet1_l
+    - pallet2_l
+    - pallet_tail2
+    - lift_down
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet2_r
+    - loop
+  - name: Line_0ToCache_0
+    waypoints:
+    - vel_out
+    - origin_l
+    - pallet1_l
+    - pallet_tail
+    - lift_up
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet1_l
+    - pallet2_l
+    - pallet_tail2
+    - lift_down
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet2_r
+    - origin_r
+    - origin_tail
+    - vel_zero
+  - name: Line_0ToCache_1
+    waypoints:
+    - vel_out
+    - origin_l
+    - pallet2_l
+    - pallet_tail2
+    - lift_up
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet2_r
+    - pallet1_r
+    - pallet_tail
+    - lift_down
+    - timer4s
+    - lift_hang
+    - vel_out
+    - pallet1_r
+    - origin_r
+    - origin_tail
+    - vel_zero
