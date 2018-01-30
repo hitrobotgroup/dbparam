@@ -327,6 +327,40 @@ waypoints:
   - name: go_B_wp
     failure_mode: go_B_cb
     type: call
+  - name: test_A_2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 32.9058
+        y: 10.2663
+        z: -2.08167e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.707081
+        w: 0.707132
+  - name: origin
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 30.9057
+        y: -0.647725
+        z: -2.08167e-17
+      orientation:
+        x: 0
+        y: 0
+        z: 0.706283
+        w: 0.707929
 trajectories:
   - name: lift_up_cb
     waypoints:
