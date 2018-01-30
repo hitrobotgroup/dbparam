@@ -4,7 +4,7 @@ waypoints:
     home: 充电位_
     type: initial_pose
   - name: 充电位_AGV
-    call: line_center_4500_cb
+    call: line_center_4900_cb
     frame_id: map
     iter: 5
     iter_span: 1.28
@@ -58,7 +58,7 @@ waypoints:
     pose:
       position:
         x: 14.95
-        y: -0.88
+        y: -1
         z: 0
       orientation:
         x: 0
@@ -73,8 +73,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 11.32
-        y: -0.88
+        x: 11.26
+        y: -1
         z: 0
       orientation:
         x: 0
@@ -89,8 +89,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 32.93
-        y: -0.9
+        x: 32.9
+        y: -1.1
         z: 0
       orientation:
         x: 0
@@ -103,8 +103,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 24.24
-        y: -0.9
+        x: 24.23
+        y: -1.1
         z: 0
       orientation:
         x: 0
@@ -117,8 +117,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 22.84
-        y: -0.9
+        x: 22.83
+        y: -1.1
         z: 0
       orientation:
         x: 0
@@ -131,8 +131,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 21.44
-        y: -0.9
+        x: 21.43
+        y: -1.1
         z: 0
       orientation:
         x: 0
@@ -147,8 +147,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 32.93
-        y: -1.67
+        x: 32.86
+        y: -1.9
         z: 0
       orientation:
         x: 0
@@ -161,8 +161,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 24.24
-        y: -1.67
+        x: 24.25
+        y: -1.9
         z: 0
       orientation:
         x: 0
@@ -175,8 +175,22 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 22.84
-        y: -1.67
+        x: 25.4
+        y: -4.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 中间缓存区_B_7_tail
+    frame_id: map
+    goal_timeout: 45.0
+    type: tail
+    pose:
+      position:
+        x: 22.78
+        y: -1.9
         z: 0
       orientation:
         x: 0
@@ -203,8 +217,8 @@ waypoints:
     type: tail
     pose:
       position:
-        x: 21.44
-        y: -1.67
+        x: 21.37
+        y: -1.9
         z: 0
       orientation:
         x: 0
@@ -219,8 +233,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 34.06
-        y: -6.97
+        x: 33.98
+        y: -7.2
         z: 0
       orientation:
         x: 0
@@ -248,7 +262,7 @@ waypoints:
     pose:
       position:
         x: 21.44
-        y: -6.95
+        y: -7.2
         z: 0
       orientation:
         x: 0
@@ -276,7 +290,7 @@ waypoints:
     pose:
       position:
         x: 20.04
-        y: -6.95
+        y: -7.2
         z: 0
       orientation:
         x: 0
@@ -291,8 +305,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 44.68
-        y: 4.88
+        x: 44.72
+        y: 4.46
         z: 0
       orientation:
         x: 0
@@ -307,8 +321,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 21.82
-        y: 4.73
+        x: 21.75
+        y: 4.5
         z: 0
       orientation:
         x: 0
@@ -316,15 +330,15 @@ waypoints:
         z: -0.7071
         w: 0.7071
   - name: 折弯机1
-    call: line_center_cb
+    call: line_center_4270_cb
     frame_id: map
     iter: 2
-    iter_span: 2.2
+    iter_span: 2.07
     type: workstation
     pose:
       position:
-        x: 61.5847
-        y: -2.5
+        x: 61.52
+        y: -2.57
         z: 0
       orientation:
         x: 0
@@ -332,15 +346,15 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 折弯机2
-    call: line_center_cb
+    call: line_center_4270_cb
     frame_id: map
     iter: 2
-    iter_span: 2.6
+    iter_span: 2.63
     type: workstation
     pose:
       position:
-        x: 54.95
-        y: -2.5
+        x: 54.81
+        y: -2.57
         z: 0
       orientation:
         x: 0
@@ -348,15 +362,15 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 折弯机3
-    call: line_center_cb
+    call: line_center_4600_cb
     frame_id: map
     iter: 2
-    iter_span: 1.72
+    iter_span: 1.7
     type: workstation
     pose:
       position:
-        x: 47.65
-        y: -2.8
+        x: 47.74
+        y: -2.92
         z: 0
       orientation:
         x: 0
@@ -364,15 +378,15 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 折弯机4
-    call: line_center_cb
+    call: line_center_4600_cb
     frame_id: map
     iter: 2
-    iter_span: 1.6
+    iter_span: 1.68
     type: workstation
     pose:
       position:
-        x: 41.44
-        y: -2.8
+        x: 41.65
+        y: -2.92
         z: 0
       orientation:
         x: 0
@@ -383,12 +397,12 @@ waypoints:
     call: line_center_3700_cb
     frame_id: map
     iter: 20
-    iter_span: -1.4
+    iter_span: -1.41
     type: workstation
     pose:
       position:
-        x: 65.46
-        y: -11.09
+        x: 65.29
+        y: -11.68
         z: 0
       orientation:
         x: 0
@@ -403,8 +417,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 65.58
-        y: -17.5
+        x: 65.46
+        y: -17.94
         z: 0
       orientation:
         x: 0
@@ -419,8 +433,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 65.58
-        y: -18.22
+        x: 65.46
+        y: -18.66
         z: 0
       orientation:
         x: 0
@@ -915,7 +929,22 @@ waypoints:
         y: 0
         z: 0
         w: 1
-  - name: line_center_4500
+  - name: line_center_4600
+    failure_mode: LOOP
+    frame_id: map
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 4.6
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: line_center_4900
     failure_mode: LOOP
     frame_id: map
     mark: true
@@ -923,6 +952,21 @@ waypoints:
     pose:
       position:
         x: 4.9
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: line_center_4270
+    failure_mode: LOOP
+    frame_id: map
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 4.27
         y: 0
         z: 0
       orientation:
@@ -1102,17 +1146,23 @@ trajectories:
     - set_fixed
     - line_center
     - set_navfn
-  - name: line_center_4500_cb
+  - name: line_center_4600_cb
     waypoints:
     - light_green
     - set_fixed
-    - line_center_4500
+    - line_center_4600
     - set_navfn
-  - name: line_center_3700_cb
+  - name: line_center_4900_cb
     waypoints:
     - light_green
     - set_fixed
-    - line_center_3700
+    - line_center_4900
+    - set_navfn
+  - name: line_center_4270_cb
+    waypoints:
+    - light_green
+    - set_fixed
+    - line_center_4270
     - set_navfn
   - name: line_center_2500_cb
     waypoints:
@@ -1131,6 +1181,12 @@ trajectories:
     - light_green
     - set_fixed
     - line_center_2700
+    - set_navfn
+  - name: line_center_3700_cb
+    waypoints:
+    - light_green
+    - set_fixed
+    - line_center_3700
     - set_navfn
   - name: line_left_up_cb
     waypoints:
@@ -1169,6 +1225,18 @@ trajectories:
     - light_yellow
     - line_auto
     - tail_down_wp
+    - light_off
+  - name: 中间缓存区_B_7_unloading
+    waypoints:
+    - light_yellow
+    - 中间缓存区_B_7_tail
+    - lift_down_wp
+    - light_off
+  - name: 中间缓存区_B_7_loading
+    waypoints:
+    - light_yellow
+    - 中间缓存区_B_7_tail
+    - lift_up_wp
     - light_off
   - name: 中间缓存区_B_8_unloading
     waypoints:
