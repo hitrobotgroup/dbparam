@@ -1,10 +1,193 @@
 waypoints:
-  - name: test_mark1
+  - name: init
+    failure_mode: init_cb
+    type: call
+  - name: l2c_mid
+    close_enough: 1.0
+    failure_mode: LOOP
     frame_id: map
-    type: tail
+    goal_timeout: 0
+    type: goal
     pose:
       position:
-        x: 2.2
+        x: 16
+        y: 1.9
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: l2c_door
+    close_enough: 1.0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 28
+        y: 2.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: c2l_door
+    close_enough: 1.0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 25
+        y: 2.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: line_A
+    call: go_A_1_cb
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: mark
+    pose:
+      position:
+        x: 8.2
+        y: 2.96342
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: line_A_backup
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: mark
+    pose:
+      position:
+        x: 9.61607
+        y: 2.96342
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: line_B
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: mark
+    pose:
+      position:
+        x: 17.5589
+        y: 2.96342
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: line_B_backup
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: mark
+    pose:
+      position:
+        x: 17.0589
+        y: -0.254594
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: cache_B_left
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 30
+        y: 3.8
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cache_B_1_front
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 29.3972
+        y: 4
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: cache_B_1
+    call: go_B_1_cb
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    iter: 10
+    iter_x: -1
+    type: mark
+    pose:
+      position:
+        x: 29.3972
+        y: 6.22
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.706721
+        w: 0.707491
+  - name: cache_B_2
+    call: go_B_2_cb
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    iter: 10
+    iter_x: -1
+    type: mark
+    pose:
+      position:
+        x: 28.2887
+        y: 6.22
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.706894
+        w: 0.707319
+  - name: line_down
+    failure_mode: NONE
+    frame_id: map
+    goal_timeout: 0
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 0
         y: 0
         z: 0
       orientation:
@@ -12,90 +195,179 @@ waypoints:
         y: 0
         z: 0
         w: 1
-  - name: home
-    close_enough: 0
+  - name: line_center
+    close_enough: 2.0
     failure_mode: LOOP
     frame_id: map
-    goal_timeout: 0
+    mark: true
     type: goal
     pose:
       position:
-        x: -0.0439839
-        y: 0.0523334
-        z: -6.93889e-18
+        x: 2
+        y: 0
+        z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.00126448
-        w: 0.999999
-  - name: mark1
-    close_enough: 0
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 2.21527
-        y: 0.0539775
-        z: -2.77556e-17
-      orientation:
-        x: 0
-        y: 0
-        z: -0.000537151
+        z: 0
         w: 1
-  - name: mark2
-    close_enough: 0
+  - name: line_left
     failure_mode: LOOP
     frame_id: map
-    goal_timeout: 0
+    mark: true
     type: goal
     pose:
       position:
-        x: 3.46045
-        y: -11.7839
-        z: -6.93889e-18
+        x: 1.5
+        y: 1
+        z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.703063
-        w: 0.711127
-  - name: mark3
-    close_enough: 0
+        z: 0.7071
+        w: 0.7071
+  - name: line_right
     failure_mode: LOOP
     frame_id: map
-    goal_timeout: 0
+    mark: true
     type: goal
     pose:
       position:
-        x: 1.90956
-        y: -26.2591
-        z: 6.93889e-18
+        x: 1.5
+        y: -1
+        z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.685603
-        w: 0.727976
-  - name: m4
-    close_enough: 0
+        z: -0.7071
+        w: 0.7071
+  - name: line_front
     failure_mode: LOOP
     frame_id: map
-    goal_timeout: 0
+    mark: true
     type: goal
     pose:
       position:
-        x: 3.85581
-        y: -25.2281
-        z: -2.77556e-17
+        x: 0.5
+        y: 0
+        z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.713224
-        w: 0.700936
+        z: 0
+        w: 1
+  - name: line_auto
+    failure_mode: LOOP
+    frame_id: map
+    line: true
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 2
+        y: 1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: set_shutdown
+    type: shutdown
+  - name: set_power_off
+    plc_io: 1536
+    plc_io_cmd: on
+    type: plc_io
+  - name: light_green
+    plc_io: 128
+    plc_io_cmd: set
+    type: plc_io
+  - name: light_yellow
+    plc_io: 192
+    plc_io_cmd: set
+    type: plc_io
+  - name: light_red
+    plc_io: 64
+    plc_io_cmd: set
+    type: plc_io
+  - name: light_off
+    plc_io: 32319
+    plc_io_cmd: off
+    type: plc_io
+  - name: lift_up
+    plc_io: 32
+    plc_io_cmd: on
+    type: plc_io
+  - name: lift_down
+    plc_io: 16
+    plc_io_cmd: on
+    type: plc_io
+  - name: lift_hang
+    plc_io: 32719
+    plc_io_cmd: off
+    type: plc_io
+  - name: wait3s
+    goal_timeout: 3
+    type: timer
+  - name: wait4s
+    goal_timeout: 4
+    type: timer
+  - name: wait5s
+    goal_timeout: 5
+    type: timer
+  - name: lift_up_wp
+    failure_mode: lift_up_cb
+    type: call
+  - name: lift_down_wp
+    failure_mode: lift_down_cb
+    type: call
+  - name: go_A_wp
+    failure_mode: go_A_cb
+    type: call
+  - name: go_B_wp
+    failure_mode: go_B_cb
+    type: call
 trajectories:
-  - name: test_ouiyeah
+  - name: lift_up_cb
     waypoints:
-    - home
-    - mark1
-    - mark2
-    - mark3
+    - lift_up
+    - wait4s
+    - lift_hang
+  - name: lift_down_cb
+    waypoints:
+    - lift_down
+    - wait5s
+    - lift_hang
+  - name: init_cb
+    waypoints:
+    - light_green
+  - name: power_off
+    waypoints:
+    - set_power_off
+    - set_shutdown
+  - name: go_A_cb
+    waypoints:
+    - c2l_door
+    - line_A
+    - line_right
+    - line_down
+    - lift_down_wp
+    - line_front
+    - l2c_mid
+    - l2c_door
+    - cache_B_left
+  - name: go_B_cb
+    waypoints:
+    - c2l_door
+    - line_B
+    - line_right
+    - line_down
+    - line_front
+    - l2c_door
+    - cache_B_left
+  - name: go_B_1_cb
+    waypoints:
+    - line_down
+    - lift_up_wp
+    - cache_B_1_front
+    - go_A_wp
