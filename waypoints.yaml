@@ -371,7 +371,7 @@ waypoints:
         z: -0.7071
         w: 0.7071
   - name: 临时停车位
-    call: line_center_3700_cb
+    call: line_center_3000_cb
     frame_id: map
     iter: 2
     iter_span: -1.4
@@ -451,7 +451,7 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: 最终缓存区_A
-    call: line_center_3700_cb
+    call: line_center_3000_cb
     frame_id: map
     iter: 20
     iter_span: -1.41
@@ -466,31 +466,139 @@ waypoints:
         y: 0
         z: -0.7071
         w: 0.7071
+  - name: 最终缓存区_A_1_head
+    frame_id: map
+    type: goal
+    pose:
+      position:
+        x: 65.29
+        y: -15.9
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_A_1_tail_out
+    frame_id: map
+    goal_timeout: 10.0
+    type: tail
+    pose:
+      position:
+        x: 63
+        y: -14.2
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: 最终缓存区_A_2_head
+    frame_id: map
+    type: goal
+    pose:
+      position:
+        x: 63.88
+        y: -15.9
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_A_2_tail_out
+    frame_id: map
+    goal_timeout: 13.0
+    type: tail
+    pose:
+      position:
+        x: 63
+        y: -14.2
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
   - name: 最终缓存区_B
-    call: line_center_3700_cb
+    call: line_center_3000_cb
     frame_id: map
     iter: 20
-    iter_span: 1.4
+    iter_span: 1.41
     type: workstation
     pose:
       position:
-        x: 65.46
-        y: -17.94
+        x: 65.4
+        y: -18.04
         z: 0
       orientation:
         x: 0
         y: 0
         z: 0.7071
         w: 0.7071
+  - name: 最终缓存区_B_1_head
+    frame_id: map
+    type: goal
+    pose:
+      position:
+        x: 65.4
+        y: -13.8
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_1_tail_out
+    frame_id: map
+    goal_timeout: 13.0
+    type: tail
+    pose:
+      position:
+        x: 63
+        y: -16
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: 最终缓存区_B_2_head
+    frame_id: map
+    type: goal
+    pose:
+      position:
+        x: 64
+        y: -13.8
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_2_tail_out
+    frame_id: map
+    goal_timeout: 13.0
+    type: tail
+    pose:
+      position:
+        x: 63.32
+        y: -15.95
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
   - name: 最终缓存区_C
     call: line_center_2500_cb
     frame_id: map
     iter: 20
-    iter_span: -1.4
+    iter_span: -1.41
     type: workstation
     pose:
       position:
-        x: 65.46
+        x: 65.45
         y: -18.66
         z: 0
       orientation:
@@ -498,6 +606,60 @@ waypoints:
         y: 0
         z: -0.7071
         w: 0.7071
+  - name: 最终缓存区_C_1_head
+    frame_id: map
+    type: goal
+    pose:
+      position:
+        x: 65.45
+        y: -21.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_1_tail_out
+    frame_id: map
+    goal_timeout: 25.0
+    type: tail
+    pose:
+      position:
+        x: 64
+        y: -21.3
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: 最终缓存区_C_2_head
+    frame_id: map
+    type: goal
+    pose:
+      position:
+        x: 64.04
+        y: -21.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_2_tail_out
+    frame_id: map
+    goal_timeout: 25.0
+    type: tail
+    pose:
+      position:
+        x: 63
+        y: -21.3
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
   - name: 炉体1_A
     call: line_center_2500_cb
     frame_id: map
@@ -1034,14 +1196,14 @@ waypoints:
         y: 0
         z: 0
         w: 1
-  - name: line_center_3700
+  - name: line_center_3000
     failure_mode: LOOP
     frame_id: map
     mark: true
     type: goal
     pose:
       position:
-        x: 3.7
+        x: 3
         y: 0
         z: 0
       orientation:
@@ -1242,11 +1404,11 @@ trajectories:
     - set_fixed
     - line_center_2700
     - set_navfn
-  - name: line_center_3700_cb
+  - name: line_center_3000_cb
     waypoints:
     - light_green
     - set_fixed
-    - line_center_3700
+    - line_center_3000
     - set_navfn
   - name: line_left_up_cb
     waypoints:
@@ -1292,6 +1454,54 @@ trajectories:
     - set_navfn
     - 中间缓存区_B_1_head
     - 中间缓存区_B_1_tail_out
+    - set_fixed
+    - light_off
+  - name: 最终缓存区_A_1_out
+    waypoints:
+    - light_yellow
+    - set_navfn
+    - 最终缓存区_A_1_head
+    - 最终缓存区_A_1_tail_out
+    - set_fixed
+    - light_off
+  - name: 最终缓存区_A_2_out
+    waypoints:
+    - light_yellow
+    - set_navfn
+    - 最终缓存区_A_2_head
+    - 最终缓存区_A_2_tail_out
+    - set_fixed
+    - light_off
+  - name: 最终缓存区_B_1_out
+    waypoints:
+    - light_yellow
+    - set_navfn
+    - 最终缓存区_B_1_head
+    - 最终缓存区_B_1_tail_out
+    - set_fixed
+    - light_off
+  - name: 最终缓存区_B_2_out
+    waypoints:
+    - light_yellow
+    - set_navfn
+    - 最终缓存区_B_2_head
+    - 最终缓存区_B_2_tail_out
+    - set_fixed
+    - light_off
+  - name: 最终缓存区_C_1_out
+    waypoints:
+    - light_yellow
+    - set_navfn
+    - 最终缓存区_C_1_head
+    - 最终缓存区_C_1_tail_out
+    - set_fixed
+    - light_off
+  - name: 最终缓存区_C_2_out
+    waypoints:
+    - light_yellow
+    - set_navfn
+    - 最终缓存区_C_2_head
+    - 最终缓存区_C_2_tail_out
     - set_fixed
     - light_off
   - name: 中间缓存区_B_7_unloading
