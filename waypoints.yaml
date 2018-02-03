@@ -85,7 +85,7 @@ waypoints:
     call: line_center_2700_cb
     frame_id: map
     iter: 5
-    iter_span: 1.8
+    iter_span: 1.82
     type: workstation
     pose:
       position:
@@ -143,7 +143,7 @@ waypoints:
     call: line_center_2725_cb
     frame_id: map
     iter: 5
-    iter_span: -1.81
+    iter_span: -1.82
     type: workstation
     pose:
       position:
@@ -155,6 +155,33 @@ waypoints:
         y: 0
         z: -0.7071
         w: 0.7071
+  - name: 中间缓存区_B_1_head
+    frame_id: map
+    type: goal
+    pose:
+      position:
+        x: 32.94
+        y: -5.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 中间缓存区_B_1_tail_out
+    frame_id: map
+    goal_timeout: 25.0
+    type: tail
+    pose:
+      position:
+        x: 32.2
+        y: -3.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
   - name: 中间缓存区_B_6
     call: line_center_2725_cb
     frame_id: map
@@ -914,6 +941,9 @@ waypoints:
   - name: wait5s
     goal_timeout: 5
     type: timer
+  - name: wait6s
+    goal_timeout: 6
+    type: timer
   - name: tail_up
     frame_id: map
     goal_timeout: 45.0
@@ -1160,7 +1190,7 @@ trajectories:
   - name: lift_down_cb
     waypoints:
     - lift_down
-    - wait5s
+    - wait6s
     - lift_hang
   - name: tail_up_cb
     waypoints:
@@ -1255,6 +1285,14 @@ trajectories:
     - light_yellow
     - line_auto
     - tail_down_wp
+    - light_off
+  - name: 中间缓存区_B_1_out
+    waypoints:
+    - light_yellow
+    - set_navfn
+    - 中间缓存区_B_1_head
+    - 中间缓存区_B_1_tail_out
+    - set_fixed
     - light_off
   - name: 中间缓存区_B_7_unloading
     waypoints:
