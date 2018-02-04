@@ -85,7 +85,7 @@ waypoints:
     call: line_center_2700_cb
     frame_id: map
     iter: 5
-    iter_span: 1.82
+    iter_span: 1.81
     type: workstation
     pose:
       position:
@@ -256,7 +256,7 @@ waypoints:
     call: line_center_2725_cb
     frame_id: map
     iter: 9
-    iter_span: 1.4
+    iter_span: 1.41
     type: workstation
     pose:
       position:
@@ -591,15 +591,15 @@ waypoints:
         z: 0
         w: 1
   - name: 最终缓存区_C
-    call: line_center_2500_cb
+    call: line_center_3000_cb
     frame_id: map
     iter: 20
     iter_span: -1.41
     type: workstation
     pose:
       position:
-        x: 65.45
-        y: -18.66
+        x: 65.42
+        y: -18.78
         z: 0
       orientation:
         x: 0
@@ -612,7 +612,7 @@ waypoints:
     pose:
       position:
         x: 65.45
-        y: -21.5
+        y: -22.9
         z: 0
       orientation:
         x: 0
@@ -625,8 +625,8 @@ waypoints:
     type: tail
     pose:
       position:
-        x: 64
-        y: -21.3
+        x: 62
+        y: -21.2
         z: 0
       orientation:
         x: 0
@@ -639,7 +639,7 @@ waypoints:
     pose:
       position:
         x: 64.04
-        y: -21.5
+        y: -22.9
         z: 0
       orientation:
         x: 0
@@ -652,8 +652,8 @@ waypoints:
     type: tail
     pose:
       position:
-        x: 63
-        y: -21.3
+        x: 62
+        y: -21.2
         z: 0
       orientation:
         x: 0
