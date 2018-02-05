@@ -85,12 +85,12 @@ waypoints:
     call: line_center_2700_cb
     frame_id: map
     iter: 5
-    iter_span: 1.805
+    iter_span: 1.81
     type: workstation
     pose:
       position:
         x: 32.99
-        y: -1.08
+        y: -1.09
         z: 0
       orientation:
         x: 0
@@ -104,7 +104,7 @@ waypoints:
     pose:
       position:
         x: 24.24
-        y: -1
+        y: -1.08
         z: 0
       orientation:
         x: 0
@@ -118,7 +118,7 @@ waypoints:
     pose:
       position:
         x: 22.84
-        y: -1
+        y: -1.08
         z: 0
       orientation:
         x: 0
@@ -132,7 +132,7 @@ waypoints:
     pose:
       position:
         x: 21.48
-        y: -1
+        y: -1.08
         z: 0
       orientation:
         x: 0
@@ -660,7 +660,7 @@ waypoints:
         y: 0
         z: 0
         w: 1
-  - name: 炉底_A
+  - name: 炉底人工配盘区_A
     call: line_center_3000_cb
     frame_id: map
     iter: 7
@@ -676,7 +676,7 @@ waypoints:
         y: 0
         z: -0.7071
         w: 0.7071
-  - name: 炉底_B
+  - name: 炉底人工配盘区_B
     call: line_center_2500_cb
     frame_id: map
     iter: 2
@@ -797,6 +797,20 @@ waypoints:
     type: workstation
     pose:
       position:
+        x: 51
+        y: -29
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: 炉体1_A_8_tail
+    frame_id: map
+    goal_timeout: 45.0
+    type: tail
+    pose:
+      position:
         x: 53.18
         y: -26.75
         z: 0
@@ -827,7 +841,7 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 59.26
+        x: 59.3
         y: -31.98
         z: 0
       orientation:
@@ -841,8 +855,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 57.75
-        y: -31.98
+        x: 57.8
+        y: -32
         z: 0
       orientation:
         x: 0
@@ -855,7 +869,7 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 56.3
+        x: 56.32
         y: -32
         z: 0
       orientation:
@@ -883,6 +897,20 @@ waypoints:
     type: workstation
     pose:
       position:
+        x: 48.2
+        y: -29
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: 炉体1_B_8_tail
+    frame_id: map
+    goal_timeout: 45.0
+    type: tail
+    pose:
+      position:
         x: 53.3
         y: -32.1
         z: 0
@@ -897,8 +925,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 64.15
-        y: -35.4
+        x: 64.2
+        y: -35.55
         z: 0
       orientation:
         x: 0
@@ -910,7 +938,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 64.15
+        x: 64.2
         y: -39.2
         z: 0
       orientation:
@@ -938,8 +966,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 62.81
-        y: -35.6
+        x: 62.55
+        y: -35.55
         z: 0
       orientation:
         x: 0
@@ -952,8 +980,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 61.33
-        y: -35.6
+        x: 61.14
+        y: -35.55
         z: 0
       orientation:
         x: 0
@@ -966,8 +994,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 59.49
-        y: -35.6
+        x: 59.32
+        y: -35.55
         z: 0
       orientation:
         x: 0
@@ -981,7 +1009,7 @@ waypoints:
     pose:
       position:
         x: 57.86
-        y: -35.6
+        y: -35.55
         z: 0
       orientation:
         x: 0
@@ -994,8 +1022,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 56.44
-        y: -35.6
+        x: 56.32
+        y: -35.55
         z: 0
       orientation:
         x: 0
@@ -1008,8 +1036,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 54.9
-        y: -35.6
+        x: 54.84
+        y: -35.55
         z: 0
       orientation:
         x: 0
@@ -1022,8 +1050,22 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 53.5
-        y: -35.6
+        x: 51.3
+        y: -38.2
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: 炉体2_A_8_tail
+    frame_id: map
+    goal_timeout: 45.0
+    type: tail
+    pose:
+      position:
+        x: 53.36
+        y: -35.55
         z: 0
       orientation:
         x: 0
@@ -1037,7 +1079,7 @@ waypoints:
     pose:
       position:
         x: 64.3
-        y: -40.8
+        y: -40.63
         z: 0
       orientation:
         x: 0
@@ -1051,7 +1093,7 @@ waypoints:
     pose:
       position:
         x: 62.81
-        y: -40.8
+        y: -40.65
         z: 0
       orientation:
         x: 0
@@ -1065,7 +1107,7 @@ waypoints:
     pose:
       position:
         x: 61.33
-        y: -40.8
+        y: -40.67
         z: 0
       orientation:
         x: 0
@@ -1078,8 +1120,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 59.49
-        y: -40.8
+        x: 59.5
+        y: -40.75
         z: 0
       orientation:
         x: 0
@@ -1092,8 +1134,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 57.86
-        y: -40.8
+        x: 57.9
+        y: -40.76
         z: 0
       orientation:
         x: 0
@@ -1107,7 +1149,7 @@ waypoints:
     pose:
       position:
         x: 56.44
-        y: -40.8
+        y: -40.77
         z: 0
       orientation:
         x: 0
@@ -1120,8 +1162,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 54.9
-        y: -40.8
+        x: 54.96
+        y: -40.80
         z: 0
       orientation:
         x: 0
@@ -1134,8 +1176,22 @@ waypoints:
     type: workstation
     pose:
       position:
+        x: 51.3
+        y: -38.2
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: 炉体2_B_8_tail
+    frame_id: map
+    goal_timeout: 45.0
+    type: tail
+    pose:
+      position:
         x: 53.5
-        y: -40.8
+        y: -40.83
         z: 0
       orientation:
         x: 0
@@ -1443,11 +1499,9 @@ trajectories:
   - name: tail_up_cb
     waypoints:
     - tail_up
-    - lift_up_wp
   - name: tail_down_cb
     waypoints:
     - tail_down
-    - lift_down_wp
   - name: line_center_cb
     waypoints:
     - light_green
@@ -1652,5 +1706,53 @@ trajectories:
     waypoints:
     - light_yellow
     - 中间缓存区_C_11_tail
+    - lift_up_wp
+    - light_off
+  - name: 炉体1_A_8_unloading
+    waypoints:
+    - light_yellow
+    - 炉体1_A_8_tail
+    - lift_down_wp
+    - light_off
+  - name: 炉体1_A_8_loading
+    waypoints:
+    - light_yellow
+    - 炉体1_A_8_tail
+    - lift_up_wp
+    - light_off
+  - name: 炉体1_B_8_unloading
+    waypoints:
+    - light_yellow
+    - 炉体1_B_8_tail
+    - lift_down_wp
+    - light_off
+  - name: 炉体1_B_8_loading
+    waypoints:
+    - light_yellow
+    - 炉体1_B_8_tail
+    - lift_up_wp
+    - light_off
+  - name: 炉体2_A_8_unloading
+    waypoints:
+    - light_yellow
+    - 炉体2_A_8_tail
+    - lift_down_wp
+    - light_off
+  - name: 炉体2_A_8_loading
+    waypoints:
+    - light_yellow
+    - 炉体2_A_8_tail
+    - lift_up_wp
+    - light_off
+  - name: 炉体2_B_8_unloading
+    waypoints:
+    - light_yellow
+    - 炉体2_B_8_tail
+    - lift_down_wp
+    - light_off
+  - name: 炉体2_B_8_loading
+    waypoints:
+    - light_yellow
+    - 炉体2_B_8_tail
     - lift_up_wp
     - light_off
