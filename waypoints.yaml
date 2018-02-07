@@ -63,13 +63,13 @@ waypoints:
     pose:
       position:
         x: 8.2
-        y: 2.96342
+        y: 3
         z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.703605
-        w: 0.710591
+        z: -0.7071
+        w: 0.7071
   - name: line_B_backup
     failure_mode: LOOP
     frame_id: map
@@ -105,13 +105,13 @@ waypoints:
     pose:
       position:
         x: 16.85
-        y: -0.254594
+        y: -0.3
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.703605
-        w: 0.710591
+        z: 0.7071
+        w: 0.7071
   - name: origin
     failure_mode: LOOP
     frame_id: map
@@ -164,7 +164,7 @@ waypoints:
     pose:
       position:
         x: 28
-        y: 2.2
+        y: 2
         z: 0
       orientation:
         x: 0
@@ -172,14 +172,14 @@ waypoints:
         z: 1
         w: 0
   - name: origin_right
-    close_enough: 1.0
+    close_enough: 2.0
     failure_mode: LOOP
     frame_id: map
     type: goal
     pose:
       position:
-        x: 32.5
-        y: 2.2
+        x: 33.5
+        y: 2
         z: 0
       orientation:
         x: 0
@@ -225,7 +225,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 1.8
+        x: 1.7
         y: 1
         z: 0
       orientation:
@@ -240,7 +240,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 1.6
+        x: 1.7
         y: -1
         z: 0
       orientation:
@@ -255,7 +255,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 0.5
+        x: 0.8
         y: 0
         z: 0
       orientation:
@@ -451,7 +451,7 @@ waypoints:
     type: mark
     pose:
       position:
-        x: 30.64
+        x: 30.67
         y: 4.72
         z: 0
       orientation:
@@ -467,7 +467,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 30.64
+        x: 30.67
         y: 4.72
         z: 0
       orientation:
@@ -542,7 +542,7 @@ waypoints:
         z: -0.714788
         w: 0.699347
   - name: cache_A_2
-    call: test_A_2
+    call: go_A_2_cb
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
@@ -560,7 +560,7 @@ waypoints:
         z: -0.7113
         w: 0.7029
   - name: cache_A_2_start
-    close_enough: 0
+    close_enough: 0.0
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
@@ -800,7 +800,7 @@ trajectories:
     waypoints:
     - ctrl_nav_wp
     - origin_front
-    - origin_left
+    - origin_right
     - cache_B_1_start
     - line_down
     - lift_up_wp
