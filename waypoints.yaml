@@ -57,8 +57,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 15.01
-        y: -0.94
+        x: 14.92
+        y: -0.98
         z: 0
       orientation:
         x: 0
@@ -74,7 +74,7 @@ waypoints:
     pose:
       position:
         x: 11.36
-        y: -0.94
+        y: -0.95
         z: 0
       orientation:
         x: 0
@@ -458,8 +458,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 65.29
-        y: -11.68
+        x: 65.33
+        y: -11.93
         z: 0
       orientation:
         x: 0
@@ -471,7 +471,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 65.29
+        x: 65.33
         y: -15.9
         z: 0
       orientation:
@@ -481,12 +481,12 @@ waypoints:
         w: 0.7071
   - name: 最终缓存区_A_1_tail_out
     frame_id: map
-    goal_timeout: 10.0
+    goal_timeout: 25.0
     type: tail
     pose:
       position:
-        x: 63
-        y: -14.2
+        x: 61
+        y: -14.8
         z: 0
       orientation:
         x: 0
@@ -508,12 +508,12 @@ waypoints:
         w: 0.7071
   - name: 最终缓存区_A_2_tail_out
     frame_id: map
-    goal_timeout: 13.0
+    goal_timeout: 25.0
     type: tail
     pose:
       position:
-        x: 63
-        y: -14.2
+        x: 61
+        y: -14.8
         z: 0
       orientation:
         x: 0
@@ -524,12 +524,12 @@ waypoints:
     call: line_center_3000_cb
     frame_id: map
     iter: 20
-    iter_span: 1.41
+    iter_span: 1.42
     type: workstation
     pose:
       position:
-        x: 65.4
-        y: -18.04
+        x: 65.39
+        y: -18.37
         z: 0
       orientation:
         x: 0
@@ -556,7 +556,7 @@ waypoints:
     pose:
       position:
         x: 63
-        y: -16
+        y: -15.5
         z: 0
       orientation:
         x: 0
@@ -582,8 +582,8 @@ waypoints:
     type: tail
     pose:
       position:
-        x: 63.32
-        y: -15.95
+        x: 63
+        y: -15.5
         z: 0
       orientation:
         x: 0
