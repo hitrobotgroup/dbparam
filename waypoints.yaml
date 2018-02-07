@@ -7,14 +7,14 @@ waypoints:
     home: origin
     type: initial_pose
   - name: l2c_mid
-    close_enough: 1.0
+    close_enough: 2.25
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
     type: goal
     pose:
       position:
-        x: 16
+        x: 17
         y: 1.9
         z: 0
       orientation:
@@ -23,7 +23,7 @@ waypoints:
         z: 0
         w: 1
   - name: l2c_door
-    close_enough: 1.2
+    close_enough: 2.2
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
@@ -31,8 +31,8 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 28
-        y: 2.1
+        x: 29
+        y: 1.9
         z: 0
       orientation:
         x: 0
@@ -40,7 +40,7 @@ waypoints:
         z: 0
         w: 1
   - name: c2l_door
-    close_enough: 1.0
+    close_enough: 2.25
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
@@ -48,15 +48,15 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 25
-        y: 2.1
+        x: 24
+        y: 1.9
         z: 0
       orientation:
         x: 0
         y: 0
         z: 1
         w: 0
-  - name: line_A
+  - name: line_B
     failure_mode: LOOP
     frame_id: map
     type: mark
@@ -68,9 +68,9 @@ waypoints:
       orientation:
         x: 0
         y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: line_A_backup
+        z: -0.703605
+        w: 0.710591
+  - name: line_B_backup
     failure_mode: LOOP
     frame_id: map
     type: mark
@@ -82,9 +82,9 @@ waypoints:
       orientation:
         x: 0
         y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: line_B
+        z: -0.703605
+        w: 0.710591
+  - name: line_A
     failure_mode: LOOP
     frame_id: map
     type: mark
@@ -98,7 +98,7 @@ waypoints:
         y: 0
         z: -0.7071
         w: 0.7071
-  - name: line_B_backup
+  - name: line_A_backup
     failure_mode: LOOP
     frame_id: map
     type: mark
@@ -110,8 +110,8 @@ waypoints:
       orientation:
         x: 0
         y: 0
-        z: 0.7071
-        w: 0.7071
+        z: 0.703605
+        w: 0.710591
   - name: origin
     failure_mode: LOOP
     frame_id: map
@@ -124,23 +124,23 @@ waypoints:
       orientation:
         x: 0
         y: 0
-        z: 0.7071
-        w: 0.7071
+        z: 0.703605
+        w: 0.710591
   - name: origin_front
-    close_enough: 1.0
+    close_enough: 3.75
     failure_mode: LOOP
     frame_id: map
     type: goal
     pose:
       position:
         x: 30.91
-        y: 2
+        y: 4
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.7071
-        w: 0.7071
+        z: 0.703605
+        w: 0.710591
   - name: origin_front2
     close_enough: 1.0
     failure_mode: LOOP
@@ -157,14 +157,14 @@ waypoints:
         z: 0.7071
         w: 0.7071
   - name: origin_left
-    close_enough: 1.0
+    close_enough: 2.0
     failure_mode: LOOP
     frame_id: map
     type: goal
     pose:
       position:
-        x: 28.91
-        y: 2
+        x: 28
+        y: 2.2
         z: 0
       orientation:
         x: 0
@@ -178,143 +178,14 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 32.91
-        y: 2
+        x: 32.5
+        y: 2.2
         z: 0
       orientation:
         x: 0
         y: 0
         z: 0
         w: 1
-  - name: cache_A_1_front
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 34.2
-        y: 5
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: cache_A_2_front
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 32.8
-        y: 5
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: cache_B_1_front
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 29.3972
-        y: 5
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: cache_B_2_front
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    type: goal
-    pose:
-      position:
-        x: 28.2887
-        y: 4
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: cache_A_1
-    call: go_A_1_cb
-    failure_mode: LOOP
-    frame_id: map
-    iter: 10
-    iter_x: -1
-    type: mark
-    pose:
-      position:
-        x: 34.2
-        y: 6.22
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: cache_A_2
-    call: go_A_2_cb
-    failure_mode: LOOP
-    frame_id: map
-    iter: 10
-    iter_x: -1
-    type: mark
-    pose:
-      position:
-        x: 32.8
-        y: 6.22
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.7071
-        w: 0.7071
-  - name: cache_B_1
-    call: go_B_1_cb
-    failure_mode: LOOP
-    frame_id: map
-    iter: 10
-    iter_x: -1
-    type: mark
-    pose:
-      position:
-        x: 29.3972
-        y: 6.22
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.706721
-        w: 0.707491
-  - name: cache_B_2
-    call: go_B_2_cb
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    iter: 10
-    iter_x: -1
-    type: mark
-    pose:
-      position:
-        x: 28.2887
-        y: 6.22
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.706894
-        w: 0.707319
   - name: line_down
     failure_mode: LOOP
     frame_id: map
@@ -369,7 +240,7 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 1.8
+        x: 1.6
         y: -1
         z: 0
       orientation:
@@ -430,6 +301,8 @@ waypoints:
     plc_io: 32319
     plc_io_cmd: off
     type: plc_io
+  - name: pub_light
+    type: publisher
   - name: lift_up
     plc_io: 32
     plc_io_cmd: on
@@ -463,42 +336,30 @@ waypoints:
   - name: go_B_wp
     failure_mode: go_B_cb
     type: call
-  - name: test_cache_B_2
-    call: test_go_B_2_cb
-    failure_mode: LOOP
-    frame_id: map
-    goal_timeout: 0
-    iter: 10
-    iter_x: -1
-    type: mark
-    pose:
-      position:
-        x: 28.036
-        y: 4.725
-        z: 0
-      orientation:
-        x: 0
-        y: 0
-        z: -0.708203
-        w: 0.706009
-  - name: B_2_front
-    close_enough: 0.5
+  - name: ctrl_nav_wp
+    failure_mode: ctrl_nav_cb
+    type: call
+  - name: ctrl_straight_wp
+    failure_mode: ctrl_straight_cb
+    type: call
+  - name: cache_B_3_front
+    close_enough: 1.0
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
     type: goal
     pose:
       position:
-        x: 28.036
-        y: 4.2
+        x: 28
+        y: 3.5
         z: 0
       orientation:
         x: 0
         y: 0
         z: -0.708203
         w: 0.706009
-  - name: B_2_rotate
-    close_enough: 0.5
+  - name: cache_B_3_rotate
+    close_enough: 0.85
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
@@ -513,25 +374,42 @@ waypoints:
         y: 0
         z: -0.362783
         w: 0.931874
-  - name: test_cache_B_1
-    call: test_go_B_1_cb
+  - name: cache_B_2
+    call: go_B_2_cb
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
     iter: 10
-    iter_x: -1
+    iter_x: -0.8589
+    iter_y: 0
     type: mark
     pose:
       position:
-        x: 29.3627
-        y: 4.71
+        x: 29.35
+        y: 4.721
         z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.721756
-        w: 0.692148
-  - name: B_1_rotate
+        z: -0.709846
+        w: 0.704357
+  - name: cache_B_2_start
+    close_enough: 0.0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 29.35
+        y: 4.721
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.70206
+        w: 0.712115
+  - name: B_2_rotate
     close_enough: 1.0
     failure_mode: LOOP
     frame_id: map
@@ -547,23 +425,41 @@ waypoints:
         y: 0
         z: -0.362783
         w: 0.931874
-  - name: B_1_front
-    close_enough: 1.0
+  - name: cache_B_2_front
+    close_enough: 1.5
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
     type: goal
     pose:
       position:
-        x: 29.3627
-        y: 2.71
+        x: 29.25
+        y: 2.4
         z: 0
       orientation:
         x: 0
         y: 0
         z: -0.721756
         w: 0.692148
-  - name: test_cache_A_3
+  - name: cache_B_1
+    call: go_B_1_cb
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    iter: 10
+    iter_x: -0.85
+    type: mark
+    pose:
+      position:
+        x: 30.64
+        y: 4.72
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.71211
+        w: 0.702067
+  - name: cache_B_1_start
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
@@ -571,15 +467,49 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 30.6672
-        y: 4.77142
-        z: -1.38778e-17
+        x: 30.64
+        y: 4.72
+        z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.711187
-        w: 0.703003
-  - name: test_cache_A_1
+        z: -0.71004
+        w: 0.70415
+  - name: cache_B_1_front
+    close_enough: 1.5
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 30.6
+        y: 2.4
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.71004
+        w: 0.70415
+  - name: cache_A_1
+    call: go_A_1_cb
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    iter: 10
+    iter_x: -0.8476
+    type: mark
+    pose:
+      position:
+        x: 33.25
+        y: 4.7
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.711404
+        w: 0.702783
+  - name: cache_A_1_start
     close_enough: 0
     failure_mode: LOOP
     frame_id: map
@@ -587,16 +517,82 @@ waypoints:
     type: goal
     pose:
       position:
-        x: 33.2402
-        y: 4.70804
-        z: -4.16334e-17
+        x: 33.25
+        y: 4.7
+        z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.713073
-        w: 0.70109
-  - name: test_cache_A_2
+        z: -0.714788
+        w: 0.699347
+  - name: cache_A_1_front
+    close_enough: 1.5
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 33.21
+        y: 2.4
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.714788
+        w: 0.699347
+  - name: cache_A_2
+    call: test_A_2
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    iter: 10
+    iter_x: -0.85
+    type: mark
+    pose:
+      position:
+        x: 31.95
+        y: 4.72
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7113
+        w: 0.7029
+  - name: cache_A_2_start
     close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 31.95
+        y: 4.72
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.704703
+        w: 0.709502
+  - name: cache_A_2_front
+    close_enough: 1.5
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 31.9
+        y: 2.4
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.704703
+        w: 0.709502
+  - name: test_A_2_front
+    close_enough: 1.5
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
@@ -604,13 +600,109 @@ waypoints:
     pose:
       position:
         x: 31.9667
-        y: 4.70597
-        z: 6.93889e-18
+        y: 2.2
+        z: 0
       orientation:
         x: 0
         y: 0
         z: -0.720432
         w: 0.693526
+  - name: testtest
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 29.4218
+        y: 9.02322
+        z: -2.08167e-17
+      orientation:
+        x: 0
+        y: 0
+        z: -0.709449
+        w: 0.704757
+  - name: cache_B_3_end
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 28.1251
+        y: 12.4099
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.722513
+        w: 0.691357
+  - name: cache_B_3_start
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 28.0444
+        y: 4.78
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.709887
+        w: 0.704316
+  - name: cache_B_3
+    call: go_B_3_cb
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    iter: 10
+    iter_x: -0.85
+    type: mark
+    pose:
+      position:
+        x: 28.0444
+        y: 4.78
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.710827
+        w: 0.703366
+  - name: goal_ctrl_0.2
+    node: move_base/BZPlannerROS
+    param: goal_ctrl
+    type: dynparam
+    value: 0.25
+  - name: goal_ctrl_0.3
+    node: move_base/BZPlannerROS
+    param: goal_ctrl
+    type: dynparam
+    value: 0.3
+  - name: goal_ctrl_0.5
+    node: move_base/BZPlannerROS
+    param: goal_ctrl
+    type: dynparam
+    value: 0.5
+  - name: current_ctrl_0.3
+    node: move_base/BZPlannerROS
+    param: current_ctrl
+    type: dynparam
+    value: 0.3
+  - name: current_ctrl_0.2
+    node: move_base/BZPlannerROS
+    param: current_ctrl
+    type: dynparam
+    value: 0.25
+  - name: timer1s
+    close_enough: 0
+    failure_mode: LOOP
+    goal_timeout: 1.0
+    type: timer
 trajectories:
   - name: lift_up_cb
     waypoints:
@@ -625,15 +717,28 @@ trajectories:
   - name: init_cb
     waypoints:
     - init_pose
+    - pub_light
     - light_green
   - name: power_off
     waypoints:
+    - light_yellow
     - set_power_off
     - set_shutdown
   - name: go_A_cb
     waypoints:
     - c2l_door
-    - line_A
+    - line_A_backup
+    - line_left
+    - line_down
+    - lift_down_wp
+    - line_front
+    - l2c_door
+    - origin_right
+    - origin
+  - name: go_B_cb
+    waypoints:
+    - c2l_door
+    - line_B
     - line_right
     - line_down
     - lift_down_wp
@@ -642,67 +747,94 @@ trajectories:
     - l2c_door
     - origin_right
     - origin
-  - name: go_A_1_cb
+  - name: go_B_3_cb
     waypoints:
-    - origin_front
-    - origin_left
-    - line_auto
-    - line_down
-    - lift_up_wp
-    - cache_A_1_front
-    - go_A_wp
-  - name: go_A_2_cb
-    waypoints:
-    - origin_front
-    - origin_left
-    - line_auto
-    - line_down
-    - lift_up_wp
-    - cache_A_2_front
-    - go_A_wp
-  - name: go_B_cb
-    waypoints:
-    - c2l_door
-    - line_B_backup
-    - line_left
-    - line_down
-    - lift_down_wp
-    - line_front
-    - l2c_door
-    - origin_right
-    - origin
-  - name: go_B_1_cb
-    waypoints:
+    - ctrl_nav_wp
     - origin_front
     - origin_right
-    - line_auto
+    - cache_B_3_start
     - line_down
     - lift_up_wp
-    - cache_B_1_front
+    - ctrl_straight_wp
+    - cache_B_3_front
+    - ctrl_nav_wp
+    - cache_B_3_rotate
     - go_B_wp
   - name: go_B_2_cb
     waypoints:
+    - ctrl_nav_wp
     - origin_front
     - origin_right
-    - line_auto
+    - cache_B_2_start
     - line_down
     - lift_up_wp
+    - ctrl_straight_wp
     - cache_B_2_front
+    - ctrl_nav_wp
     - go_B_wp
-  - name: test_go_B_2_cb
+  - name: go_A_1_cb
     waypoints:
+    - ctrl_nav_wp
     - origin_front
-    - origin_right
+    - origin_left
+    - cache_A_1_start
     - line_down
     - lift_up_wp
-    - B_2_front
-    - B_2_rotate
-    - go_B_wp
-  - name: test_go_B_1_cb
+    - ctrl_straight_wp
+    - cache_A_1_front
+    - ctrl_nav_wp
+    - go_A_wp
+  - name: go_A_2_cb
     waypoints:
+    - ctrl_nav_wp
     - origin_front
-    - origin_right
+    - origin_left
+    - cache_A_2_start
     - line_down
     - lift_up_wp
-    - B_1_front
+    - ctrl_straight_wp
+    - cache_A_2_front
+    - ctrl_nav_wp
+    - go_A_wp
+  - name: go_B_1_cb
+    waypoints:
+    - ctrl_nav_wp
+    - origin_front
+    - origin_left
+    - cache_B_1_start
+    - line_down
+    - lift_up_wp
+    - ctrl_straight_wp
+    - cache_B_1_front
+    - ctrl_nav_wp
     - go_B_wp
+  - name: test
+    waypoints:
+    - cache_B_2_start
+    - line_down
+  - name: test_A_2
+    waypoints:
+    - origin_front
+    - origin_left
+    - cache_A_2_start
+    - line_down
+  - name: test_B_1
+    waypoints:
+    - cache_B_1_start
+    - line_down
+  - name: test_A_1
+    waypoints:
+    - cache_A_1_start
+    - line_down
+  - name: test_B_3
+    waypoints:
+    - cache_B_3_start
+    - line_down
+  - name: ctrl_nav_cb
+    waypoints:
+    - goal_ctrl_0.5
+    - current_ctrl_0.3
+  - name: ctrl_straight_cb
+    waypoints:
+    - goal_ctrl_0.2
+    - current_ctrl_0.2
