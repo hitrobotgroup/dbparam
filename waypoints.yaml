@@ -57,7 +57,7 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 14.92
+        x: 14.99
         y: -0.98
         z: 0
       orientation:
@@ -422,11 +422,11 @@ waypoints:
     call: line_center_4600_cb
     frame_id: map
     iter: 2
-    iter_span: 1.7
+    iter_span: 1.5
     type: workstation
     pose:
       position:
-        x: 47.74
+        x: 47.54
         y: -2.92
         z: 0
       orientation:
@@ -454,18 +454,18 @@ waypoints:
     call: line_center_3000_cb
     frame_id: map
     iter: 20
-    iter_span: -1.41
+    iter_span: -1.403
     type: workstation
     pose:
       position:
-        x: 65.33
-        y: -11.93
+        x: 65.25
+        y: -11.68
         z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.7071
-        w: 0.7071
+        z: -0.70277
+        w: 0.71141
   - name: 最终缓存区_A_1_head
     frame_id: map
     type: goal
@@ -524,18 +524,18 @@ waypoints:
     call: line_center_3000_cb
     frame_id: map
     iter: 20
-    iter_span: 1.42
+    iter_span: 1.415
     type: workstation
     pose:
       position:
         x: 65.39
-        y: -18.37
+        y: -18.05
         z: 0
       orientation:
         x: 0
         y: 0
-        z: 0.7071
-        w: 0.7071
+        z: 0.71167
+        w: 0.70249
   - name: 最终缓存区_B_1_head
     frame_id: map
     type: goal
@@ -594,18 +594,18 @@ waypoints:
     call: line_center_3000_cb
     frame_id: map
     iter: 20
-    iter_span: -1.41
+    iter_span: -1.40
     type: workstation
     pose:
       position:
-        x: 65.42
-        y: -18.78
+        x: 65.39
+        y: -18.75
         z: 0
       orientation:
         x: 0
         y: 0
-        z: -0.7071
-        w: 0.7071
+        z: -0.700261
+        w: 0.713887
   - name: 最终缓存区_C_1_head
     frame_id: map
     type: goal
@@ -663,13 +663,69 @@ waypoints:
   - name: 炉底人工配盘区_A
     call: line_center_3000_cb
     frame_id: map
-    iter: 7
-    iter_span: -1.41
+    iter: 5
+    iter_span: -1.402
     type: workstation
     pose:
       position:
         x: 37.09
-        y: -11.68
+        y: -11.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 炉底人工配盘区_A_6
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 29
+        y: -12.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.947262
+        w: -0.320459
+  - name: 炉底人工配盘区_A_6_tail
+    frame_id: map
+    goal_timeout: 60.0
+    type: tail
+    pose:
+      position:
+        x: 30.08
+        y: -11.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 炉底人工配盘区_A_7
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 29
+        y: -12.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.947262
+        w: -0.320459
+  - name: 炉底人工配盘区_A_7_tail
+    frame_id: map
+    goal_timeout: 60.0
+    type: tail
+    pose:
+      position:
+        x: 28.678
+        y: -11.5
         z: 0
       orientation:
         x: 0
@@ -1248,6 +1304,9 @@ waypoints:
   - name: wait6s
     goal_timeout: 6
     type: timer
+  - name: wait7s
+    goal_timeout: 7
+    type: timer
   - name: tail_up
     frame_id: map
     goal_timeout: 45.0
@@ -1494,7 +1553,7 @@ trajectories:
   - name: lift_down_cb
     waypoints:
     - lift_down
-    - wait6s
+    - wait7s
     - lift_hang
   - name: tail_up_cb
     waypoints:
@@ -1756,5 +1815,29 @@ trajectories:
     waypoints:
     - light_yellow
     - 炉体2_B_8_tail
+    - lift_up_wp
+    - light_off
+  - name: 炉底人工配盘区_A_6_unloading
+    waypoints:
+    - light_yellow
+    - 炉底人工配盘区_A_6_tail
+    - lift_down_wp
+    - light_off
+  - name: 炉底人工配盘区_A_6_loading
+    waypoints:
+    - light_yellow
+    - 炉底人工配盘区_A_6_tail
+    - lift_up_wp
+    - light_off
+  - name: 炉底人工配盘区_A_7_unloading
+    waypoints:
+    - light_yellow
+    - 炉底人工配盘区_A_7_tail
+    - lift_down_wp
+    - light_off
+  - name: 炉底人工配盘区_A_7_loading
+    waypoints:
+    - light_yellow
+    - 炉底人工配盘区_A_7_tail
     - lift_up_wp
     - light_off
