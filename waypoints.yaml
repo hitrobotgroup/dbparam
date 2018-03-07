@@ -336,6 +336,9 @@ waypoints:
   - name: go_B_wp
     failure_mode: go_B_cb
     type: call
+  - name: go_origin_wp
+    failure_mode: go_origin_cb
+    type: call
   - name: ctrl_nav_wp
     failure_mode: ctrl_nav_cb
     type: call
@@ -376,6 +379,25 @@ waypoints:
         w: 0.931874
   - name: cache_B_2
     call: go_B_2_cb
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    iter: 10
+    iter_x: -0.8589
+    iter_y: 0
+    type: mark
+    pose:
+      position:
+        x: 29.35
+        y: 4.721
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.709846
+        w: 0.704357
+  - name: continue_cache_B_2
+    call: continue_B_2_cb
     failure_mode: LOOP
     frame_id: map
     goal_timeout: 0
@@ -452,6 +474,24 @@ waypoints:
     pose:
       position:
         x: 30.67
+        y: 4.72
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.71211
+        w: 0.702067
+  - name: continue_cache_B_1
+    call: continue_B_1_cb
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    iter: 10
+    iter_x: -0.85
+    type: mark
+    pose:
+      position:
+        x: 30.64
         y: 4.72
         z: 0
       orientation:
@@ -673,6 +713,24 @@ waypoints:
         y: 0
         z: -0.710827
         w: 0.703366
+  - name: continue_cache_B_3
+    call: continue_B_3_cb
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    iter: 10
+    iter_x: -0.85
+    type: mark
+    pose:
+      position:
+        x: 28.0444
+        y: 4.78
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.710827
+        w: 0.703366
   - name: goal_ctrl_0.2
     node: move_base/BZPlannerROS
     param: goal_ctrl
@@ -719,6 +777,7 @@ trajectories:
     - init_pose
     - pub_light
     - light_green
+    - ctrl_nav_wp
   - name: power_off
     waypoints:
     - light_yellow
@@ -733,8 +792,6 @@ trajectories:
     - lift_down_wp
     - line_front
     - l2c_door
-    - origin_right
-    - origin
   - name: go_B_cb
     waypoints:
     - c2l_door
@@ -745,11 +802,8 @@ trajectories:
     - line_front
     - l2c_mid
     - l2c_door
-    - origin_right
-    - origin
   - name: go_B_3_cb
     waypoints:
-    - ctrl_nav_wp
     - origin_front
     - origin_right
     - cache_B_3_start
@@ -762,8 +816,28 @@ trajectories:
     - go_B_wp
   - name: go_B_2_cb
     waypoints:
-    - ctrl_nav_wp
     - origin_front
+    - origin_right
+    - cache_B_2_start
+    - line_down
+    - lift_up_wp
+    - ctrl_straight_wp
+    - cache_B_2_front
+    - ctrl_nav_wp
+    - go_B_wp
+  - name: continue_B_3_cb
+    waypoints:
+    - origin_right
+    - cache_B_3_start
+    - line_down
+    - lift_up_wp
+    - ctrl_straight_wp
+    - cache_B_3_front
+    - ctrl_nav_wp
+    - cache_B_3_rotate
+    - go_B_wp
+  - name: continue_B_2_cb
+    waypoints:
     - origin_right
     - cache_B_2_start
     - line_down
@@ -798,9 +872,10 @@ trajectories:
     - go_A_wp
   - name: go_B_1_cb
     waypoints:
-    - ctrl_nav_wp
     - origin_front
     - origin_right
+<<<<<<< HEAD
+=======
     - cache_B_1_start
     - line_down
     - lift_up_wp
@@ -808,6 +883,21 @@ trajectories:
     - cache_B_1_front
     - ctrl_nav_wp
     - go_B_wp
+  - name: continue_B_1_cb
+    waypoints:
+    - origin_right
+>>>>>>> b6a9c9f9c5bc9d197e673c474fcd16d74677e0f7
+    - cache_B_1_start
+    - line_down
+    - lift_up_wp
+    - ctrl_straight_wp
+    - cache_B_1_front
+    - ctrl_nav_wp
+    - go_B_wp
+  - name: go_origin_cb
+    waypoints:
+    - origin_right
+    - origin
   - name: test
     waypoints:
     - cache_B_2_start
