@@ -58,7 +58,7 @@ waypoints:
     pose:
       position:
         x: 14.99
-        y: -0.98
+        y: -0.94
         z: 0
       orientation:
         x: 0
@@ -74,7 +74,7 @@ waypoints:
     pose:
       position:
         x: 11.36
-        y: -0.95
+        y: -0.94
         z: 0
       orientation:
         x: 0
@@ -90,7 +90,7 @@ waypoints:
     pose:
       position:
         x: 32.99
-        y: -1.09
+        y: -1.02
         z: 0
       orientation:
         x: 0
@@ -104,7 +104,7 @@ waypoints:
     pose:
       position:
         x: 24.24
-        y: -1.04
+        y: -0.99
         z: 0
       orientation:
         x: 0
@@ -118,7 +118,7 @@ waypoints:
     pose:
       position:
         x: 22.84
-        y: -1.04
+        y: -0.99
         z: 0
       orientation:
         x: 0
@@ -132,7 +132,7 @@ waypoints:
     pose:
       position:
         x: 21.48
-        y: -1.04
+        y: -0.99
         z: 0
       orientation:
         x: 0
@@ -1363,13 +1363,21 @@ waypoints:
     goal_timeout: 7
     type: timer
   - name: tail_up
+    angular_ratio: 5.0
     frame_id: map
     goal_timeout: 45.0
+    manual_comp: 0.00
     mark: true
+    max_bez_vel: 0.6
+    min_bez_vel: 0.2
     type: tail
+    vel_ratio: 0.2
+    x_tolerance: 0.03
+    y_tolerance: 0.03
+    yaw_tolerance: 0.05
     pose:
       position:
-        x: -0.05
+        x: -0.03
         y: 0
         z: 0
       orientation:
@@ -1378,10 +1386,18 @@ waypoints:
         z: 0
         w: 1
   - name: tail_down
+    angular_ratio: 5.0
     frame_id: map
     goal_timeout: 45.0
+    manual_comp: 0.00
     mark: true
+    max_bez_vel: 0.6
+    min_bez_vel: 0.2
     type: tail
+    vel_ratio: 0.2
+    x_tolerance: 0.03
+    y_tolerance: 0.03
+    yaw_tolerance: 0.05
     pose:
       position:
         x: 0
