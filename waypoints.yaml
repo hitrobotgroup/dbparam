@@ -662,12 +662,12 @@ waypoints:
     call: line_center_3000_cb
     frame_id: map
     iter: 20
-    iter_span: -1.405
+    iter_span: -1.407
     type: workstation
     pose:
       position:
         x: 65.22
-        y: -18.75
+        y: -18.85
         z: 0
       orientation:
         x: 0
@@ -1644,10 +1644,12 @@ trajectories:
     - line_center
   - name: lift_up_cb
     waypoints:
+    - lift_up
     - wait4s
     - lift_hang
   - name: lift_down_cb
     waypoints:
+    - lift_down
     - wait7s
     - lift_hang
   - name: tail_up_cb
