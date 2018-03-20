@@ -11,8 +11,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 5.476
-        y: -3.3
+        x: 5.55
+        y: -3.4
         z: 0
       orientation:
         x: 0
@@ -148,7 +148,7 @@ waypoints:
     pose:
       position:
         x: 32.98
-        y: -1.85
+        y: -1.82
         z: 0
       orientation:
         x: 0
@@ -189,7 +189,7 @@ waypoints:
     pose:
       position:
         x: 24.19
-        y: -1.85
+        y: -1.82
         z: 0
       orientation:
         x: 0
@@ -217,7 +217,7 @@ waypoints:
     pose:
       position:
         x: 22.79
-        y: -1.85
+        y: -1.82
         z: 0
       orientation:
         x: 0
@@ -245,7 +245,7 @@ waypoints:
     pose:
       position:
         x: 21.43
-        y: -1.85
+        y: -1.82
         z: 0
       orientation:
         x: 0
@@ -261,7 +261,7 @@ waypoints:
     pose:
       position:
         x: 35.44
-        y: -7.1
+        y: -7.16
         z: 0
       orientation:
         x: 0
@@ -288,7 +288,7 @@ waypoints:
     pose:
       position:
         x: 35.46
-        y: -7.1
+        y: -7.16
         z: 0
       orientation:
         x: 0
@@ -329,7 +329,7 @@ waypoints:
     pose:
       position:
         x: 21.44
-        y: -7.1
+        y: -7.16
         z: 0
       orientation:
         x: 0
@@ -357,7 +357,7 @@ waypoints:
     pose:
       position:
         x: 20.04
-        y: -7.1
+        y: -7.16
         z: 0
       orientation:
         x: 0
@@ -385,7 +385,7 @@ waypoints:
     pose:
       position:
         x: 18.63
-        y: -7.1
+        y: -7.16
         z: 0
       orientation:
         x: 0
@@ -1363,7 +1363,7 @@ waypoints:
     goal_timeout: 7
     type: timer
   - name: tail_up
-    angular_ratio: 5.0
+    angular_ratio: 4.0
     frame_id: map
     goal_timeout: 45.0
     manual_comp: 0.05
@@ -1386,7 +1386,7 @@ waypoints:
         z: 0
         w: 1
   - name: tail_down
-    angular_ratio: 5.0
+    angular_ratio: 4.0
     frame_id: map
     goal_timeout: 4500000.0
     manual_comp: 0.05
@@ -1398,6 +1398,25 @@ waypoints:
     x_tolerance: 0.03
     y_tolerance: 0.03
     yaw_tolerance: 0.05
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: tail_down_dock
+    angular_ratio: 2.0
+    frame_id: map
+    goal_timeout: 100.0
+    mark: true
+    max_bez_vel: 0.5
+    min_bez_vel: 0.2
+    type: tail
+    vel_ratio: 0.2
     pose:
       position:
         x: -0.02
@@ -1574,6 +1593,22 @@ waypoints:
         y: 0
         z: 0.7071
         w: 0.7071
+  - name: line_auto_4000
+    failure_mode: LOOP
+    frame_id: map
+    line: true
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 4
+        y: 4
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
   - name: lift_up_wp
     failure_mode: lift_up_cb
     type: call
@@ -1705,8 +1740,8 @@ trajectories:
   - name: line_auto_dock_cb
     waypoints:
     - light_yellow
-    - line_auto
-    - tail_down
+    - line_auto_4000
+    - tail_down_dock
     - light_off
   - name: line_auto_up_cb
     waypoints:
