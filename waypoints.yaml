@@ -58,7 +58,7 @@ waypoints:
     pose:
       position:
         x: 14.94
-        y: -1.07
+        y: -1.1
         z: 0
       orientation:
         x: 0
@@ -73,8 +73,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 11.25
-        y: -1.07
+        x: 11.3
+        y: -1.1
         z: 0
       orientation:
         x: 0
@@ -89,8 +89,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 32.94
-        y: -1.05
+        x: 32.9
+        y: -1.1
         z: 0
       orientation:
         x: 0
@@ -104,7 +104,7 @@ waypoints:
     pose:
       position:
         x: 24.19
-        y: -1.05
+        y: -1.1
         z: 0
       orientation:
         x: 0
@@ -118,7 +118,7 @@ waypoints:
     pose:
       position:
         x: 22.79
-        y: -1.05
+        y: -1.1
         z: 0
       orientation:
         x: 0
@@ -132,7 +132,7 @@ waypoints:
     pose:
       position:
         x: 21.39
-        y: -1.05
+        y: -1.1
         z: 0
       orientation:
         x: 0
@@ -400,7 +400,7 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 44.67
+        x: 44.72
         y: 4.5
         z: 0
       orientation:
@@ -430,7 +430,7 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 51.54
+        x: 51.85
         y: 4.46
         z: 0
       orientation:
@@ -463,7 +463,7 @@ waypoints:
     pose:
       position:
         x: 61.64
-        y: -2.52
+        y: -2.5
         z: 0
       orientation:
         x: 0
@@ -479,7 +479,7 @@ waypoints:
     pose:
       position:
         x: 54.87
-        y: -2.52
+        y: -2.47
         z: 0
       orientation:
         x: 0
@@ -522,7 +522,7 @@ waypoints:
     call: line_center_3000_cb
     frame_id: map
     iter: 20
-    iter_span: -1.405
+    iter_span: -1.406
     type: workstation
     pose:
       position:
@@ -592,7 +592,7 @@ waypoints:
     call: line_center_3000_cb
     frame_id: map
     iter: 20
-    iter_span: 1.404
+    iter_span: 1.405
     type: workstation
     pose:
       position:
