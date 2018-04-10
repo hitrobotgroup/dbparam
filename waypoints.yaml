@@ -438,15 +438,41 @@ waypoints:
         y: 0
         z: -0.7071
         w: 0.7071
-  - name: 临时停车位
+  - name: 临时停车位_1
     call: line_center_3000_cb
     frame_id: map
-    iter: 2
-    iter_span: -1.4
+    type: workstation
+    pose:
+      position:
+        x: 37
+        y: -18.39
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 临时停车位_2
+    call: line_center_3000_cb
+    frame_id: map
     type: workstation
     pose:
       position:
         x: 50
+        y: 5.4
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 临时停车位_3
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 48.6
         y: 5.4
         z: 0
       orientation:
