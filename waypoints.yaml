@@ -928,8 +928,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 48.372
-        y: -18.85
+        x: 48.22
+        y: -18.8
         z: 0
       orientation:
         x: 0
@@ -942,8 +942,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 46.968
-        y: -18.85
+        x: 46.8
+        y: -18.8
         z: 0
       orientation:
         x: 0
@@ -956,8 +956,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 45.564
-        y: -18.85
+        x: 45.4
+        y: -18.75
         z: 0
       orientation:
         x: 0
@@ -970,8 +970,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 44.16
-        y: -18.85
+        x: 44.15
+        y: -18.75
         z: 0
       orientation:
         x: 0
@@ -984,8 +984,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 42.756
-        y: -18.85
+        x: 42.72
+        y: -18.75
         z: 0
       orientation:
         x: 0
@@ -998,8 +998,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 41.352
-        y: -18.85
+        x: 41.3
+        y: -18.75
         z: 0
       orientation:
         x: 0
@@ -1012,8 +1012,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 39.948
-        y: -18.85
+        x: 39.9
+        y: -18.75
         z: 0
       orientation:
         x: 0
@@ -1026,8 +1026,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 38.544
-        y: -18.85
+        x: 38.3
+        y: -18.75
         z: 0
       orientation:
         x: 0
