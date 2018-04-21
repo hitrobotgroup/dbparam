@@ -90,7 +90,7 @@ waypoints:
     pose:
       position:
         x: 32.9
-        y: -1.1
+        y: -1.08
         z: 0
       orientation:
         x: 0
@@ -104,7 +104,7 @@ waypoints:
     pose:
       position:
         x: 24.19
-        y: -1.1
+        y: -1.08
         z: 0
       orientation:
         x: 0
@@ -118,7 +118,7 @@ waypoints:
     pose:
       position:
         x: 22.79
-        y: -1.1
+        y: -1.08
         z: 0
       orientation:
         x: 0
@@ -132,7 +132,7 @@ waypoints:
     pose:
       position:
         x: 21.39
-        y: -1.1
+        y: -1.08
         z: 0
       orientation:
         x: 0
@@ -148,7 +148,7 @@ waypoints:
     pose:
       position:
         x: 32.98
-        y: -1.82
+        y: -1.75
         z: 0
       orientation:
         x: 0
@@ -175,7 +175,7 @@ waypoints:
     pose:
       position:
         x: 31
-        y: -4.4
+        y: -4.1
         z: 0
       orientation:
         x: 0
@@ -188,8 +188,8 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 24.19
-        y: -1.82
+        x: 24.3
+        y: -1.8
         z: 0
       orientation:
         x: 0
@@ -217,7 +217,7 @@ waypoints:
     pose:
       position:
         x: 22.9
-        y: -1.82
+        y: -1.8
         z: 0
       orientation:
         x: 0
@@ -244,8 +244,8 @@ waypoints:
     type: tail
     pose:
       position:
-        x: 21.43
-        y: -1.82
+        x: 21.45
+        y: -1.8
         z: 0
       orientation:
         x: 0
@@ -417,7 +417,7 @@ waypoints:
     pose:
       position:
         x: 21.63
-        y: 4.5
+        y: 4.55
         z: 0
       orientation:
         x: 0
@@ -430,7 +430,7 @@ waypoints:
     type: workstation
     pose:
       position:
-        x: 51.85
+        x: 51.84
         y: 4.56
         z: 0
       orientation:
@@ -617,7 +617,7 @@ waypoints:
   - name: 最终缓存区_B
     call: line_center_3000_cb
     frame_id: map
-    iter: 20
+    iter: 10
     iter_span: 1.405
     type: workstation
     pose:
@@ -684,10 +684,150 @@ waypoints:
         y: 0
         z: 0
         w: 1
+  - name: 最终缓存区_B_11
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 51.17
+        y: -18.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_12
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 49.765
+        y: -18.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_13
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 48.36
+        y: -18.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_14
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 46.955
+        y: -18.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_15
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 45.55
+        y: -18.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_16
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 44.145
+        y: -18.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_17
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 42.74
+        y: -18.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_18
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 41.335
+        y: -18.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_19
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 39.93
+        y: -18.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
+  - name: 最终缓存区_B_20
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 38.525
+        y: -18.1
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.7071
+        w: 0.7071
   - name: 最终缓存区_C
     call: line_center_3000_cb
     frame_id: map
-    iter: 20
+    iter: 10
     iter_span: -1.404
     type: workstation
     pose:
@@ -754,6 +894,146 @@ waypoints:
         y: 0
         z: 0
         w: 1
+  - name: 最终缓存区_C_11
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 51.18
+        y: -18.85
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_12
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 49.776
+        y: -18.85
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_13
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 48.372
+        y: -18.85
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_14
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 46.968
+        y: -18.85
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_15
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 45.564
+        y: -18.85
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_16
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 44.16
+        y: -18.85
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_17
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 42.756
+        y: -18.85
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_18
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 41.352
+        y: -18.85
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_19
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 39.948
+        y: -18.85
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: 最终缓存区_C_20
+    call: line_center_3000_cb
+    frame_id: map
+    type: workstation
+    pose:
+      position:
+        x: 38.544
+        y: -18.85
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
   - name: 炉底人工配盘区_A
     call: line_center_3000_cb
     frame_id: map
