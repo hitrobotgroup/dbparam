@@ -1,2 +1,1732 @@
 waypoints:
+  - name: homing_control
+    homing_goal: base_shelf
+    type: homing_control
+    x_goal: 0.0
+    y_goal: 0.0
+    yaw_goal: 0.0
+  - name: do_forward
+    homing_goal: base_link
+    type: homing_control
+    x_goal: 1.3
+    y_goal: 0.0
+    yaw_goal: 0.0
+  - name: do_backward
+    homing_goal: base_link
+    type: homing_control
+    x_goal: -1.3
+    y_goal: 0.0
+    yaw_goal: 0.0
+  - name: do_left
+    homing_goal: base_link
+    type: homing_control
+    x_goal: 0.0
+    y_goal: 0.0
+    yaw_goal: 1.57
+  - name: do_right
+    homing_goal: base_link
+    type: homing_control
+    x_goal: 0.0
+    y_goal: 0.0
+    yaw_goal: -1.57
+  - name: wait_ns
+    failure_mode: NONE
+    goal_timeout: 5
+    type: timer
+  - name: home
+    frame_id: map
+    type: goal
+    pose:
+      position:
+        x: 1.3
+        y: 0.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: home_wcj
+    frame_id: map
+    type: goal
+    pose:
+      position:
+        x: 2.13
+        y: -0.43
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.02596
+        w: 0.99966
+  - name: finish_pick
+    type: publisher
+  - name: finish_put
+    type: publisher
+  - name: shelf_approach
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: true
+    type: goal
+    pose:
+      position:
+        x: 1.4
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: storage_shelf_stop
+    frame_id: stop
+    mark: pallet
+    type: mark
+    pose:
+      position:
+        x: 9.9
+        y: -10.5
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7071
+        w: 0.7071
+  - name: shelf_forward_bz
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: base_link
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 1.2
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: shelf_backward_bz
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: base_link
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: -1.2
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: shelf_rotate
+    failure_mode: NONE
+    goal_timeout: 5
+    type: cmd_vel
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.6283
+        w: 0
+  - name: cmd_vel_back
+    failure_mode: NONE
+    goal_timeout: 7
+    type: cmd_vel
+    pose:
+      position:
+        x: -0.2
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_forward
+    failure_mode: NONE
+    goal_timeout: 6
+    type: cmd_vel
+    pose:
+      position:
+        x: 0.2
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: cmd_vel_forward_elevator
+    failure_mode: NONE
+    goal_timeout: 14
+    type: cmd_vel
+    pose:
+      position:
+        x: 0.2
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: F1_Elevator_Point1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 2.99168
+        y: 11.7358
+        z: 0.00385326
+      orientation:
+        x: 0.00943018
+        y: -0.00387944
+        z: 0.696835
+        w: 0.717159
+  - name: F1_Elevator_Door1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 2.90579
+        y: 9.05494
+        z: 0.0014828
+      orientation:
+        x: 0.0121605
+        y: -0.0037744
+        z: 0.734534
+        w: 0.678453
+  - name: F1_Elevator_Door2
+    close_enough: 0.05
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.60841
+        y: 7.57803
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.704507
+        w: 0.709681
+  - name: F1_Elevator_Door2_new_map
+    close_enough: 0.05
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 0.729887
+        y: 4.37656
+        z: 0.00102114
+      orientation:
+        x: 0.00119312
+        y: -0.00159934
+        z: 0.699542
+        w: 0.714589
+  - name: F1_StogeBits1_Head
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 4.91201
+        y: 7.61011
+        z: -0.0022069
+      orientation:
+        x: -0.000550296
+        y: -0.00949805
+        z: -0.699384
+        w: 0.714683
+  - name: F1_StogeBits3_Head
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 5.47566
+        y: -3.64607
+        z: -0.000665818
+      orientation:
+        x: 0.00344334
+        y: 0.00333283
+        z: 0.710067
+        w: 0.704118
+  - name: F1_StogeBits4_Head
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 6.69964
+        y: -3.78307
+        z: 7.89215e-05
+      orientation:
+        x: 0.00617593
+        y: 0.00768846
+        z: 0.691809
+        w: 0.722013
+  - name: F1_StogeBits5_Head
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 8.06286
+        y: -3.7934
+        z: -0.000502842
+      orientation:
+        x: 0.00576911
+        y: 0.00490924
+        z: 0.701735
+        w: 0.712398
+  - name: F1_StogeBits6_Head
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 9.40385
+        y: -3.97981
+        z: -0.00018682
+      orientation:
+        x: 0.00567996
+        y: 0.00711378
+        z: 0.70115
+        w: 0.712955
+  - name: F1_StogeBits7_Head
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 0.815913
+        y: -2.26292
+        z: -0.000314613
+      orientation:
+        x: -0.00846243
+        y: -0.0084836
+        z: 0.99984
+        w: -0.013255
+  - name: F1_C2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.44828
+        y: 0.965002
+        z: -0.000855521
+      orientation:
+        x: -0.00105374
+        y: -0.00162191
+        z: -0.707258
+        w: 0.706952
+  - name: F1_StogePoint2_new_map
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 0.798065
+        y: -6.46892
+        z: 2.01797e-05
+      orientation:
+        x: -0.000592357
+        y: 0.000534119
+        z: -0.717894
+        w: 0.696152
+  - name: F1_StogePoint3
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 0.978813
+        y: -3.64575
+        z: 1.56658e-05
+      orientation:
+        x: 0.000609443
+        y: 0.000364522
+        z: 0.999751
+        w: 0.00732872
+  - name: F1_Stoge01
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.5
+        y: 6.66864
+        z: -0.00120339
+      orientation:
+        x: 0.0019953
+        y: 0.000667621
+        z: 0.999971
+        w: 0.00732872
+  - name: F1_Stoge02
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.7
+        y: 6.68504
+        z: -0.00122473
+      orientation:
+        x: 0.000743174
+        y: -0.00220643
+        z: -0.00561687
+        w: 0.999982
+  - name: F1_Stoge03
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.5
+        y: 5.75226
+        z: -0.00224046
+      orientation:
+        x: 0.00310458
+        y: -0.000232567
+        z: 0.99988
+        w: -0.0151769
+  - name: F1_Stoge04
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.7
+        y: 5.89751
+        z: -0.000237559
+      orientation:
+        x: -0.000118069
+        y: -9.83691e-05
+        z: -0.0121828
+        w: 0.999926
+  - name: F1_Stoge05
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.5
+        y: 4.97202
+        z: 2.17508e-05
+      orientation:
+        x: -0.00175565
+        y: -0.000410551
+        z: 0.999997
+        w: 0.00144883
+  - name: F1_Stoge07
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.5
+        y: 4.172
+        z: -0.000450098
+      orientation:
+        x: -0.00150333
+        y: -0.000223643
+        z: 0.999953
+        w: 0.0095598
+  - name: F1_Stoge09
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.5
+        y: 3.39099
+        z: 8.71456e-05
+      orientation:
+        x: -0.00035113
+        y: -7.38994e-05
+        z: 0.999962
+        w: 0.00875322
+  - name: F1_Stoge11
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.5
+        y: 2.61624
+        z: -0.00230766
+      orientation:
+        x: 0.0035531
+        y: 0.000791805
+        z: 0.999956
+        w: 0.00864514
+  - name: F1_Stoge13
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.5
+        y: 1.83213
+        z: -0.000462288
+      orientation:
+        x: -0.00045044
+        y: -0.000685256
+        z: 0.999878
+        w: 0.0156194
+  - name: F1_Stoge12_new_map
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 0.686764
+        y: -1.10951
+        z: -0.000403072
+      orientation:
+        x: 0.00560129
+        y: 0.00334429
+        z: 0.0232002
+        w: 0.99971
+  - name: F1_Stoge10
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.7
+        y: 2.77298
+        z: -0.000570723
+      orientation:
+        x: 0.0012204
+        y: 0.00113978
+        z: -0.0198622
+        w: 0.999801
+  - name: F1_Stoge08
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.7
+        y: 3.55197
+        z: -0.00260943
+      orientation:
+        x: -0.001804
+        y: 0.000261733
+        z: -0.0195055
+        w: 0.999808
+  - name: F1_Stoge06
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.7
+        y: 4.35063
+        z: -0.000231659
+      orientation:
+        x: -0.000160375
+        y: 0.0020968
+        z: -0.0143844
+        w: 0.999894
+  - name: F1_Stoge06_ref
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.85
+        y: 4.35063
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0143844
+        w: 0.999894
+  - name: F1_Stoge14
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.7
+        y: 5.17208
+        z: -0.0011115
+      orientation:
+        x: -0.000929543
+        y: 0.00291124
+        z: 0.00207949
+        w: 0.999993
+  - name: F1_Stoge17
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -1.49111
+        y: -3.48667
+        z: -0.00010206
+      orientation:
+        x: -0.00223744
+        y: -0.00112838
+        z: 0.717882
+        w: 0.69616
+  - name: F1_Stoge18
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -2.33135
+        y: -3.47879
+        z: -0.00101094
+      orientation:
+        x: 0.00615424
+        y: -0.00266119
+        z: 0.705656
+        w: 0.708523
+  - name: F1_Stoge19
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -3.15336
+        y: -3.51684
+        z: -0.000515499
+      orientation:
+        x: -0.000883638
+        y: 0.0011809
+        z: 0.705265
+        w: 0.708942
+  - name: F1_Stoge20
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -3.95649
+        y: -3.46848
+        z: -0.000859074
+      orientation:
+        x: -0.00193576
+        y: 0.000234506
+        z: 0.698984
+        w: 0.715135
+  - name: F1_Stoge21
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -4.79776
+        y: -3.38361
+        z: -1.82359e-05
+      orientation:
+        x: -0.00182753
+        y: 0.00123197
+        z: 0.697355
+        w: 0.716722
+  - name: F1_Stoge22
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -5.65945
+        y: -3.24267
+        z: -5.03484e-06
+      orientation:
+        x: -0.00113414
+        y: 0.00160131
+        z: 0.687377
+        w: 0.726299
+  - name: F1_Stoge15
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 0.104
+        y: -3.30875
+        z: 0.00020972
+      orientation:
+        x: 0.000525828
+        y: -0.000396373
+        z: 0.707123
+        w: 0.707128
+  - name: F1_Stoge16
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -0.737577
+        y: -3.49246
+        z: -0.000905672
+      orientation:
+        x: 0.00492177
+        y: -0.00371048
+        z: 0.714213
+        w: 0.699901
+  - name: F1_Stoge23
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -0.349706
+        y: 0.482887
+        z: -0.000120706
+      orientation:
+        x: -0.00342867
+        y: 0.0027297
+        z: -0.709761
+        w: 0.704429
+  - name: F1_Stoge24
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -1.13627
+        y: 0.495065
+        z: 0.000533204
+      orientation:
+        x: 0.000849647
+        y: 0.00128405
+        z: -0.712157
+        w: 0.702018
+  - name: F1_Stoge25
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -1.95887
+        y: 0.520889
+        z: 0.000372175
+      orientation:
+        x: 0.00166705
+        y: 0.00331919
+        z: -0.711544
+        w: 0.702632
+  - name: F1_Stoge26
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -2.82839
+        y: 0.524828
+        z: -0.000107745
+      orientation:
+        x: -0.000920732
+        y: 0.000264932
+        z: -0.715225
+        w: 0.698894
+  - name: F1_Stoge27
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -3.67889
+        y: 0.486809
+        z: -9.08223e-05
+      orientation:
+        x: -0.000794916
+        y: -0.00062427
+        z: -0.709605
+        w: 0.704599
+  - name: F1_Stoge28
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -4.69108
+        y: 0.568926
+        z: 0.000505648
+      orientation:
+        x: 0.00137952
+        y: 0.000959404
+        z: -0.707558
+        w: 0.706653
+  - name: F1_Stoge29
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -5.50818
+        y: 0.504229
+        z: 0.000218021
+      orientation:
+        x: -0.00183473
+        y: -0.00060456
+        z: -0.699559
+        w: 0.714572
+  - name: F1_Elevator_Door1_Turn
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 2.84472
+        y: 8.95629
+        z: 0.000564234
+      orientation:
+        x: 0.0104491
+        y: -0.00211821
+        z: -0.716355
+        w: 0.697655
+  - name: F1_Elevator_Point1_Turn
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.01892
+        y: 11.7059
+        z: -7.08622e-05
+      orientation:
+        x: -0.00286109
+        y: -0.0113043
+        z: -0.707166
+        w: 0.706951
+  - name: F1_Line1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 1.09518
+        y: 7.35521
+        z: -0.00691737
+      orientation:
+        x: 0.0115505
+        y: -0.000774324
+        z: 0.999932
+        w: -0.00122846
+  - name: charge_start
+    close_enough: 0.0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 2.854
+        y: -0.39
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0.99995
+        w: 0.00951
+  - name: turn_back
+    close_enough: 0.0
+    failure_mode: LOOP
+    frame_id: base_link
+    goal_timeout: 0
+    type: goal
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 1
+        w: 0
+  - name: dock_back_fast
+    close_enough: -0.015
+    type: cmd_vel
+  - name: dock_back_slow
+    close_enough: -0.004
+    type: cmd_vel
+  - name: stop_agv
+    close_enough: 0.0
+    type: cmd_vel
+  - name: charge_status
+    failure_mode: 1
+    goal_timeout: 13
+    type: pubsuber
+  - name: F1_Stoge12_Put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 4.99668
+        y: 1.94188
+        z: -0.00642389
+      orientation:
+        x: -0.00124396
+        y: -0.000708847
+        z: -0.0182231
+        w: 0.999833
+  - name: F1_Stoge10_Put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 4.99668
+        y: 2.77298
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0182231
+        w: 0.999833
+  - name: F1_Stoge08_Put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 4.99668
+        y: 3.55197
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0182231
+        w: 0.999833
+  - name: F1_Stoge06_Put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 4.99668
+        y: 4.35063
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0182231
+        w: 0.999833
+  - name: F1_Stoge04_Put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 4.99668
+        y: 5.89751
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0182231
+        w: 0.999833
+  - name: F1_Stoge02_Put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 4.99668
+        y: 6.68504
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0182231
+        w: 0.999833
+  - name: F1_Stoge14_Put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 4.99668
+        y: 5.17208
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0182231
+        w: 0.999833
+  - name: F1_Line01
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -1.41469
+        y: 7.40892
+        z: -0.00225226
+      orientation:
+        x: 0.000120894
+        y: -0.00238587
+        z: -0.024947
+        w: 0.999686
+  - name: F1_Line01_Put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -0.267569
+        y: 7.4066
+        z: 0.00585573
+      orientation:
+        x: -0.00119955
+        y: 0.00188333
+        z: -0.0106059
+        w: 0.999941
+  - name: pf
+    failure_mode: LOOP
+    frame_id: base_link
+    type: local_goal
+    pose:
+      position:
+        x: 1.29
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+  - name: pb
+    failure_mode: LOOP
+    frame_id: base_link
+    type: local_goal
+    pose:
+      position:
+        x: 0
+        y: 0
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: 2
+        w: 0
+  - name: looper
+    failure_mode: LOOP
+    type: looper
+  - name: F1_Line01_le
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -1.4337
+        y: 8.51737
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.725181
+        w: 0.688559
+  - name: F1_Line02
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -4.2903
+        y: 7.55899
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: 0.00663336
+        w: 0.999978
+  - name: F1_Line03
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -7.26967
+        y: 7.63095
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0240368
+        w: 0.999711
+  - name: F1_Line03_le
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -7.30402
+        y: 8.50627
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.691793
+        w: 0.722096
+  - name: F1_Line04
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -10.9879
+        y: 7.67839
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0262762
+        w: 0.999655
+  - name: F1_Line04_put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -9.90727
+        y: 7.61624
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0158706
+        w: 0.999874
+  - name: F1_Line05_le
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -14.0242
+        y: 8.65684
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.715673
+        w: 0.698436
+  - name: F1_Line05
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -14.0461
+        y: 7.75717
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0153149
+        w: 0.999883
+  - name: F1_Line05_put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -12.9923
+        y: 7.66284
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0307844
+        w: 0.999526
+  - name: F1_Line06_put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -16.4257
+        y: 7.63749
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0576772
+        w: 0.998335
+  - name: F1_Line07
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -21.1714
+        y: 7.81969
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.00135217
+        w: 0.999999
+  - name: F1_Line07_put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -20.1503
+        y: 7.77155
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0110556
+        w: 0.999939
+  - name: F1_Line07_le
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -21.1532
+        y: 8.5766
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.706087
+        w: 0.708125
+  - name: F1_Line03_put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -6.38154
+        y: 7.68061
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0163175
+        w: 0.999867
+  - name: F1_Line02_put
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -3.27414
+        y: 7.67913
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0180738
+        w: 0.999837
+  - name: F1_Line02_le
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -4.28462
+        y: 8.68139
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.703493
+        w: 0.710703
+  - name: F1_Line04_le
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -10.9194
+        y: 8.41144
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.721129
+        w: 0.692801
+  - name: F1_Line06
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -17.5603
+        y: 7.74788
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0155676
+        w: 0.999879
+  - name: F1_Line06_le
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: -17.7326
+        y: 8.58791
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.694534
+        w: 0.71946
+  - name: F1_Line01_P
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 0.990734
+        y: 8.1689
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0142891
+        w: 0.999898
+  - name: F1_C1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.61083
+        y: 7.94532
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.709332
+        w: 0.704875
+  - name: F1_C3
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.30828
+        y: -3.46725
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: 0.703396
+        w: 0.710798
+  - name: F1_Hide1
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 5.21839
+        y: 8.21134
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: 0.999998
+        w: 0.00186992
+  - name: F1_Hide2
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 2.32118
+        y: 0.722737
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: 0.0197266
+        w: 0.999805
+  - name: F1_Stoge12
+    close_enough: 0
+    failure_mode: LOOP
+    frame_id: map
+    goal_timeout: 0
+    mark: false
+    type: goal
+    pose:
+      position:
+        x: 3.74562
+        y: 2.03569
+        z: 0.05
+      orientation:
+        x: 0
+        y: 0
+        z: -0.0177738
+        w: 0.999842
 trajectories:
+  - name: fsk_docking_back_bz
+    waypoints:
+    - bz_nav_params_wp
+    - shelf_forward_bz
+    - lift_down_wp
+    - shelf_backward_bz
+    - dwa_agv_params_wp
+    - finish_put
+  - name: fsk_docking_back_vel_copy
+    waypoints:
+    - bz_nav_params_wp
+    - cmd_vel_forward
+    - lift_down_wp
+    - cmd_vel_back
+    - dwa_agv_params_wp
+    - finish_put
+  - name: new_map_test
+    waypoints:
+    - F1_Elevator_Door2_new_map
+    - F1_Stoge12_new_map
+    - F1_StogePoint2_new_map
+    - F1_Stoge12_new_map
+  - name: lift_init_cb
+    waypoints:
+    - init_pose
+  - name: pp
+    waypoints:
+    - shelf_on
+    - homing_control
+    - shelf_off
+    - lift_up_wp
+    - do_backward
+    - do_forward
+    - lift_down_wp
+    - do_backward
+    - looper
+  - name: my_test
+    waypoints:
+    - shelf_on
+    - homing_control
+    - shelf_off
+    - do_backward
+  - name: hh0
+    waypoints:
+    - F1_Stoge24
+    - shelf_on
+    - homing_control
+    - shelf_off
+    - do_backward
+    - looper
+  - name: hh1
+    waypoints:
+    - F1_Stoge16
+    - shelf_on
+    - homing_control
+    - shelf_off
+    - do_backward
+    - shelf_on
+    - homing_control
+    - shelf_off
+    - do_backward
+  - name: hh21
+    waypoints:
+    - shelf_on
+    - homing_control
+    - shelf_off
+    - lift_up_wp
+    - do_backward
+    - do_forward
+    - lift_down_wp
+    - do_backward
+  - name: hh22
+    waypoints:
+    - shelf_on
+    - homing_control
+    - shelf_off
+    - lift_up_wp
+    - do_backward
+    - do_forward
+    - lift_down_wp
+    - do_backward
+  - name: F1_hshtest_jitai6
+    waypoints:
+    - F1_Line06_le
+    - F1_Line06
+    - shelf_on
+    - homing_control
+    - shelf_off
+    - lift_up_wp
+    - do_backward
+    - F1_Line06_le
+    - F1_Line06_le
+    - F1_Line06
+    - do_forward
+    - lift_down_wp
+    - do_backward
+  - name: fsk_docking_vel
+    waypoints:
+    - shelf_on
+    - homing_control
+    - shelf_off
+    - lift_up_wp
+    - do_backward
+    - finish_pick
+  - name: fsk_docking_back_vel
+    waypoints:
+    - do_forward
+    - lift_down_wp
+    - do_backward
+    - finish_put
